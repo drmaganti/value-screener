@@ -1,0 +1,43 @@
+name: Daily Value Screen
+
+on:
+  schedule:
+    # 13:00 UTC = 9:00am ET during daylight time (EDT), 8:00am during EST.
+    # Runs weekdays only; markets are closed weekends. GitHub may delay
+    # scheduled runs by a few minutes under load, so treat this as "around 9".
+    - cron: "0 13 * * 1-5"
+  workflow_dispatch: {}   # also lets you trigger it by hand from the Actions tab
+
+permissions:
+  contents: write          # needed to commit the updated cooldown state back
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run screener
+        env:
+          PROVIDER: yfinance
+          CLASSIFIER: groq
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python value_screener.py
+
+      - name: Persist cooldown state
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "Update cooldown state [skip ci]"
+          git push
