@@ -38,5 +38,3 @@ jobs:
           git add state.json
           git diff --staged --quiet || git commit -m "Update cooldown state [skip ci]"
           git push
-EOF
-If the file IS there lo
