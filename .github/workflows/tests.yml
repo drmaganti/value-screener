@@ -1,0 +1,31 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+
+      # Gating: deterministic unit + integration tests must pass.
+      - name: Unit and integration tests
+        run: python -m pytest -q
+
+      # Informational: the catalyst eval against the free mock baseline.
+      # Shows trap-recall numbers in the log but does not block the build
+      # (the mock is intentionally limited; the real quality bar is the Groq
+      # eval, run on demand -- see TESTING.md).
+      - name: Catalyst eval (mock baseline, non-gating)
+        continue-on-error: true
+        run: python evals/eval_catalyst.py --min-trap-recall 0.60
