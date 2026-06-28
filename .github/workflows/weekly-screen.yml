@@ -1,0 +1,47 @@
+name: Weekly Value Screen
+
+on:
+  schedule:
+    # 04:00 UTC Monday = ~Sunday ~11pm-midnight ET (markets closed, prices settled).
+    # Email lands well before Monday's 9:30 ET open. Runs slow + paced on purpose.
+    - cron: "0 4 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write          # commit the updated pick log + universe back
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330    # allow a long, polite, batched scan
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh index constituents
+        run: python refresh_universe.py
+        continue-on-error: true   # if Wikipedia hiccups, fall back to last universe.json
+
+      - name: Run weekly screen
+        env:
+          PROVIDER: yfinance
+          CLASSIFIER: groq
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python value_screener.py
+
+      - name: Persist pick log and universe
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add picks_log.json universe.json
+          git diff --staged --quiet || git commit -m "Weekly run: update log + universe [skip ci]"
+          git push
