@@ -21,7 +21,7 @@ suite and a catalyst eval.
 - A value-buy cutoff (≥ 60/100); the top 3 get a ~200-word written analysis.
 - A modern HTML email: this week's picks plus a maturing track record.
 
-## Phase 2 — See whether it works (next)
+## Phase 2 — See whether it works (next) July - Aug
 
 Built quickly, but the payoff is gated on having a month-plus of matured picks.
 
