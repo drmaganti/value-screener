@@ -1,80 +1,121 @@
 """
-Integration tests: the whole funnel end to end, plus the cooldown state that
-has to survive between cloud runs.
+Integration tests for the Phase 1 pipeline and the outcome log.
 
-These run on the synthetic provider and the mock classifier, so they're fast,
-deterministic, and need no network or keys — but they exercise the real
-pipeline code path that runs in production.
+Runs on the synthetic provider / mock classifier / synthetic analyst, so it's
+fast, deterministic, and needs no network or keys -- but exercises the real
+weekly code path: scan -> funnel -> cutoff -> top-N -> log -> mature outcomes.
 """
-import json
+import datetime
 import value_screener as vs
+
+
+def _components():
+    return vs.SyntheticProvider(), vs.MockClassifier(), vs.SyntheticAnalyst()
 
 
 # ── Pipeline ────────────────────────────────────────────────────────────────
 
 def test_pipeline_never_recommends_known_traps():
-    # INTC (guidance cut) and VZ (lawsuit) are synthetic value traps. They may
-    # pass the technical screen, but the catalyst filter must keep them out of
-    # the buy list every single time.
-    picks, rejected = vs.run_screen(vs.SyntheticProvider(), vs.MockClassifier(), set())
-    pick_tickers = {c.fund.ticker for c in picks}
-    rej_tickers = {c.fund.ticker for c in rejected}
-    assert "INTC" not in pick_tickers and "VZ" not in pick_tickers
-    assert "INTC" in rej_tickers and "VZ" in rej_tickers
+    p, clf, an = _components()
+    qualifiers, featured, rejected = vs.run_screen(p, clf, an, exclude=set())
+    quals = {c.fund.ticker for c in qualifiers}
+    rejs = {c.fund.ticker for c in rejected}
+    assert "INTC" not in quals and "VZ" not in quals
+    assert "INTC" in rejs and "VZ" in rejs
 
 
-def test_picks_are_sorted_capped_and_above_threshold():
-    picks, _ = vs.run_screen(vs.SyntheticProvider(), vs.MockClassifier(), set())
-    scores = [c.composite for c in picks]
-    assert scores == sorted(scores, reverse=True)               # best first
-    assert len(picks) <= vs.THRESHOLDS["max_picks"]             # capped
-    assert all(s >= vs.THRESHOLDS["min_composite"] for s in scores)  # cleared the bar
+def test_qualifiers_respect_cutoff_and_are_sorted():
+    p, clf, an = _components()
+    qualifiers, _, _ = vs.run_screen(p, clf, an, exclude=set())
+    scores = [c.composite for c in qualifiers]
+    assert scores == sorted(scores, reverse=True)
+    assert all(s >= vs.THRESHOLDS["min_composite"] for s in scores)
+    assert len(qualifiers) <= vs.THRESHOLDS["max_picks_per_run"]
 
 
-def test_every_pick_carries_full_evidence():
-    # The email promises a reason and a source for each name; make sure the
-    # pipeline actually populates them.
-    picks, _ = vs.run_screen(vs.SyntheticProvider(), vs.MockClassifier(), set())
-    for c in picks:
-        assert c.val is not None and c.qual is not None and c.cat is not None
-        assert c.cat.reason and c.cat.category
+def test_only_top_n_are_featured_with_analysis():
+    p, clf, an = _components()
+    qualifiers, featured, _ = vs.run_screen(p, clf, an, exclude=set())
+    assert len(featured) <= vs.THRESHOLDS["featured"]
+    assert featured == qualifiers[:len(featured)]
+    for c in featured:
+        assert len(c.analysis) > 200
+    for c in qualifiers[len(featured):]:
+        assert c.analysis == ""
 
 
-def test_cooldown_suppresses_recently_sent_names():
-    picks1, _ = vs.run_screen(vs.SyntheticProvider(), vs.MockClassifier(), set())
-    assert picks1, "expected at least one pick to exercise the cooldown"
-    already_sent = {picks1[0].fund.ticker}
-    picks2, _ = vs.run_screen(vs.SyntheticProvider(), vs.MockClassifier(), already_sent)
-    assert picks1[0].fund.ticker not in {c.fund.ticker for c in picks2}
+def test_exclude_set_removes_names_from_scan():
+    p, clf, an = _components()
+    base, _, _ = vs.run_screen(p, clf, an, exclude=set())
+    assert base, "expected qualifiers to test exclusion"
+    drop = base[0].fund.ticker
+    after, _, _ = vs.run_screen(p, clf, an, exclude={drop})
+    assert drop not in {c.fund.ticker for c in after}
 
 
-# ── Cooldown state (state.json) ─────────────────────────────────────────────
+# ── Days-in-decline (reversal vs momentum) ──────────────────────────────────
 
-def test_state_load_respects_the_cooldown_window(tmp_path, monkeypatch):
-    sf = tmp_path / "state.json"
-    monkeypatch.setattr(vs, "STATE_FILE", str(sf))
-    today = vs.date.today()
-    sf.write_text(json.dumps({"sent": {
-        "RECENT": (today - vs.timedelta(days=1)).isoformat(),
-        "OLD":    (today - vs.timedelta(days=30)).isoformat(),
-    }}))
-    within, _ = vs.load_recently_sent(cooldown_days=5)
-    assert "RECENT" in within and "OLD" not in within
+def test_days_in_decline_distinguishes_fresh_dip_from_long_slide():
+    fresh = [100.0 + i for i in range(250)] + [348.0, 344.0]
+    slide = [100.0 + i for i in range(200)] + [299.0 - i for i in range(52)]
+    assert vs._days_in_decline(fresh) < 10
+    assert vs._days_in_decline(slide) > 40
 
 
-def test_state_write_prunes_stale_entries(tmp_path, monkeypatch):
-    sf = tmp_path / "state.json"
-    monkeypatch.setattr(vs, "STATE_FILE", str(sf))
-    today = vs.date.today()
-    sf.write_text(json.dumps({"sent": {"OLD": (today - vs.timedelta(days=30)).isoformat()}}))
-    _, data = vs.load_recently_sent(cooldown_days=5)
-    vs.record_sent(data, ["NEW"], cooldown_days=5)
-    saved = json.loads(sf.read_text())["sent"]
-    assert "NEW" in saved and "OLD" not in saved      # stale entry pruned on write
+# ── Outcome log ─────────────────────────────────────────────────────────────
+
+def test_open_tickers_uses_the_open_window():
+    today = datetime.date.today()
+    log = {"picks": [
+        {"ticker": "FRESH", "pick_date": (today - datetime.timedelta(days=5)).isoformat()},
+        {"ticker": "OLD", "pick_date": (today - datetime.timedelta(days=60)).isoformat()},
+    ]}
+    openset = vs.open_tickers(log, today)
+    assert "FRESH" in openset and "OLD" not in openset
 
 
-def test_state_missing_file_is_handled(tmp_path, monkeypatch):
-    sf = tmp_path / "does_not_exist.json"
-    monkeypatch.setattr(vs, "STATE_FILE", str(sf))
-    within, data = vs.load_recently_sent(cooldown_days=5)
-    assert within == set() and data == {"sent": {}}   # clean start, no crash
+def test_update_outcomes_fills_matured_horizons():
+    today = datetime.date.today()
+    log = {"picks": [{
+        "ticker": "AAA", "pick_date": (today - datetime.timedelta(days=40)).isoformat(),
+        "pick_price": 100.0, "bench_at_pick": 400.0,
+        "outcomes": {k: None for k in vs.HORIZONS},
+        "outcomes_bench": {k: None for k in vs.HORIZONS},
+    }]}
+
+    class StubProvider:
+        def last_price(self, t): return 110.0 if t == "AAA" else 404.0
+
+    filled = vs.update_outcomes(StubProvider(), log, today)
+    o = log["picks"][0]["outcomes"]
+    assert o["1w"] == 10.0 and o["1m"] == 10.0
+    assert o["3m"] is None and o["6m"] is None
+    assert log["picks"][0]["outcomes_bench"]["1m"] == 1.0
+    assert filled == 2
+
+
+def test_track_record_stats_counts_beats():
+    log = {"picks": [
+        {"ticker": "WIN", "pick_date": "2026-01-01",
+         "outcomes": {"1m": 8.0}, "outcomes_bench": {"1m": 2.0}},
+        {"ticker": "LOSE", "pick_date": "2026-01-01",
+         "outcomes": {"1m": -3.0}, "outcomes_bench": {"1m": 1.0}},
+        {"ticker": "PENDING", "pick_date": "2026-06-01",
+         "outcomes": {"1m": None}, "outcomes_bench": {"1m": None}},
+    ]}
+    s = vs.track_record_stats(log)
+    assert s["n"] == 2 and s["beats"] == 1
+
+
+def test_log_roundtrip(tmp_path, monkeypatch):
+    monkeypatch.setattr(vs, "STATE_DIR", str(tmp_path))
+    vs.save_log({"picks": [{"ticker": "ZZZ", "pick_date": "2026-06-01",
+                            "outcomes": {}, "outcomes_bench": {}}]})
+    assert vs.load_log()["picks"][0]["ticker"] == "ZZZ"
+
+
+def test_empty_log_is_handled(tmp_path, monkeypatch):
+    monkeypatch.setattr(vs, "STATE_DIR", str(tmp_path))
+    assert vs.load_log() == {"picks": []}
+    assert vs.open_tickers({"picks": []}, datetime.date.today()) == set()
+    assert vs.track_record_stats({"picks": []}) is None
