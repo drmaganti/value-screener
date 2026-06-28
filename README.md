@@ -1,119 +1,148 @@
 # Value Stock Screener
 
-A research tool that emails you a daily shortlist of blue-chip stocks (NYSE /
-NASDAQ / TSX) that have pulled back, look cheap versus their own history, are
-financially healthy, and are down for a **transient** reason rather than a
-structural one. Runs in the cloud on GitHub Actions for **$0/month, no credit
-card**.
+A research tool that scans a large blue-chip universe (NYSE / NASDAQ / TSX) **once
+a week**, finds stocks that have pulled back but look cheap, financially healthy,
+and down for a *temporary* reason, scores them, **tracks how they actually do over
+time**, and emails a clean HTML digest. Runs entirely in the cloud on GitHub
+Actions for **$0/month, no credit card**.
 
-> **Not investment advice.** This surfaces candidates and the evidence behind
-> them. The buy decision is yours. The catalyst filter is deliberately
-> conservative, but no screen replaces your own judgment. Backtest before you
-> trust it with money.
+> **Not investment advice.** This surfaces candidates with the evidence behind
+> them; the buy decision is yours. The value-trap filter is deliberately
+> conservative, but no screen replaces your own judgment. The track record is
+> there so you can see whether the picks actually work before trusting them.
 
 ## How it works
 
-A funnel, cheapest checks first:
+Each weekly run is a funnel — cheap checks first, expensive checks only on the
+survivors:
 
-1. **Technical screen** runs on the whole universe: pullback off the 52-week
-   high, RSI, position vs the 50- and 200-day moving averages.
-2. **Enrich the survivors only** (keeps API usage tiny): valuation vs the
-   stock's own history, a Piotroski-style financial-health score, recent news.
-3. **Catalyst classification** (the value-trap filter): an LLM reads the recent
-   headlines and decides *why* the stock is down. Anything structural (guidance
-   cut, lawsuit, regulatory action, governance blowup) is a hard veto.
-4. **Score, rank, dedupe, email.** A weighted composite; only names above the
-   threshold go out, and a cooldown stops the same name emailing you daily.
+1. **Mature past picks.** Update the outcome log: for every earlier pick whose
+   1-week / 1-month / 3-month / 6-month horizon has come due, record its return
+   versus the S&P 500.
+2. **Skip open bets.** Names picked within the last 30 days are excluded so the
+   same stock doesn't surface week after week.
+3. **Paced scan.** Pull a year of prices for the whole universe in small batches
+   with sleeps and retries, so free data survives ~600 names without throttling.
+4. **Funnel.** Keep names that have corrected (≥10% off the 52-week high or RSI
+   oversold), then enrich only those with valuation, financial-health, and news
+   signals.
+5. **Classify the catalyst.** An LLM reads the recent headlines and decides *why*
+   the stock is down. Structural reasons (guidance cut, lawsuit, regulatory
+   action, governance blowup) are a hard veto.
+6. **Score and rank.** A weighted composite (0–100). Only names scoring **≥ 60**
+   count as value buys.
+7. **Write and send.** The top 3 get a ~200-word written analysis; everything
+   logged goes into the email — this week's picks up top, the maturing track
+   record below.
 
 ## The free stack
 
 | Piece | Service | Cost |
 |-------|---------|------|
 | Market data | yfinance | free, no key |
-| Catalyst LLM | Groq (`llama-3.3-70b-versatile`) | free, no card |
+| Catalyst + analysis LLM | Groq (`llama-3.3-70b-versatile`) | free, no card |
 | Email | Gmail SMTP | free |
 | Scheduler / host | GitHub Actions | free (well under the limit) |
-| Cooldown state | `state.json` committed back to the repo | free |
+| Universe + pick log | JSON files committed back to the repo | free |
 
-## Deploy (about 15 minutes)
+## Files
 
-### 1. Put this in a GitHub repo
-Create a new repo (private is fine) and push these files to it.
+```
+value_screener.py            the engine: providers, lenses, classifier, log, pipeline
+email_report.py              builds the HTML + plain-text digest
+refresh_universe.py          fetches index constituents -> universe.json
+universe.json                the ~600-name universe (created by refresh_universe)
+picks_log.json               the outcome log (created + committed each run)
+conftest.py                  lets the tests import value_screener
+requirements.txt             runtime deps (yfinance, requests, pandas, lxml)
+requirements-dev.txt         test deps (pytest)
+README.md / TESTING.md / ROADMAP.md
 
-### 2. Get a free Groq API key
-Sign up at **console.groq.com** (no credit card), create an API key, copy it.
+.github/workflows/
+  weekly-screen.yml          runs the screener Sunday overnight
+  tests.yml                  runs the test suite on every push
 
-### 3. Get a Gmail app password
-With 2-factor auth on your Google account, go to **myaccount.google.com →
-Security → App passwords**, generate one for "Mail", and copy the 16-character
-value. This is *not* your normal Gmail password.
+tests/                       unit + invariant + integration tests
+evals/                       the catalyst classifier eval + labeled dataset
+```
 
-### 4. Add four repository secrets
-In the repo: **Settings → Secrets and variables → Actions → New repository
-secret**. Add each of:
+## Deploy
 
-- `GROQ_API_KEY` — the Groq key from step 2
+### 1. Repo + secrets
+Push these files to a GitHub repo (private is fine). Then add four repository
+secrets under **Settings → Secrets and variables → Actions**:
+
+- `GROQ_API_KEY` — free key from console.groq.com
 - `EMAIL_FROM` — your Gmail address
-- `EMAIL_APP_PASSWORD` — the app password from step 3
-- `EMAIL_TO` — where you want the digest sent
+- `EMAIL_APP_PASSWORD` — a Gmail app password (Google account → Security → App
+  passwords), *not* your login password
+- `EMAIL_TO` — where the digest goes
 
-### 5. Test it before trusting the schedule
-Open the **Actions** tab, pick **Daily Value Screen**, click **Run workflow**.
-This runs it immediately so you can confirm the email arrives and looks right.
-After that it runs itself every weekday morning.
+### 2. Build the universe once
+Run `python refresh_universe.py` locally (or just let the weekly workflow's
+refresh step do it). This writes `universe.json` with the S&P 500 + NASDAQ-100 +
+S&P/TSX 60 members. It scrapes Wikipedia, so it needs open network; the workflow
+runs it with `continue-on-error` so a hiccup falls back to the last good file.
 
-## Run it locally first (recommended)
+### 3. Test the run
+**Actions → Weekly Value Screen → Run workflow.** The first email will have picks
+but an empty Track Record — that section fills in over the following weeks as
+picks mature. After that it runs itself every Sunday overnight.
 
-Confirm the logic with offline synthetic data — no keys, no network:
+## Run it locally
 
 ```bash
+# Offline, synthetic data, no keys — writes a preview to email_preview.html
 python value_screener.py
+
+# Live data + real LLM, prints/sends for real
+PROVIDER=yfinance CLASSIFIER=groq GROQ_API_KEY=... python value_screener.py
 ```
 
-This prints a sample digest instead of emailing. Then try live data:
-
-```bash
-PROVIDER=yfinance CLASSIFIER=groq GROQ_API_KEY=your_key python value_screener.py
-```
-
-Leave the email variables unset and it prints the real digest to your terminal
-rather than sending it — handy while you tune things.
+With the email variables unset, the digest is written to `email_preview.html`
+instead of sent — handy for previewing the layout.
 
 ## Configuration
 
-Behaviour is driven by environment variables (the workflow sets these from your
-secrets) and by two dictionaries at the top of `value_screener.py`:
+Everything tunable lives at the top of `value_screener.py`:
 
-- `UNIVERSE` — the tickers it watches. Add your own; TSX names use `.TO`.
-- `WEIGHTS` — how the five lenses combine into the score. Tune to taste.
-- `THRESHOLDS` — pullback size, quality floor, cooldown length, max picks, etc.
+- `THRESHOLDS["min_composite"]` — the value-buy cutoff (default **60**; lower =
+  more picks).
+- `THRESHOLDS["featured"]` / `["max_picks_per_run"]` — how many get the written
+  analysis (3) and how many are logged per run (10).
+- `THRESHOLDS["open_window_days"]` — how long a pick blocks re-selection (30).
+- `HORIZONS` — the outcome windows tracked (1w / 1m / 3m / 6m).
+- `WEIGHTS` — how the five lenses combine into the score.
+- `SCAN` — batch size and sleep timing for the paced scan.
 
-## Scheduling note
+## The outcome log
 
-The cron is `0 13 * * 1-5` = **13:00 UTC, weekdays**. That's 9:00am Eastern
-during daylight saving (EDT) and 8:00am during standard time (EST), because
-cron doesn't follow DST. Adjust the hour in the workflow if you want to pin it.
-At ~9am ET the latest available price is the **previous close** (markets open
-9:30am ET), which is all a daily screen needs, and the run also catches any
-overnight or pre-market news before you'd act at the open.
+`picks_log.json` is the heart of the system and the thing that lets it improve.
+Each pick records its signals at pick time (cheapness, F-score, pullback, days in
+decline, catalyst category) and a return slot for each horizon, filled in later
+versus the S&P. Over months this becomes a dataset you can mine: do higher scores
+mean better outcomes? Do cheap picks beat healthy ones? Do fresh dips bounce
+better than long slides? That analysis is Phase 2 (see ROADMAP.md).
 
 ## Honest limitations
 
 - **Fundamentals fidelity.** yfinance gives clean prices and current ratios but
   not a clean 5-year P/E band, so the "cheap vs history" lens leans on
-  dividend-yield-vs-5-year-average (which yfinance *does* provide) plus current
-  multiples. For full P/E-percentile fidelity, swap the data provider for
-  Financial Modeling Prep or Polygon — the code is built so that's one class.
-- **The Piotroski score is a documented subset**, not the full nine signals,
-  because several require year-over-year statement deltas.
-- **No backtest yet.** Log picks with their price and date, then measure whether
-  the weighting actually works. An agent you can't evaluate is just vibes.
-- **Free tiers can change or rate-limit.** You're using a tiny fraction of
-  Groq's daily allowance, but providers adjust quotas; verify if it ever stops.
+  dividend-yield-vs-5-year-average plus current multiples. A paid source (FMP,
+  Polygon) is the upgrade; the provider abstraction makes it a one-class swap.
+- **Large-cap quality.** The Piotroski-style score is most powerful in small/mid
+  caps; on blue chips its edge is thinner (well documented). It's still a useful
+  trap filter, not a strong return signal on its own.
+- **The universe drifts.** Constituents change on rebalance; re-run
+  `refresh_universe.py` periodically (the workflow does it weekly).
+- **No backtest of the strategy itself.** The tests prove the code is correct,
+  not that the picks make money. The track record answers that — give it time.
+- **Free tiers can change.** You use a tiny fraction of Groq's allowance and
+  GitHub's minutes, but providers adjust quotas.
 
-## Going paid later (optional)
+## Compliance note
 
-If you outgrow the free tier, the catalyst step is the only real cost, and
-running it as an **overnight batch job** is roughly half price on both Groq and
-Anthropic. Flip `CLASSIFIER` and point it at a batch endpoint. An
-`AnthropicClassifier` is already in the code, unused by default.
+If you ever make the track record public (e.g. for marketing), keep it honest —
+benchmark-relative, including the losers, not back-fit — and be aware that
+publishing stock track records can edge toward regulated investment-advice
+territory in both Canada and the US. This is a flag, not legal advice.
