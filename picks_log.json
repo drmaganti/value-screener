@@ -1,0 +1,334 @@
+{
+  "picks": [
+    {
+      "ticker": "CVE.TO",
+      "name": "CENOVUS ENERGY INC.",
+      "exchange": "Toronto",
+      "sector": "Energy",
+      "pick_date": "2026-06-28",
+      "pick_price": 35.17,
+      "bench_at_pick": 728.99,
+      "composite": 82.5,
+      "signals": {
+        "technical": 65.2,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.191,
+        "rsi": 26,
+        "days_in_decline": 28,
+        "fscore": 7,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "APA",
+      "name": "APA Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Energy",
+      "pick_date": "2026-06-28",
+      "pick_price": 33.01,
+      "bench_at_pick": 728.99,
+      "composite": 81.1,
+      "signals": {
+        "technical": 72.3,
+        "valuation": 100.0,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.251,
+        "rsi": 35,
+        "days_in_decline": 62,
+        "fscore": 6,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-28",
+      "pick_price": 223.55,
+      "bench_at_pick": 728.99,
+      "composite": 80.4,
+      "signals": {
+        "technical": 33.2,
+        "valuation": 100.0,
+        "quality": 88.9,
+        "catalyst": 90.0,
+        "pullback_pct": 0.261,
+        "rsi": 42,
+        "days_in_decline": 228,
+        "fscore": 8,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-28",
+      "pick_price": 283.78,
+      "bench_at_pick": 728.99,
+      "composite": 79.6,
+      "signals": {
+        "technical": 37.1,
+        "valuation": 100.0,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.1,
+        "rsi": 33,
+        "days_in_decline": 17,
+        "fscore": 8,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ABX.TO",
+      "name": "BARRICK MINING CORPORATION",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-06-28",
+      "pick_price": 52.9,
+      "bench_at_pick": 728.99,
+      "composite": 78.6,
+      "signals": {
+        "technical": 32.0,
+        "valuation": 100.0,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.255,
+        "rsi": 45,
+        "days_in_decline": 104,
+        "fscore": 8,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "GEN",
+      "name": "Gen Digital Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-28",
+      "pick_price": 24.45,
+      "bench_at_pick": 728.99,
+      "composite": 78.3,
+      "signals": {
+        "technical": 64.5,
+        "valuation": 100.0,
+        "quality": 55.6,
+        "catalyst": 90.0,
+        "pullback_pct": 0.225,
+        "rsi": 37,
+        "days_in_decline": 218,
+        "fscore": 5,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines",
+      "exchange": "NYSE",
+      "sector": "Technology",
+      "pick_date": "2026-06-28",
+      "pick_price": 271.63,
+      "bench_at_pick": 728.99,
+      "composite": 77.9,
+      "signals": {
+        "technical": 48.5,
+        "valuation": 100.0,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.175,
+        "rsi": 42,
+        "days_in_decline": 17,
+        "fscore": 6,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-06-28",
+      "pick_price": 136.01,
+      "bench_at_pick": 728.99,
+      "composite": 77.2,
+      "signals": {
+        "technical": 31.5,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.131,
+        "rsi": 51,
+        "days_in_decline": 145,
+        "fscore": 7,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "exchange": "NYSE",
+      "sector": "Financial Services",
+      "pick_date": "2026-06-28",
+      "pick_price": 226.01,
+      "bench_at_pick": 728.99,
+      "composite": 77.0,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.286,
+        "rsi": 60,
+        "days_in_decline": 249,
+        "fscore": 7,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "NTR.TO",
+      "name": "NUTRIEN LTD",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-06-28",
+      "pick_price": 86.55,
+      "bench_at_pick": 728.99,
+      "composite": 77.0,
+      "signals": {
+        "technical": 37.7,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.238,
+        "rsi": 27,
+        "days_in_decline": 74,
+        "fscore": 7,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    }
+  ]
+}
