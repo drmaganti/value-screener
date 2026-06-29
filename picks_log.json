@@ -659,6 +659,388 @@
         "3m": null,
         "6m": null
       }
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv PLC",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-06-29",
+      "pick_price": 59.19,
+      "bench_at_pick": 740.63,
+      "composite": 67.0,
+      "signals": {
+        "technical": 39.8,
+        "valuation": 78.8,
+        "quality": 55.6,
+        "catalyst": 90.0,
+        "pullback_pct": 0.332,
+        "rsi": 25,
+        "days_in_decline": 116,
+        "fscore": 5,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 95.9,
+          "ev_ebitda": 100.0,
+          "pb": 91.0,
+          "ps": 100.0,
+          "vs_sector": 76.0,
+          "analyst_upside": 89.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "AKAM",
+      "name": "Akamai Technologies, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-29",
+      "pick_price": 113.25,
+      "bench_at_pick": 740.63,
+      "composite": 65.4,
+      "signals": {
+        "technical": 90.2,
+        "valuation": 45.0,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.297,
+        "rsi": 12,
+        "days_in_decline": 31,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 32.2,
+          "ev_ebitda": 0.0,
+          "pb": 41.1,
+          "ps": 59.2,
+          "vs_sector": 82.4,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-06-29",
+      "pick_price": 22.0,
+      "bench_at_pick": 740.63,
+      "composite": 65.3,
+      "signals": {
+        "technical": 60.0,
+        "valuation": 74.0,
+        "quality": 44.4,
+        "catalyst": 80.0,
+        "pullback_pct": 0.29,
+        "rsi": 72,
+        "days_in_decline": 249,
+        "fscore": 4,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "fcf_yield": 84.7,
+          "ev_ebitda": 67.0,
+          "pb": 78.0,
+          "ps": 99.9,
+          "vs_sector": 88.1,
+          "analyst_upside": 0.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-29",
+      "pick_price": 231.9,
+      "bench_at_pick": 740.63,
+      "composite": 64.7,
+      "signals": {
+        "technical": 37.4,
+        "valuation": 54.1,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.271,
+        "rsi": 31,
+        "days_in_decline": 17,
+        "fscore": 7,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 52.5,
+          "fcf_yield": 37.1,
+          "ev_ebitda": 61.2,
+          "pb": 61.9,
+          "ps": 48.5,
+          "vs_sector": 98.7,
+          "analyst_upside": 18.6
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "VICI",
+      "name": "VICI Properties Inc.",
+      "exchange": "NYSE",
+      "sector": "Real Estate",
+      "pick_date": "2026-06-29",
+      "pick_price": 27.1,
+      "bench_at_pick": 740.63,
+      "composite": 63.7,
+      "signals": {
+        "technical": 17.9,
+        "valuation": 69.0,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.149,
+        "rsi": 51,
+        "days_in_decline": 226,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 34.3,
+          "ev_ebitda": 47.7,
+          "pb": 99.3,
+          "ps": 11.1,
+          "vs_sector": 88.3,
+          "analyst_upside": 70.9,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown, Inc.",
+      "exchange": "NYSE",
+      "sector": "Financial Services",
+      "pick_date": "2026-06-29",
+      "pick_price": 63.62,
+      "bench_at_pick": 740.63,
+      "composite": 63.6,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 60.5,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.421,
+        "rsi": 71,
+        "days_in_decline": 250,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 26.1,
+          "fcf_yield": 72.4,
+          "ev_ebitda": 48.6,
+          "pb": 82.7,
+          "ps": 65.1,
+          "vs_sector": 52.3,
+          "analyst_upside": 37.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BDX",
+      "name": "Becton, Dickinson and Company",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-06-29",
+      "pick_price": 153.43,
+      "bench_at_pick": 740.63,
+      "composite": 62.8,
+      "signals": {
+        "technical": 38.7,
+        "valuation": 71.4,
+        "quality": 66.7,
+        "catalyst": 60.0,
+        "pullback_pct": 0.161,
+        "rsi": 56,
+        "days_in_decline": 88,
+        "fscore": 6,
+        "catalyst_category": "one_off_operational",
+        "valuation_parts": {
+          "earnings_yield": 10.4,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 70.5,
+          "pb": 81.2,
+          "ps": 87.1,
+          "vs_sector": 76.8,
+          "analyst_upside": 45.5,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Communication Services",
+      "pick_date": "2026-06-29",
+      "pick_price": 25.17,
+      "bench_at_pick": 740.63,
+      "composite": 61.8,
+      "signals": {
+        "technical": 30.1,
+        "valuation": 71.9,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.185,
+        "rsi": 30,
+        "days_in_decline": 187,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 2.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 41.5,
+          "pb": 84.7,
+          "ps": 92.1,
+          "vs_sector": 55.2,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corporation",
+      "exchange": "NYSE",
+      "sector": "Basic Materials",
+      "pick_date": "2026-06-29",
+      "pick_price": 129.35,
+      "bench_at_pick": 740.63,
+      "composite": 61.3,
+      "signals": {
+        "technical": 35.4,
+        "valuation": 62.7,
+        "quality": 55.6,
+        "catalyst": 90.0,
+        "pullback_pct": 0.399,
+        "rsi": 36,
+        "days_in_decline": 50,
+        "fscore": 5,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "fcf_yield": 38.5,
+          "ev_ebitda": 0.0,
+          "pb": 74.9,
+          "ps": 74.6,
+          "vs_sector": 51.2,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
     }
   ]
 }
