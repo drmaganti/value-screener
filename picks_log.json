@@ -329,6 +329,336 @@
         "3m": null,
         "6m": null
       }
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-29",
+      "pick_price": 365.02,
+      "bench_at_pick": 728.99,
+      "composite": 84.8,
+      "signals": {
+        "technical": 62.7,
+        "valuation": 100.0,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.241,
+        "rsi": 44,
+        "days_in_decline": 17,
+        "fscore": 8,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "GRMN",
+      "name": "Garmin Ltd.",
+      "exchange": "NYSE",
+      "sector": "Technology",
+      "pick_date": "2026-06-29",
+      "pick_price": 232.51,
+      "bench_at_pick": 728.99,
+      "composite": 80.4,
+      "signals": {
+        "technical": 33.5,
+        "valuation": 100.0,
+        "quality": 88.9,
+        "catalyst": 90.0,
+        "pullback_pct": 0.127,
+        "rsi": 46,
+        "days_in_decline": 47,
+        "fscore": 8,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB Limited",
+      "exchange": "NYSE",
+      "sector": "Energy",
+      "pick_date": "2026-06-29",
+      "pick_price": 47.0,
+      "bench_at_pick": 728.99,
+      "composite": 80.2,
+      "signals": {
+        "technical": 67.7,
+        "valuation": 100.0,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.19,
+        "rsi": 22,
+        "days_in_decline": 15,
+        "fscore": 6,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "WPM.TO",
+      "name": "WHEATON PRECIOUS METALS CORP",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-06-29",
+      "pick_price": 160.71,
+      "bench_at_pick": 728.99,
+      "composite": 79.7,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 100.0,
+        "quality": 88.9,
+        "catalyst": 90.0,
+        "pullback_pct": 0.289,
+        "rsi": 50,
+        "days_in_decline": 82,
+        "fscore": 8,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-06-29",
+      "pick_price": 68.0,
+      "bench_at_pick": 728.99,
+      "composite": 76.8,
+      "signals": {
+        "technical": 50.8,
+        "valuation": 100.0,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.185,
+        "rsi": 42,
+        "days_in_decline": 22,
+        "fscore": 6,
+        "catalyst_category": "sector"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion plc",
+      "exchange": "NYSE",
+      "sector": "Industrials",
+      "pick_date": "2026-06-29",
+      "pick_price": 139.71,
+      "bench_at_pick": 728.99,
+      "composite": 76.2,
+      "signals": {
+        "technical": 26.0,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.217,
+        "rsi": 63,
+        "days_in_decline": 96,
+        "fscore": 7,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric Company",
+      "exchange": "NYSE",
+      "sector": "Industrials",
+      "pick_date": "2026-06-29",
+      "pick_price": 143.49,
+      "bench_at_pick": 728.99,
+      "composite": 76.0,
+      "signals": {
+        "technical": 25.3,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.106,
+        "rsi": 57,
+        "days_in_decline": 94,
+        "fscore": 7,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Energy",
+      "pick_date": "2026-06-29",
+      "pick_price": 179.91,
+      "bench_at_pick": 728.99,
+      "composite": 75.4,
+      "signals": {
+        "technical": 50.1,
+        "valuation": 100.0,
+        "quality": 55.6,
+        "catalyst": 90.0,
+        "pullback_pct": 0.153,
+        "rsi": 33,
+        "days_in_decline": 37,
+        "fscore": 5,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "AMP",
+      "name": "Ameriprise Financial, Inc.",
+      "exchange": "NYSE",
+      "sector": "Financial Services",
+      "pick_date": "2026-06-29",
+      "pick_price": 452.81,
+      "bench_at_pick": 728.99,
+      "composite": 75.0,
+      "signals": {
+        "technical": 20.4,
+        "valuation": 100.0,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.164,
+        "rsi": 48,
+        "days_in_decline": 98,
+        "fscore": 7,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Communication Services",
+      "pick_date": "2026-06-29",
+      "pick_price": 23.17,
+      "bench_at_pick": 728.99,
+      "composite": 74.8,
+      "signals": {
+        "technical": 33.1,
+        "valuation": 100.0,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.29,
+        "rsi": 42,
+        "days_in_decline": 248,
+        "fscore": 6,
+        "catalyst_category": "market"
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
     }
   ]
 }

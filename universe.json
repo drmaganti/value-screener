@@ -20,6 +20,7 @@
     "AIZ",
     "AJG",
     "AKAM",
+    "ALAB",
     "ALB",
     "ALGN",
     "ALL",
@@ -122,6 +123,7 @@
     "CRL",
     "CRM",
     "CRWD",
+    "CRWV",
     "CSCO",
     "CSGP",
     "CSX",
@@ -251,7 +253,6 @@
     "IEX",
     "IFF",
     "INCY",
-    "INSM",
     "INTC",
     "INTU",
     "INVH",
@@ -334,6 +335,7 @@
     "MTB",
     "MTD",
     "MU",
+    "NBIS",
     "NCLH",
     "NDAQ",
     "NDSN",
@@ -400,6 +402,7 @@
     "REGN",
     "RF",
     "RJF",
+    "RKLB",
     "RL",
     "RMD",
     "ROK",
@@ -513,7 +516,6 @@
     "YUM",
     "ZBH",
     "ZBRA",
-    "ZS",
     "ZTS"
   ],
   "TSX": [
@@ -577,5 +579,5 @@
     "WPM.TO",
     "WSP.TO"
   ],
-  "as_of": "2026-06-28"
+  "as_of": "2026-06-29"
 }
