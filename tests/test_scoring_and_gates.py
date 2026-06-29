@@ -24,37 +24,86 @@ def trap_fund():
 
 # ── Valuation lens ──────────────────────────────────────────────────────────
 
-def test_valuation_pe_percentile_midband():
+def test_valuation_pe_history_method_still_computes_percentile():
     f = healthy_fund()
     f.pe, f.pe_5y_low, f.pe_5y_high = 15.0, 10.0, 20.0
-    f.div_yield_5y_avg = None                      # isolate the P/E signal
-    assert abs(vs.compute_valuation(f).pe_percentile - 0.5) < 1e-6
+    assert abs(vs.compute_valuation(f).pe_percentile - 0.5) < 1e-6   # mid-band
 
 
-def test_valuation_cheap_when_pe_near_band_bottom():
+def test_valuation_cheap_across_all_metrics():
+    # Cheap on everything -> high blended score, cheap flag set.
     f = healthy_fund()
-    f.pe, f.pe_5y_low, f.pe_5y_high = 11.0, 10.0, 30.0
-    f.div_yield_5y_avg = None
-    assert vs.compute_valuation(f).cheap
-
-
-def test_valuation_yield_above_history_reads_cheap():
-    # No P/E band available -> the lens should fall back to yield-vs-its-own-
-    # 5y-average, which is the signal yfinance actually provides.
-    f = healthy_fund()
-    f.pe_5y_low = f.pe_5y_high = None
-    f.dividend_yield, f.div_yield_5y_avg = 4.0, 2.0   # yielding double its norm
+    f.pe, f.pe_5y_low, f.pe_5y_high = 8.0, 7.0, 30.0   # low P/E (high earnings yield) + low in band
+    f.pb, f.ps, f.ev_ebitda = 1.0, 1.0, 7.0            # cheap multiples
+    f.market_cap_b, f.fcf = 100, 8e9                   # 8% FCF yield
     v = vs.compute_valuation(f)
-    assert v.cheap and v.yield_vs_norm == 2.0
+    assert v.cheap and v.score >= 70
+
+
+def test_valuation_expensive_across_all_metrics():
+    f = healthy_fund()
+    f.pe, f.pe_5y_low, f.pe_5y_high = 60.0, 10.0, 65.0
+    f.pb, f.ps, f.ev_ebitda = 9.0, 12.0, 25.0
+    f.market_cap_b, f.fcf = 100, 0.0
+    f.dividend_yield, f.div_yield_5y_avg = 0.0, None
+    v = vs.compute_valuation(f)
+    assert not v.cheap and v.score <= 40
+
+
+def test_valuation_scores_non_dividend_payer():
+    # THE point of this rebuild: a company paying NO dividend still gets a real,
+    # non-hollow score from earnings yield, FCF yield, EV/EBITDA, P/B, P/S.
+    f = healthy_fund()
+    f.dividend_yield, f.div_yield_5y_avg = 0.0, None   # pays nothing
+    f.pe_5y_low = f.pe_5y_high = None                  # no history band either
+    f.pe, f.pb, f.ps, f.ev_ebitda = 12.0, 1.5, 1.5, 8.0
+    f.market_cap_b, f.fcf = 100, 6e9
+    v = vs.compute_valuation(f)
+    assert "yield_vs_history" not in v.parts           # no dividend signal
+    assert {"earnings_yield", "fcf_yield", "ev_ebitda", "pb", "ps"} <= set(v.parts)
+    assert v.cheap and v.score >= 60                   # still gets a strong read
+
+
+def test_valuation_only_blends_available_metrics():
+    f = healthy_fund()
+    f.pe = float("nan"); f.pe_5y_low = f.pe_5y_high = None
+    f.ev_ebitda = float("nan"); f.fcf = float("nan")
+    f.dividend_yield, f.div_yield_5y_avg = 0.0, None
+    f.num_analysts = 0                                 # exclude analyst upside too
+    f.pb, f.ps = 1.2, 1.2                              # only these two have data
+    v = vs.compute_valuation(f)
+    assert set(v.parts) == {"pb", "ps"}                # blends just what's present
 
 
 def test_valuation_never_crashes_on_missing_data():
     f = healthy_fund()
-    f.pe = float("nan")
+    for attr in ("pe", "pb", "ps", "ev_ebitda", "fcf"):
+        setattr(f, attr, float("nan"))
     f.pe_5y_low = f.pe_5y_high = None
     f.dividend_yield, f.div_yield_5y_avg = 0.0, None
+    f.num_analysts = 0                                 # no analyst coverage either
     v = vs.compute_valuation(f)
-    assert 0 <= v.score <= 100                       # neutral, not an exception
+    assert 0 <= v.score <= 100 and v.parts == {}       # neutral 50, no crash
+
+
+def test_analyst_upside_high_when_target_far_above_price():
+    f = healthy_fund()
+    f.price, f.target_mean, f.num_analysts = 100.0, 140.0, 12   # +40% upside, well-covered
+    v = vs.compute_valuation(f)
+    assert v.parts["analyst_upside"] >= 90
+
+
+def test_analyst_upside_low_when_price_above_target():
+    f = healthy_fund()
+    f.price, f.target_mean, f.num_analysts = 100.0, 95.0, 12     # trading above consensus target
+    v = vs.compute_valuation(f)
+    assert v.parts["analyst_upside"] <= 10
+
+
+def test_analyst_upside_skipped_on_thin_coverage():
+    f = healthy_fund()
+    f.price, f.target_mean, f.num_analysts = 100.0, 140.0, 2     # only 2 analysts -> not trusted
+    assert "analyst_upside" not in vs.compute_valuation(f).parts
 
 
 # ── Quality lens ────────────────────────────────────────────────────────────
