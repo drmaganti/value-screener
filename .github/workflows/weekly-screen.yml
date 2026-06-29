@@ -42,6 +42,6 @@ jobs:
         run: |
           git config user.name "screener-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add picks_log.json universe.json 2>/dev/null || git add picks_log.json
-          git diff --staged --quiet || git commit -m "Weekly run: update log + universe [skip ci]"
+          git add picks_log.json universe.json fundamentals_cache.json 2>/dev/null || git add picks_log.json
+          git diff --staged --quiet || git commit -m "Weekly run: update log + universe + cache [skip ci]"
           git push
