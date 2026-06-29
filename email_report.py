@@ -37,13 +37,25 @@ def _nan(x):
     return x is None or (isinstance(x, float) and x != x)
 
 
+def _analyst_line(f):
+    if _nan(f.target_mean) or _nan(f.price) or f.price <= 0 or f.num_analysts < 3:
+        return ""   # no/thin coverage -> show nothing rather than a misleading number
+    upside = (f.target_mean / f.price - 1) * 100
+    col = POS if upside >= 0 else NEG
+    lo = f"${f.target_low:.0f}" if not _nan(f.target_low) else "?"
+    hi = f"${f.target_high:.0f}" if not _nan(f.target_high) else "?"
+    return (f'<div style="font-size:12px;color:{MUTE};margin-top:10px;">'
+            f'Analyst 12-mo target: <span style="color:{INK};">{lo}&ndash;{hi}</span> '
+            f'(mean ${f.target_mean:.0f}, <span style="color:{col};font-weight:600;">{upside:+.0f}%</span>) '
+            f'&middot; {f.num_analysts} analysts</div>')
+
+
 def _featured_card(c, rank):
     f, t, v = c.fund, c.tech, c.val
-    val_txt = (f"{v.pe_percentile*100:.0f}th %ile P/E" if not _nan(v.pe_percentile)
-               else (f"{v.yield_vs_norm:.2f}x avg yield" if not _nan(v.yield_vs_norm) else "cheap"))
+    val_txt = f"{v.score:.0f}/100"
     metrics = (_metric("Pullback", f"{t.pullback_pct*100:.0f}%")
                + _metric("RSI", f"{t.rsi:.0f}")
-               + _metric("Valuation", val_txt)
+               + _metric("Value", val_txt)
                + _metric("Health", f"{c.qual.fscore}/9")
                + _metric("Catalyst", c.cat.category.replace("_", " ")))
     return f"""
@@ -59,6 +71,7 @@ def _featured_card(c, rank):
           </tr></table>
           <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>{metrics}</tr></table>
           <p style="font-size:14px;line-height:1.6;color:#374151;margin:14px 0 2px;">{c.analysis}</p>
+          {_analyst_line(f)}
         </td></tr>
       </table>
     </td></tr>"""

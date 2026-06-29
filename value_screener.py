@@ -43,6 +43,7 @@ CLASSIFIER = os.getenv("CLASSIFIER", "mock")      # "mock" | "groq" | "anthropic
 
 UNIVERSE_FILE = "universe.json"     # produced by refresh_universe.py; seed fallback below
 PICKS_LOG = "picks_log.json"        # the outcome log (committed back each run)
+FUND_CACHE = "fundamentals_cache.json"  # rolling fundamentals store -> sector medians (committed back)
 CHECKPOINT = "scan_checkpoint.json" # lets a long scan resume if the run restarts
 STATE_DIR = os.getenv("STATE_DIR", ".")
 
@@ -58,6 +59,9 @@ THRESHOLDS = {
     "open_window_days":   30,      # a pick stays an "open bet" this long -> not re-picked
     "max_picks_per_run":  10,      # how many qualifiers to log per run
     "featured":           3,       # how many get the written analysis (top N)
+    "fund_staleness_days": 21,     # refresh a fundamentals cache entry once older than this
+    "max_fundamentals_refresh": 200,  # cap fundamentals fetches per run (spreads 600 over ~3 weeks)
+    "min_sector_count":   5,       # need this many cached names in a sector to trust its median
 }
 
 # Outcome horizons (days). Returns get filled in as each matures.
@@ -90,12 +94,15 @@ def _p(name):
 class Fundamentals:
     ticker: str; name: str; exchange: str; market_cap_b: float; sector: str
     pe: float; pe_5y_low: Optional[float]; pe_5y_high: Optional[float]
-    pb: float; ev_ebitda: float
+    pb: float; ev_ebitda: float; ps: float; fcf: float          # ps = price/sales; fcf = free cash flow ($)
     fcf_positive: bool; net_income_positive: bool; op_cash_flow_positive: bool
     roe: float; debt_to_equity: float; interest_coverage: float; current_ratio: float
     gross_margin: float; margin_trend_up: bool
     dividend_yield: float; div_yield_5y_avg: Optional[float]; payout_ratio: float
     next_earnings: Optional[date]
+    price: float = float("nan")                                  # current price (for the upside calc)
+    target_mean: float = float("nan"); target_high: float = float("nan")
+    target_low: float = float("nan"); num_analysts: int = 0      # consensus analyst price targets
 
 
 @dataclass
@@ -116,7 +123,12 @@ class TechnicalSignals:
 
 @dataclass
 class ValuationSignals:
-    pe_percentile: float; yield_vs_norm: float; cheap: bool; score: float = 0.0
+    score: float = 0.0                              # blended 0-100 (cheaper = higher)
+    cheap: bool = False
+    parts: dict = field(default_factory=dict)       # metric name -> sub-score 0-100 (data-permitting)
+    summary: str = ""                               # short text for the email
+    pe_percentile: float = float("nan")             # kept for the P/E-vs-history method + display
+    yield_vs_norm: float = float("nan")             # kept for the yield-vs-history method + display
 
 
 @dataclass
@@ -214,6 +226,7 @@ class YFinanceProvider:
             market_cap_b=(g("marketCap", 0) or 0) / 1e9, sector=info.get("sector", "?"),
             pe=g("trailingPE"), pe_5y_low=None, pe_5y_high=None,
             pb=g("priceToBook"), ev_ebitda=g("enterpriseToEbitda"),
+            ps=g("priceToSalesTrailing12Months"), fcf=g("freeCashflow"),
             fcf_positive=(g("freeCashflow", 0) or 0) > 0,
             net_income_positive=(g("netIncomeToCommon", 0) or 0) > 0,
             op_cash_flow_positive=(g("operatingCashflow", 0) or 0) > 0,
@@ -222,7 +235,10 @@ class YFinanceProvider:
             gross_margin=(g("grossMargins", 0) or 0) * 100, margin_trend_up=self._margin_trend(t),
             dividend_yield=(g("dividendYield", 0) or 0) * 100,
             div_yield_5y_avg=info.get("fiveYearAvgDividendYield"),
-            payout_ratio=(g("payoutRatio", 0) or 0) * 100, next_earnings=self._earnings_date(t))
+            payout_ratio=(g("payoutRatio", 0) or 0) * 100, next_earnings=self._earnings_date(t),
+            price=g("currentPrice"), target_mean=g("targetMeanPrice"),
+            target_high=g("targetHighPrice"), target_low=g("targetLowPrice"),
+            num_analysts=int(g("numberOfAnalystOpinions", 0) or 0))
 
     def recent_news(self, ticker):
         try:
@@ -274,13 +290,17 @@ class SyntheticProvider:
         healthy = kind != "value_trap"
         pe = r.uniform(11, 18) if kind == "clean_buy" else r.uniform(9, 26)
         yld = r.uniform(2.0, 4.5)
+        pays_div = r.random() > 0.35                      # ~1/3 of names pay no dividend
+        mcap = r.uniform(15, 400)
         return Fundamentals(
             ticker=ticker, name=f"{ticker} Inc.",
             exchange="Toronto" if ticker.endswith(".TO") else "NASDAQ/NYSE",
-            market_cap_b=r.uniform(15, 400),
+            market_cap_b=mcap,
             sector=r.choice(["Consumer Staples", "Healthcare", "Technology", "Financials", "Communications"]),
             pe=pe, pe_5y_low=pe * r.uniform(0.75, 0.9), pe_5y_high=pe * r.uniform(1.4, 2.0),
             pb=r.uniform(1.5, 6), ev_ebitda=r.uniform(7, 16),
+            ps=r.uniform(1.0, 9.0),
+            fcf=mcap * 1e9 * (r.uniform(0.03, 0.08) if healthy else r.uniform(-0.02, 0.02)),
             fcf_positive=healthy, net_income_positive=healthy,
             op_cash_flow_positive=healthy or r.random() > 0.5,
             roe=r.uniform(14, 30) if healthy else r.uniform(-5, 8),
@@ -288,9 +308,15 @@ class SyntheticProvider:
             interest_coverage=r.uniform(6, 20) if healthy else r.uniform(0.8, 3),
             current_ratio=r.uniform(1.1, 2.2) if healthy else r.uniform(0.6, 1.0),
             gross_margin=r.uniform(35, 60), margin_trend_up=healthy,
-            dividend_yield=yld, div_yield_5y_avg=yld * r.uniform(0.82, 0.94),
-            payout_ratio=r.uniform(35, 60) if healthy else r.uniform(85, 130),
-            next_earnings=date.today() + timedelta(days=r.randint(6, 60)))
+            dividend_yield=yld if pays_div else 0.0,
+            div_yield_5y_avg=(yld * r.uniform(0.82, 0.94)) if pays_div else None,
+            payout_ratio=(r.uniform(35, 60) if healthy else r.uniform(85, 130)) if pays_div else 0.0,
+            next_earnings=date.today() + timedelta(days=r.randint(6, 60)),
+            price=(px := r.uniform(50, 300)),
+            target_mean=px * (1 + (up := r.uniform(-0.10, 0.40) if healthy else r.uniform(-0.20, 0.15))),
+            target_high=px * (1 + up + r.uniform(0.05, 0.20)),
+            target_low=px * (1 + up - r.uniform(0.05, 0.20)),
+            num_analysts=r.randint(0, 25))
 
     def recent_news(self, ticker):
         head = self.ARCHETYPES.get(ticker, ("normal", "No major company-specific news"))[1]
@@ -342,20 +368,96 @@ def is_corrected(t):
     return t.pullback_pct >= THRESHOLDS["min_pullback_pct"] or t.rsi <= THRESHOLDS["rsi_oversold"]
 
 
-def compute_valuation(f):
-    parts = []; pe_pct = float("nan")
+def compute_valuation(f, sector_medians=None):
+    """Adaptive multi-metric value score. Scores the stock on whichever metrics
+    it has data for, then blends. Crucially this works for NON-DIVIDEND-PAYERS:
+    earnings yield, FCF yield, EV/EBITDA, P/B and P/S don't need a dividend.
+
+    When sector_medians is supplied, it also adds a SECTOR-RELATIVE sub-metric --
+    the stock's multiples versus its own sector's median rather than an absolute
+    band -- so a cheap-for-software name isn't unfairly beaten by a utility on raw
+    P/E. This is the more meaningful comparison; the absolute bands remain as a
+    sanity check on absolute level and a fallback for thin sectors.
+
+    Every sub-score is logged so the factor leaderboard can later tell you which
+    metrics (including vs-sector) actually predict returns, and you tune from
+    there rather than trusting all of them equally."""
+    parts = {}
+
+    def band(value, lo, hi, valid=True):
+        if not valid or _nan(value):
+            return None
+        return _clamp((value - lo) / (hi - lo)) if lo != hi else None
+
+    # Universal multiples (work without dividends) -------------------------------
+    if not _nan(f.pe) and f.pe > 0:                                  # earnings yield E/P
+        s = band(1.0 / f.pe, 0.03, 0.10)
+        if s is not None: parts["earnings_yield"] = round(s * 100, 1)
+    mc = f.market_cap_b * 1e9 if f.market_cap_b else None
+    if mc and not _nan(f.fcf):                                       # free cash flow yield
+        s = band(f.fcf / mc, 0.02, 0.09)
+        if s is not None: parts["fcf_yield"] = round(s * 100, 1)
+    if not _nan(f.ev_ebitda) and f.ev_ebitda > 0:                    # EV/EBITDA (lower cheaper)
+        s = band(f.ev_ebitda, 16.0, 7.0)
+        if s is not None: parts["ev_ebitda"] = round(s * 100, 1)
+    if not _nan(f.pb) and f.pb > 0:                                  # price/book (lower cheaper)
+        s = band(f.pb, 5.0, 1.0)
+        if s is not None: parts["pb"] = round(s * 100, 1)
+    if not _nan(f.ps) and f.ps > 0:                                  # price/sales (catches no-earnings names)
+        s = band(f.ps, 8.0, 1.0)
+        if s is not None: parts["ps"] = round(s * 100, 1)
+
+    # Sector-relative: cheap FOR ITS SECTOR (the apples-to-apples comparison) -----
+    if sector_medians and f.sector in sector_medians:
+        sm = sector_medians[f.sector]
+        rel = []
+        for key, val in (("pe", f.pe), ("pb", f.pb), ("ev_ebitda", f.ev_ebitda), ("ps", f.ps)):
+            m = sm.get(key)
+            if m and m > 0 and not _nan(val) and val > 0:
+                rel.append(_clamp(1.5 - val / m))   # at sector median ->0.5, half ->1.0, 1.5x ->0.0
+        if rel:
+            parts["vs_sector"] = round(sum(rel) / len(rel) * 100, 1)
+
+    # Analyst consensus upside: room to the mean 12-month price target. This is the
+    # plain (unweighted) consensus from yfinance, gated on >=3 analysts for data
+    # quality. NOTE it's a known-weak, optimism-biased signal and runs counter to a
+    # contrarian value thesis -- it's one sub-metric among many and the leaderboard
+    # will show whether it earns its place.
+    if not _nan(f.target_mean) and not _nan(f.price) and f.price > 0 and f.num_analysts >= 3:
+        upside = f.target_mean / f.price - 1.0
+        parts["analyst_upside"] = round(band(upside, 0.0, 0.35) * 100, 1)   # 0% ->0, +35% ->100
+
+    # History-relative methods (per-stock; only when data exists) -----------------
+    pe_pct = float("nan")
     span = (f.pe_5y_high - f.pe_5y_low) if (f.pe_5y_high and f.pe_5y_low) else None
-    if span and span > 0 and not _nan(f.pe):
-        pe_pct = _clamp((f.pe - f.pe_5y_low) / span); parts.append(1 - pe_pct)
+    if span and span > 0 and not _nan(f.pe):                        # P/E vs its own 5y band
+        pe_pct = _clamp((f.pe - f.pe_5y_low) / span)
+        parts["pe_vs_history"] = round((1 - pe_pct) * 100, 1)
     yld = float("nan")
-    if f.div_yield_5y_avg and f.div_yield_5y_avg > 0 and f.dividend_yield > 0:
-        yld = f.dividend_yield / f.div_yield_5y_avg; parts.append(_clamp(0.5 + (yld - 1.0)))
-    if not parts and not _nan(f.pe):
-        parts.append(_clamp((25 - f.pe) / 20))
-    s = sum(parts) / len(parts) if parts else 0.5
-    return ValuationSignals(round(pe_pct, 2) if not _nan(pe_pct) else float("nan"),
-                            round(yld, 2) if not _nan(yld) else float("nan"),
-                            s >= 0.6, round(s * 100, 1))
+    if f.div_yield_5y_avg and f.div_yield_5y_avg > 0 and f.dividend_yield > 0:   # yield vs its own avg
+        yld = f.dividend_yield / f.div_yield_5y_avg
+        parts["yield_vs_history"] = round(_clamp(0.5 + (yld - 1.0)) * 100, 1)
+
+    score = round(sum(parts.values()) / len(parts), 1) if parts else 50.0
+    return ValuationSignals(score=score, cheap=score >= 60, parts=parts,
+                            summary=_val_summary(parts),
+                            pe_percentile=round(pe_pct, 2) if not _nan(pe_pct) else float("nan"),
+                            yield_vs_norm=round(yld, 2) if not _nan(yld) else float("nan"))
+
+
+VAL_LABELS = {"earnings_yield": "earnings yield", "fcf_yield": "FCF yield",
+              "ev_ebitda": "EV/EBITDA", "pb": "P/B", "ps": "P/S", "vs_sector": "vs sector",
+              "analyst_upside": "analyst upside",
+              "pe_vs_history": "P/E vs history", "yield_vs_history": "yield vs history"}
+
+
+def _val_summary(parts):
+    if not parts:
+        return "no valuation data"
+    cheap = sorted((k for k, v in parts.items() if v >= 60), key=lambda k: -parts[k])
+    if cheap:
+        return "cheap on " + ", ".join(VAL_LABELS[k] for k in cheap[:3])
+    return f"fair value ({len(parts)} metrics)"
 
 
 def compute_quality(f):
@@ -484,10 +586,9 @@ sober sentence. Do not give a price target or say "buy"."""
 
 def _analysis_inputs(c):
     f, t, v = c.fund, c.tech, c.val
-    val_line = (f"P/E in the {v.pe_percentile*100:.0f}th percentile of its 5-year range"
-                if not _nan(v.pe_percentile) else
-                (f"dividend yield {v.yield_vs_norm:.2f}x its 5-year average"
-                 if not _nan(v.yield_vs_norm) else "cheap on current multiples"))
+    cheap_metrics = ", ".join(f"{VAL_LABELS[k]} ({v.parts[k]:.0f}/100)"
+                              for k in sorted(v.parts, key=lambda k: -v.parts[k])[:3]) or "limited data"
+    val_line = f"blended value score {v.score:.0f}/100; cheapest on {cheap_metrics}"
     reversal_note = ("a fresh dip, which favors a near-term bounce" if t.days_in_decline <= 25
                      else "a longer slide, so confirm the trend has stabilized")
     return dict(ticker=f.ticker, name=f.name, sector=f.sector, composite=c.composite,
@@ -542,8 +643,8 @@ class GroqAnalyst:
 # SCORING + GATES
 # ════════════════════════════════════════════════════════════════════════════
 
-def evaluate(c, news):
-    c.val = compute_valuation(c.fund)
+def evaluate(c, news, sector_medians=None):
+    c.val = compute_valuation(c.fund, sector_medians)
     c.qual = compute_quality(c.fund)
     sent = score_sentiment(news)
     c.cat.score = score_catalyst(c.cat)
@@ -580,6 +681,88 @@ def load_universe():
         pass
     print(f"  {UNIVERSE_FILE} missing/empty -- using built-in seed universe.")
     return SEED_UNIVERSE
+
+
+# ════════════════════════════════════════════════════════════════════════════
+# FUNDAMENTALS CACHE -> SECTOR MEDIANS
+# A rolling store of fundamentals for the whole universe, refreshed a slice at a
+# time (so all ~600 get covered over a few weeks without a heavy weekly pull).
+# Its job is to compute sector medians so each stock can be judged cheap FOR ITS
+# SECTOR, not against a one-size-fits-all band.
+# ════════════════════════════════════════════════════════════════════════════
+
+def load_fund_cache():
+    try:
+        with open(_p(FUND_CACHE)) as fh:
+            return json.load(fh)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def save_fund_cache(cache):
+    with open(_p(FUND_CACHE), "w") as fh:
+        json.dump(cache, fh, default=str)
+
+
+def cache_put(cache, f, today):
+    d = asdict(f)
+    d["next_earnings"] = f.next_earnings.isoformat() if f.next_earnings else None
+    d["_cached"] = today.isoformat()
+    cache[f.ticker] = d
+
+
+def refresh_fundamentals_cache(provider, cache, universe_tickers, today):
+    """Fetch fundamentals for the most-stale slice of the universe (paced), so
+    coverage rotates through all names over ~fund_staleness_days. Returns count."""
+    staleness = timedelta(days=THRESHOLDS["fund_staleness_days"])
+
+    def stale(tk):
+        e = cache.get(tk)
+        if not e:
+            return True
+        try:
+            return date.fromisoformat(e.get("_cached", "2000-01-01")) < today - staleness
+        except Exception:
+            return True
+
+    todo = sorted((tk for tk in universe_tickers if stale(tk)),
+                  key=lambda tk: cache.get(tk, {}).get("_cached", "2000-01-01"))
+    todo = todo[:THRESHOLDS["max_fundamentals_refresh"]]
+    paced = (PROVIDER == "yfinance")
+    for i in range(0, len(todo), SCAN["batch_size"]):
+        for tk in todo[i:i + SCAN["batch_size"]]:
+            try:
+                cache_put(cache, provider.fundamentals(tk), today)
+            except Exception:
+                pass
+        if paced and i + SCAN["batch_size"] < len(todo):
+            time.sleep(SCAN["sleep_between_batches"])
+    return len(todo)
+
+
+def compute_sector_medians(cache):
+    """Median P/E, P/B, EV/EBITDA, P/S per sector, from the cache. Median (not
+    mean) so a few extreme multiples don't skew it. Sectors with too few names
+    are dropped -- those stocks fall back to the absolute bands."""
+    by_sector = {}
+    for entry in cache.values():
+        sec = entry.get("sector")
+        if sec and sec != "?":
+            by_sector.setdefault(sec, []).append(entry)
+
+    def median(entries, key):
+        vals = sorted(e[key] for e in entries
+                      if e.get(key) is not None and not _nan(e[key]) and e[key] > 0)
+        return vals[len(vals) // 2] if vals else None
+
+    out = {}
+    for sec, entries in by_sector.items():
+        if len(entries) < THRESHOLDS["min_sector_count"]:
+            continue
+        out[sec] = {"pe": median(entries, "pe"), "pb": median(entries, "pb"),
+                    "ev_ebitda": median(entries, "ev_ebitda"), "ps": median(entries, "ps"),
+                    "count": len(entries)}
+    return out
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -660,7 +843,8 @@ def record_picks(log, picks, bench_price, today):
                         "quality": c.qual.score, "catalyst": c.cat.score,
                         "pullback_pct": round(c.tech.pullback_pct, 3), "rsi": round(c.tech.rsi),
                         "days_in_decline": c.tech.days_in_decline, "fscore": c.qual.fscore,
-                        "catalyst_category": c.cat.category},
+                        "catalyst_category": c.cat.category,
+                        "valuation_parts": c.val.parts},   # per-metric sub-scores for the leaderboard
             "outcomes": {k: None for k in HORIZONS},
             "outcomes_bench": {k: None for k in HORIZONS},
         })
@@ -707,10 +891,11 @@ def track_record_stats(log):
 # PIPELINE
 # ════════════════════════════════════════════════════════════════════════════
 
-def run_screen(provider, classifier, analyst, exclude):
+def run_screen(provider, classifier, analyst, exclude, sector_medians=None, fund_cache=None, today=None):
     universe = load_universe()
     tickers = [t for ts in universe.values() for t in ts if t not in exclude]
     print(f"  scanning {len(tickers)} names ({len(exclude)} excluded as open bets)")
+    today = today or date.today()
 
     prices = scan_prices(provider, tickers)
     survivors = []
@@ -718,9 +903,11 @@ def run_screen(provider, classifier, analyst, exclude):
         tech = compute_technicals(ph)
         if is_corrected(tech):
             try:
-                f = provider.fundamentals(tk)
+                f = provider.fundamentals(tk)        # fresh -> P/E reflects the just-dropped price
+                if fund_cache is not None:
+                    cache_put(fund_cache, f, today)  # feed the freshest data into the cache too
                 c = Candidate(fund=f, tech=tech)
-                c.fund_price = ph.last         # remember pick price for the log
+                c.fund_price = ph.last               # remember pick price for the log
                 survivors.append(c)
             except Exception:
                 pass
@@ -729,7 +916,7 @@ def run_screen(provider, classifier, analyst, exclude):
     for c in survivors:
         news = provider.recent_news(c.fund.ticker)
         c.cat = classifier.classify(c.fund.ticker, news)
-        c = evaluate(c, news)
+        c = evaluate(c, news, sector_medians)        # sector-relative scoring when medians available
         (rejected if c.vetoed_for else scored).append(c)
 
     scored.sort(key=lambda x: x.composite, reverse=True)
@@ -789,13 +976,24 @@ def main():
     filled = update_outcomes(provider, log, today)          # 1) mature past picks
     print(f"  updated {filled} outcome slots on existing picks")
 
-    exclude = open_tickers(log, today)                      # 2) dedup open bets
-    qualifiers, featured, rejected = run_screen(            # 3) scan + score
-        provider, build_classifier(), build_analyst(), exclude)
+    # 2) refresh a slice of the fundamentals cache, then build sector medians
+    universe = load_universe()
+    all_tickers = [t for ts in universe.values() for t in ts]
+    fund_cache = load_fund_cache()
+    refreshed = refresh_fundamentals_cache(provider, fund_cache, all_tickers, today)
+    sector_medians = compute_sector_medians(fund_cache)
+    print(f"  refreshed {refreshed} fundamentals; sector medians for {len(sector_medians)} sectors "
+          f"({len(fund_cache)} names cached)")
+
+    exclude = open_tickers(log, today)                      # 3) dedup open bets
+    qualifiers, featured, rejected = run_screen(            # 4) scan + score (sector-relative)
+        provider, build_classifier(), build_analyst(), exclude,
+        sector_medians=sector_medians, fund_cache=fund_cache, today=today)
 
     bench_price = provider.last_price(BENCHMARK)
-    record_picks(log, qualifiers, bench_price, today)       # 4) log this week's picks
+    record_picks(log, qualifiers, bench_price, today)       # 5) log this week's picks
     save_log(log)
+    save_fund_cache(fund_cache)
 
     stats = track_record_stats(log)
     html, text = email_report.build(today, featured, qualifiers, log["picks"], stats)

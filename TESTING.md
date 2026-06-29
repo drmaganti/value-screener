@@ -9,18 +9,28 @@ thing that can break: **deterministic code** (math, gates, the log) and a
 ```bash
 pip install -r requirements-dev.txt
 
-python -m pytest -q                    # all unit + integration tests (34)
+python -m pytest -q                    # all unit + integration tests (48)
 python evals/eval_catalyst.py          # catalyst eval, free mock baseline
 python evals/eval_catalyst.py --groq   # catalyst eval, the real model (needs GROQ_API_KEY)
 ```
 
 On GitHub, the **Tests** workflow runs the first two automatically on every push.
 
-## Layer 1 — Unit tests (`tests/test_indicators.py`, `tests/test_scoring_and_gates.py`)
+## Layer 1 — Unit tests (`tests/test_indicators.py`, `tests/test_scoring_and_gates.py`, `tests/test_sector.py`)
 
 The deterministic backbone: RSI, moving averages, pullback detection, the
 days-in-decline signal, and the valuation and quality scores. Known inputs, known
 outputs. These **gate the build**.
+
+The **valuation** tests cover the multi-metric composite specifically: that a
+non-dividend-payer still gets a real score (earnings yield, FCF yield, EV/EBITDA,
+P/B, P/S), that it blends only the metrics with data, that the analyst-upside
+sub-metric scores high on real upside and is skipped on thin coverage, and that it
+never crashes on missing fields. The **sector** tests (`test_sector.py`) cover
+sector-relative scoring and the fundamentals cache: medians are computed as
+medians (not means), thin sectors are dropped via the min-count guard, and the
+motivating case holds — a low-P/E utility trading above its sector does *not* beat
+a higher-P/E software name trading below its sector.
 
 ## Layer 2 — Invariant tests (the veto gates + pipeline)
 
@@ -89,3 +99,7 @@ Categories: `market`, `sector`, `one_off_operational` (all buyable) and
 The live-data path (yfinance), the live-model eval (`--groq`), and the Wikipedia
 constituent fetch aren't in the push-triggered CI, to keep it free, fast, and
 deterministic. Run those on demand, or on the weekly schedule.
+
+> Count note: the 48 figure is the Phase 1 suite. The Phase 2 factor leaderboard
+> (`factor_leaderboard.py` + `tests/test_leaderboard.py`) adds 10 more, for 58,
+> once that piece is committed.
