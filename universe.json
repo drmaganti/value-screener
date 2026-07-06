@@ -78,7 +78,6 @@
     "BX",
     "BXP",
     "C",
-    "CAG",
     "CAH",
     "CARR",
     "CASY",
@@ -236,6 +235,7 @@
     "HII",
     "HLT",
     "HON",
+    "HONA",
     "HOOD",
     "HPE",
     "HPQ",
@@ -579,5 +579,5 @@
     "WPM.TO",
     "WSP.TO"
   ],
-  "as_of": "2026-06-29"
+  "as_of": "2026-07-06"
 }

@@ -21,13 +21,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.26,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -54,13 +54,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -1.97,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -87,13 +87,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 8.37,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -120,13 +120,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 8.76,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -153,13 +153,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.03,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -186,13 +186,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 9.08,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -219,13 +219,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 6.59,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -252,13 +252,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -3.91,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -285,13 +285,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 11.69,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -318,13 +318,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 6.2,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -351,13 +351,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -1.25,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -384,13 +384,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 3.23,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -417,13 +417,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -3.98,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -450,13 +450,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 4.7,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -483,13 +483,13 @@
         "catalyst_category": "sector"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -8.0,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -516,13 +516,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.62,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -549,13 +549,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -3.09,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -582,13 +582,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": -4.37,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -615,13 +615,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 8.03,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -648,13 +648,13 @@
         "catalyst_category": "market"
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.68,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 2.17,
         "1m": null,
         "3m": null,
         "6m": null
@@ -690,13 +690,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -0.51,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -732,13 +732,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -0.07,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -774,13 +774,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.95,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -816,13 +816,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -3.16,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -859,13 +859,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.33,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -902,13 +902,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 10.03,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -945,13 +945,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 3.03,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -988,13 +988,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.84,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.56,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1026,6 +1026,433 @@
           "ps": 74.6,
           "vs_sector": 51.2,
           "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": 4.8,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": 0.56,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "SU.TO",
+      "name": "SUNCOR ENERGY INC.",
+      "exchange": "Toronto",
+      "sector": "Energy",
+      "pick_date": "2026-07-06",
+      "pick_price": 78.11,
+      "bench_at_pick": 744.78,
+      "composite": 79.1,
+      "signals": {
+        "technical": 63.1,
+        "valuation": 81.0,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.179,
+        "rsi": 25,
+        "days_in_decline": 32,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 53.3,
+          "fcf_yield": 74.8,
+          "ev_ebitda": 100.0,
+          "pb": 74.5,
+          "ps": 88.5,
+          "vs_sector": 75.3,
+          "analyst_upside": 81.2,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant Technology Solutions ",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-06",
+      "pick_price": 41.99,
+      "bench_at_pick": 744.78,
+      "composite": 76.9,
+      "signals": {
+        "technical": 38.8,
+        "valuation": 99.0,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.51,
+        "rsi": 28,
+        "days_in_decline": 116,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 92.0,
+          "ps": 100.0,
+          "vs_sector": 100.0,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries Holdings, Inc.",
+      "exchange": "NYSE",
+      "sector": "Basic Materials",
+      "pick_date": "2026-07-06",
+      "pick_price": 110.54,
+      "bench_at_pick": 744.78,
+      "composite": 74.2,
+      "signals": {
+        "technical": 46.4,
+        "valuation": 75.6,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.193,
+        "rsi": 59,
+        "days_in_decline": 65,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 62.0,
+          "ev_ebitda": 100.0,
+          "pb": 45.5,
+          "ps": 81.5,
+          "vs_sector": 81.6,
+          "analyst_upside": 34.2,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "exchange": "NYSE",
+      "sector": "Energy",
+      "pick_date": "2026-07-06",
+      "pick_price": 104.73,
+      "bench_at_pick": 744.78,
+      "composite": 73.2,
+      "signals": {
+        "technical": 70.7,
+        "valuation": 74.6,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.211,
+        "rsi": 25,
+        "days_in_decline": 66,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 37.6,
+          "fcf_yield": 30.6,
+          "ev_ebitda": 100.0,
+          "pb": 75.6,
+          "ps": 83.6,
+          "vs_sector": 69.6,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes Company",
+      "exchange": "NasdaqGS",
+      "sector": "Energy",
+      "pick_date": "2026-07-06",
+      "pick_price": 52.78,
+      "bench_at_pick": 744.78,
+      "composite": 70.7,
+      "signals": {
+        "technical": 44.9,
+        "valuation": 69.3,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.24,
+        "rsi": 10,
+        "days_in_decline": 43,
+        "fscore": 7,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 41.9,
+          "fcf_yield": 57.4,
+          "ev_ebitda": 56.2,
+          "pb": 57.2,
+          "ps": 87.5,
+          "vs_sector": 54.6,
+          "analyst_upside": 99.9,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources, Inc.",
+      "exchange": "NYSE",
+      "sector": "Energy",
+      "pick_date": "2026-07-06",
+      "pick_price": 130.78,
+      "bench_at_pick": 744.78,
+      "composite": 68.4,
+      "signals": {
+        "technical": 39.1,
+        "valuation": 70.5,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.121,
+        "rsi": 37,
+        "days_in_decline": 65,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 68.2,
+          "fcf_yield": 30.2,
+          "ev_ebitda": 100.0,
+          "pb": 68.4,
+          "ps": 72.1,
+          "vs_sector": 65.0,
+          "analyst_upside": 60.1,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "PTC",
+      "name": "PTC Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-06",
+      "pick_price": 124.55,
+      "bench_at_pick": 744.78,
+      "composite": 68.2,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 66.5,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.425,
+        "rsi": 59,
+        "days_in_decline": 212,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 76.5,
+          "fcf_yield": 69.3,
+          "ev_ebitda": 48.7,
+          "pb": 31.8,
+          "ps": 45.7,
+          "vs_sector": 93.5,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-07-06",
+      "pick_price": 74.8,
+      "bench_at_pick": 744.78,
+      "composite": 66.4,
+      "signals": {
+        "technical": 36.4,
+        "valuation": 65.5,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.523,
+        "rsi": 34,
+        "days_in_decline": 250,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 73.6,
+          "fcf_yield": 52.6,
+          "ev_ebitda": 72.3,
+          "pb": 0.0,
+          "ps": 67.3,
+          "vs_sector": 58.1,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-06",
+      "pick_price": 219.72,
+      "bench_at_pick": 744.78,
+      "composite": 66.1,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 68.7,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.425,
+        "rsi": 51,
+        "days_in_decline": 248,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 70.9,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 76.4,
+          "pb": 0.0,
+          "ps": 64.8,
+          "vs_sector": 89.6,
+          "analyst_upside": 79.2
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-07-06",
+      "pick_price": 410.5,
+      "bench_at_pick": 744.78,
+      "composite": 63.3,
+      "signals": {
+        "technical": 29.3,
+        "valuation": 78.4,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.244,
+        "rsi": 70,
+        "days_in_decline": 80,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 58.1,
+          "fcf_yield": 61.3,
+          "ev_ebitda": 75.6,
+          "ps": 97.3,
+          "vs_sector": 94.2,
+          "analyst_upside": 62.5,
           "yield_vs_history": 100.0
         }
       },
