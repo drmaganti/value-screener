@@ -1073,13 +1073,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 7.31,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1116,13 +1116,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 1.38,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1159,13 +1159,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.77,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1202,13 +1202,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 4.12,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1245,13 +1245,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 9.06,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1288,13 +1288,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.54,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1330,13 +1330,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.15,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1373,13 +1373,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 1.02,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1415,13 +1415,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 1.78,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.37,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1453,6 +1453,261 @@
           "ps": 97.3,
           "vs_sector": 94.2,
           "analyst_upside": 62.5,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": -0.95,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": 1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "DHI",
+      "name": "D.R. Horton, Inc.",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-07-13",
+      "pick_price": 151.58,
+      "bench_at_pick": 754.95,
+      "composite": 69.1,
+      "signals": {
+        "technical": 47.2,
+        "valuation": 71.5,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.169,
+        "rsi": 42,
+        "days_in_decline": 210,
+        "fscore": 6,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 57.6,
+          "fcf_yield": 67.0,
+          "ev_ebitda": 52.1,
+          "pb": 79.3,
+          "ps": 95.9,
+          "vs_sector": 89.1,
+          "analyst_upside": 30.8,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "GIB-A.TO",
+      "name": "CGI INC",
+      "exchange": "Toronto",
+      "sector": "Technology",
+      "pick_date": "2026-07-13",
+      "pick_price": 94.85,
+      "bench_at_pick": 754.95,
+      "composite": 67.5,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 86.9,
+        "quality": 55.6,
+        "catalyst": 90.0,
+        "pullback_pct": 0.318,
+        "rsi": 63,
+        "days_in_decline": 251,
+        "fscore": 5,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 72.5,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 88.2,
+          "pb": 75.2,
+          "ps": 96.9,
+          "vs_sector": 100.0,
+          "analyst_upside": 75.3
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-07-13",
+      "pick_price": 44.77,
+      "bench_at_pick": 754.95,
+      "composite": 64.9,
+      "signals": {
+        "technical": 31.1,
+        "valuation": 54.9,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.586,
+        "rsi": 47,
+        "days_in_decline": 210,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 33.4,
+          "fcf_yield": 31.7,
+          "ev_ebitda": 23.5,
+          "pb": 60.7,
+          "ps": 68.2,
+          "vs_sector": 67.1,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "GPN",
+      "name": "Global Payments Inc.",
+      "exchange": "NYSE",
+      "sector": "Industrials",
+      "pick_date": "2026-07-13",
+      "pick_price": 76.04,
+      "bench_at_pick": 754.95,
+      "composite": 63.4,
+      "signals": {
+        "technical": 34.6,
+        "valuation": 75.4,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.144,
+        "rsi": 68,
+        "days_in_decline": 220,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 8.2,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 66.1,
+          "pb": 100.0,
+          "ps": 80.7,
+          "vs_sector": 86.4,
+          "analyst_upside": 62.1,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-07-13",
+      "pick_price": 211.63,
+      "bench_at_pick": 754.95,
+      "composite": 62.7,
+      "signals": {
+        "technical": 34.8,
+        "valuation": 63.5,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.26,
+        "rsi": 38,
+        "days_in_decline": 100,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 37.0,
+          "fcf_yield": 29.4,
+          "ev_ebitda": 36.3,
+          "ps": 95.1,
+          "vs_sector": 76.6,
+          "analyst_upside": 70.3,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BF-B",
+      "name": "Brown Forman Inc",
+      "exchange": "NYSE",
+      "sector": "Consumer Defensive",
+      "pick_date": "2026-07-13",
+      "pick_price": 26.17,
+      "bench_at_pick": 754.95,
+      "composite": 62.1,
+      "signals": {
+        "technical": 18.0,
+        "valuation": 54.2,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.137,
+        "rsi": 46,
+        "days_in_decline": 143,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 40.7,
+          "fcf_yield": 59.4,
+          "ev_ebitda": 43.6,
+          "pb": 50.3,
+          "ps": 70.6,
+          "vs_sector": 51.7,
+          "analyst_upside": 17.7,
           "yield_vs_history": 100.0
         }
       },
