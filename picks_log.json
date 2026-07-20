@@ -1500,13 +1500,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -1.44,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.54,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1542,13 +1542,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.57,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.54,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1584,13 +1584,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -1.65,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.54,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1627,13 +1627,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.34,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.54,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1669,13 +1669,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -1.37,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.54,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1708,6 +1708,176 @@
           "ps": 70.6,
           "vs_sector": 51.7,
           "analyst_upside": 17.7,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": -2.25,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": -1.54,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "FOX",
+      "name": "Fox Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Communication Services",
+      "pick_date": "2026-07-20",
+      "pick_price": 51.63,
+      "bench_at_pick": 743.29,
+      "composite": 71.0,
+      "signals": {
+        "technical": 28.1,
+        "valuation": 81.6,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.234,
+        "rsi": 72,
+        "days_in_decline": 133,
+        "fscore": 7,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 62.3,
+          "fcf_yield": 64.1,
+          "ev_ebitda": 96.8,
+          "pb": 75.5,
+          "ps": 95.2,
+          "vs_sector": 77.4,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "LDOS",
+      "name": "Leidos Holdings, Inc.",
+      "exchange": "NYSE",
+      "sector": "Technology",
+      "pick_date": "2026-07-20",
+      "pick_price": 106.48,
+      "bench_at_pick": 743.29,
+      "composite": 70.5,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 92.8,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.462,
+        "rsi": 64,
+        "days_in_decline": 174,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 98.9,
+          "ev_ebitda": 85.7,
+          "pb": 58.2,
+          "ps": 100.0,
+          "vs_sector": 100.0,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
+      "exchange": "NYSE",
+      "sector": "Energy",
+      "pick_date": "2026-07-20",
+      "pick_price": 43.83,
+      "bench_at_pick": 743.29,
+      "composite": 69.6,
+      "signals": {
+        "technical": 36.5,
+        "valuation": 76.1,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.152,
+        "rsi": 58,
+        "days_in_decline": 76,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 74.2,
+          "fcf_yield": 16.9,
+          "ev_ebitda": 100.0,
+          "pb": 80.9,
+          "ps": 69.2,
+          "vs_sector": 67.4,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "WYNN",
+      "name": "Wynn Resorts, Limited",
+      "exchange": "NasdaqGS",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-07-20",
+      "pick_price": 96.64,
+      "bench_at_pick": 743.29,
+      "composite": 60.0,
+      "signals": {
+        "technical": 34.8,
+        "valuation": 63.7,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.27,
+        "rsi": 38,
+        "days_in_decline": 155,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 8.7,
+          "fcf_yield": 22.3,
+          "ev_ebitda": 54.6,
+          "ps": 94.6,
+          "vs_sector": 65.7,
+          "analyst_upside": 100.0,
           "yield_vs_history": 100.0
         }
       },
