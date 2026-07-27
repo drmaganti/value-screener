@@ -1754,13 +1754,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -4.3,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -0.59,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1797,13 +1797,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.32,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -0.59,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1840,13 +1840,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.76,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -0.59,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1879,6 +1879,431 @@
           "vs_sector": 65.7,
           "analyst_upside": 100.0,
           "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": 0.29,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": -0.59,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "exchange": "NYSE",
+      "sector": "Technology",
+      "pick_date": "2026-07-27",
+      "pick_price": 146.99,
+      "bench_at_pick": 738.93,
+      "composite": 71.4,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 86.5,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.48,
+        "rsi": 61,
+        "days_in_decline": 131,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 78.8,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 54.5,
+          "ps": 96.7,
+          "vs_sector": 100.0,
+          "analyst_upside": 62.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "TECK-B.TO",
+      "name": "TECK RESOURCES LIMITED CL B",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-07-27",
+      "pick_price": 85.01,
+      "bench_at_pick": 738.93,
+      "composite": 67.1,
+      "signals": {
+        "technical": 33.7,
+        "valuation": 64.6,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.129,
+        "rsi": 46,
+        "days_in_decline": 37,
+        "fscore": 7,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 42.7,
+          "fcf_yield": 30.9,
+          "ev_ebitda": 99.1,
+          "pb": 83.6,
+          "ps": 71.7,
+          "vs_sector": 85.0,
+          "analyst_upside": 3.9,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "exchange": "NYSE",
+      "sector": "Technology",
+      "pick_date": "2026-07-27",
+      "pick_price": 163.66,
+      "bench_at_pick": 738.93,
+      "composite": 64.0,
+      "signals": {
+        "technical": 30.7,
+        "valuation": 65.5,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.389,
+        "rsi": 48,
+        "days_in_decline": 249,
+        "fscore": 6,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 32.4,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 35.8,
+          "pb": 27.1,
+          "vs_sector": 98.0,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands, Inc.",
+      "exchange": "NYSE",
+      "sector": "Consumer Defensive",
+      "pick_date": "2026-07-27",
+      "pick_price": 130.16,
+      "bench_at_pick": 738.93,
+      "composite": 63.4,
+      "signals": {
+        "technical": 29.1,
+        "valuation": 79.1,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.24,
+        "rsi": 49,
+        "days_in_decline": 248,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 72.4,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 71.8,
+          "pb": 57.4,
+          "ps": 79.2,
+          "vs_sector": 62.8,
+          "analyst_upside": 89.3,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ZBH",
+      "name": "Zimmer Biomet Holdings, Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-07-27",
+      "pick_price": 91.35,
+      "bench_at_pick": 738.93,
+      "composite": 63.3,
+      "signals": {
+        "technical": 34.3,
+        "valuation": 65.8,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.143,
+        "rsi": 53,
+        "days_in_decline": 230,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 17.5,
+          "fcf_yield": 55.8,
+          "ev_ebitda": 71.1,
+          "pb": 90.1,
+          "ps": 84.3,
+          "vs_sector": 84.9,
+          "analyst_upside": 22.7,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney Company (The)",
+      "exchange": "NYSE",
+      "sector": "Communication Services",
+      "pick_date": "2026-07-27",
+      "pick_price": 94.85,
+      "bench_at_pick": 738.93,
+      "composite": 62.5,
+      "signals": {
+        "technical": 28.3,
+        "valuation": 67.1,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.208,
+        "rsi": 42,
+        "days_in_decline": 250,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 51.3,
+          "fcf_yield": 4.0,
+          "ev_ebitda": 57.8,
+          "pb": 86.9,
+          "vs_sector": 71.1,
+          "analyst_upside": 98.3,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CDW",
+      "name": "CDW Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-27",
+      "pick_price": 133.82,
+      "bench_at_pick": 738.93,
+      "composite": 61.9,
+      "signals": {
+        "technical": 60.4,
+        "valuation": 53.0,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.251,
+        "rsi": 50,
+        "days_in_decline": 248,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 44.8,
+          "fcf_yield": 45.3,
+          "ev_ebitda": 50.7,
+          "pb": 0.0,
+          "vs_sector": 90.4,
+          "analyst_upside": 40.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-27",
+      "pick_price": 536.25,
+      "bench_at_pick": 738.93,
+      "composite": 61.5,
+      "signals": {
+        "technical": 67.8,
+        "valuation": 19.1,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.258,
+        "rsi": 40,
+        "days_in_decline": 17,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 0.0,
+          "ev_ebitda": 0.0,
+          "pb": 0.0,
+          "ps": 0.0,
+          "vs_sector": 3.7,
+          "analyst_upside": 48.7,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "JKHY",
+      "name": "Jack Henry & Associates, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-27",
+      "pick_price": 150.58,
+      "bench_at_pick": 738.93,
+      "composite": 61.0,
+      "signals": {
+        "technical": 25.4,
+        "valuation": 45.5,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.212,
+        "rsi": 56,
+        "days_in_decline": 131,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 25.0,
+          "fcf_yield": 21.3,
+          "ev_ebitda": 9.8,
+          "pb": 0.0,
+          "ps": 53.5,
+          "vs_sector": 87.5,
+          "analyst_upside": 66.7,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-07-27",
+      "pick_price": 1436.56,
+      "bench_at_pick": 738.93,
+      "composite": 60.3,
+      "signals": {
+        "technical": 67.8,
+        "valuation": 15.0,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.385,
+        "rsi": 40,
+        "days_in_decline": 20,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 0.0,
+          "ev_ebitda": 0.0,
+          "pb": 0.0,
+          "ps": 0.0,
+          "vs_sector": 4.7,
+          "analyst_upside": 100.0
         }
       },
       "outcomes": {
