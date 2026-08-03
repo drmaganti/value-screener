@@ -22,13 +22,13 @@
       },
       "outcomes": {
         "1w": 0.26,
-        "1m": null,
+        "1m": 20.19,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -55,13 +55,13 @@
       },
       "outcomes": {
         "1w": -1.97,
-        "1m": null,
+        "1m": 13.06,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -88,13 +88,13 @@
       },
       "outcomes": {
         "1w": 8.37,
-        "1m": null,
+        "1m": 19.19,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -121,13 +121,13 @@
       },
       "outcomes": {
         "1w": 8.76,
-        "1m": null,
+        "1m": 8.86,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -154,13 +154,13 @@
       },
       "outcomes": {
         "1w": 5.03,
-        "1m": null,
+        "1m": -2.74,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -187,13 +187,13 @@
       },
       "outcomes": {
         "1w": 9.08,
-        "1m": null,
+        "1m": 12.27,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -220,13 +220,13 @@
       },
       "outcomes": {
         "1w": 6.59,
-        "1m": null,
+        "1m": -17.66,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -253,13 +253,13 @@
       },
       "outcomes": {
         "1w": -3.91,
-        "1m": null,
+        "1m": 1.74,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -286,13 +286,13 @@
       },
       "outcomes": {
         "1w": 11.69,
-        "1m": null,
+        "1m": 10.36,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -319,13 +319,13 @@
       },
       "outcomes": {
         "1w": 6.2,
-        "1m": null,
+        "1m": 11.8,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -352,13 +352,13 @@
       },
       "outcomes": {
         "1w": -1.25,
-        "1m": null,
+        "1m": 6.65,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -385,13 +385,13 @@
       },
       "outcomes": {
         "1w": 3.23,
-        "1m": null,
+        "1m": 26.35,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -418,13 +418,13 @@
       },
       "outcomes": {
         "1w": -3.98,
-        "1m": null,
+        "1m": 5.51,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -451,13 +451,13 @@
       },
       "outcomes": {
         "1w": 4.7,
-        "1m": null,
+        "1m": -5.12,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -484,13 +484,13 @@
       },
       "outcomes": {
         "1w": -8.0,
-        "1m": null,
+        "1m": -8.41,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -517,13 +517,13 @@
       },
       "outcomes": {
         "1w": 0.62,
-        "1m": null,
+        "1m": 12.66,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -550,13 +550,13 @@
       },
       "outcomes": {
         "1w": -3.09,
-        "1m": null,
+        "1m": 4.41,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -583,13 +583,13 @@
       },
       "outcomes": {
         "1w": -4.37,
-        "1m": null,
+        "1m": 12.81,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -616,13 +616,13 @@
       },
       "outcomes": {
         "1w": 8.03,
-        "1m": null,
+        "1m": 20.55,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -649,13 +649,13 @@
       },
       "outcomes": {
         "1w": 2.68,
-        "1m": null,
+        "1m": 3.41,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
-        "1m": null,
+        "1m": 2.47,
         "3m": null,
         "6m": null
       }
@@ -691,13 +691,13 @@
       },
       "outcomes": {
         "1w": -0.51,
-        "1m": null,
+        "1m": -4.6,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -733,13 +733,13 @@
       },
       "outcomes": {
         "1w": -0.07,
-        "1m": null,
+        "1m": 1.7,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -775,13 +775,13 @@
       },
       "outcomes": {
         "1w": 2.95,
-        "1m": null,
+        "1m": 18.91,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -817,13 +817,13 @@
       },
       "outcomes": {
         "1w": -3.16,
-        "1m": null,
+        "1m": -9.0,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -860,13 +860,13 @@
       },
       "outcomes": {
         "1w": 0.33,
-        "1m": null,
+        "1m": -2.77,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -903,13 +903,13 @@
       },
       "outcomes": {
         "1w": 10.03,
-        "1m": null,
+        "1m": 10.66,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -946,13 +946,13 @@
       },
       "outcomes": {
         "1w": 3.03,
-        "1m": null,
+        "1m": 7.94,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -989,13 +989,13 @@
       },
       "outcomes": {
         "1w": 5.84,
-        "1m": null,
+        "1m": 9.5,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -1031,13 +1031,13 @@
       },
       "outcomes": {
         "1w": 4.8,
-        "1m": null,
+        "1m": -9.05,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
-        "1m": null,
+        "1m": 0.86,
         "3m": null,
         "6m": null
       }
@@ -1925,13 +1925,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 12.88,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -1968,13 +1968,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -0.76,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2009,13 +2009,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 12.44,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2052,13 +2052,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.05,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2095,13 +2095,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.82,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2137,13 +2137,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 1.41,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2179,13 +2179,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 10.45,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2222,13 +2222,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -5.33,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2265,13 +2265,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.3,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.1,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2304,6 +2304,262 @@
           "ps": 0.0,
           "vs_sector": 4.7,
           "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": -15.43,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": 1.1,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-08-03",
+      "pick_price": 96.88,
+      "bench_at_pick": 747.03,
+      "composite": 65.8,
+      "signals": {
+        "technical": 33.1,
+        "valuation": 60.7,
+        "quality": 77.8,
+        "catalyst": 90.0,
+        "pullback_pct": 0.218,
+        "rsi": 33,
+        "days_in_decline": 227,
+        "fscore": 7,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 60.8,
+          "fcf_yield": 65.8,
+          "ev_ebitda": 76.6,
+          "pb": 0.0,
+          "ps": 80.2,
+          "vs_sector": 65.3,
+          "analyst_upside": 76.5
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation Ltd.",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-08-03",
+      "pick_price": 27.81,
+      "bench_at_pick": 747.03,
+      "composite": 65.5,
+      "signals": {
+        "technical": 41.5,
+        "valuation": 76.8,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.173,
+        "rsi": 60,
+        "days_in_decline": 120,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 71.2,
+          "fcf_yield": 42.7,
+          "ev_ebitda": 83.4,
+          "pb": 51.4,
+          "ps": 94.4,
+          "vs_sector": 92.1,
+          "analyst_upside": 79.5,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-08-03",
+      "pick_price": 293.02,
+      "bench_at_pick": 747.03,
+      "composite": 62.4,
+      "signals": {
+        "technical": 67.7,
+        "valuation": 22.2,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.324,
+        "rsi": 40,
+        "days_in_decline": 22,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 0.0,
+          "ev_ebitda": 0.0,
+          "pb": 0.0,
+          "ps": 0.0,
+          "vs_sector": 4.8,
+          "analyst_upside": 73.2,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ALGN",
+      "name": "Align Technology, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Healthcare",
+      "pick_date": "2026-08-03",
+      "pick_price": 169.16,
+      "bench_at_pick": 747.03,
+      "composite": 62.1,
+      "signals": {
+        "technical": 44.0,
+        "valuation": 50.5,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.144,
+        "rsi": 38,
+        "days_in_decline": 117,
+        "fscore": 6,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 5.9,
+          "fcf_yield": 47.6,
+          "ev_ebitda": 44.7,
+          "pb": 53.6,
+          "ps": 72.5,
+          "vs_sector": 61.2,
+          "analyst_upside": 67.8
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-08-03",
+      "pick_price": 187.56,
+      "bench_at_pick": 747.03,
+      "composite": 61.4,
+      "signals": {
+        "technical": 69.0,
+        "valuation": 26.4,
+        "quality": 88.9,
+        "catalyst": 80.0,
+        "pullback_pct": 0.407,
+        "rsi": 39,
+        "days_in_decline": 39,
+        "fscore": 8,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 0.0,
+          "ev_ebitda": 0.0,
+          "pb": 0.0,
+          "ps": 0.0,
+          "vs_sector": 11.5,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "CSU.TO",
+      "name": "CONSTELLATION SOFTWARE INC.",
+      "exchange": "Toronto",
+      "sector": "Technology",
+      "pick_date": "2026-08-03",
+      "pick_price": 3002.99,
+      "bench_at_pick": 747.03,
+      "composite": 61.0,
+      "signals": {
+        "technical": 60.0,
+        "valuation": 36.0,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.373,
+        "rsi": 56,
+        "days_in_decline": 245,
+        "fscore": 6,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 0.0,
+          "fcf_yield": 33.2,
+          "ev_ebitda": 0.0,
+          "pb": 0.0,
+          "ps": 39.5,
+          "vs_sector": 26.7,
+          "analyst_upside": 89.0,
+          "yield_vs_history": 100.0
         }
       },
       "outcomes": {
