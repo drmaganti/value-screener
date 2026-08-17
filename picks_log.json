@@ -1501,13 +1501,13 @@
       },
       "outcomes": {
         "1w": -1.44,
-        "1m": null,
+        "1m": -1.83,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
-        "1m": null,
+        "1m": 2.83,
         "3m": null,
         "6m": null
       }
@@ -1543,13 +1543,13 @@
       },
       "outcomes": {
         "1w": 0.57,
-        "1m": null,
+        "1m": 7.41,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
-        "1m": null,
+        "1m": 2.83,
         "3m": null,
         "6m": null
       }
@@ -1585,13 +1585,13 @@
       },
       "outcomes": {
         "1w": -1.65,
-        "1m": null,
+        "1m": 15.77,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
-        "1m": null,
+        "1m": 2.83,
         "3m": null,
         "6m": null
       }
@@ -1628,13 +1628,13 @@
       },
       "outcomes": {
         "1w": 2.34,
-        "1m": null,
+        "1m": 22.37,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
-        "1m": null,
+        "1m": 2.83,
         "3m": null,
         "6m": null
       }
@@ -1670,13 +1670,13 @@
       },
       "outcomes": {
         "1w": -1.37,
-        "1m": null,
+        "1m": 3.23,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
-        "1m": null,
+        "1m": 2.83,
         "3m": null,
         "6m": null
       }
@@ -1713,13 +1713,13 @@
       },
       "outcomes": {
         "1w": -2.25,
-        "1m": null,
+        "1m": 8.6,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
-        "1m": null,
+        "1m": 2.83,
         "3m": null,
         "6m": null
       }
@@ -2606,13 +2606,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 7.2,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2649,13 +2649,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -3.31,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2691,13 +2691,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.02,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2734,13 +2734,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 3.23,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2777,13 +2777,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 7.67,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2820,13 +2820,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 3.84,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2863,13 +2863,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.31,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2906,13 +2906,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.35,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2949,13 +2949,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 7.55,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 0.4,
         "1m": null,
         "3m": null,
         "6m": null
@@ -2988,6 +2988,434 @@
           "ps": 100.0,
           "vs_sector": 91.4,
           "analyst_upside": 0.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": -1.53,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ACGL",
+      "name": "Arch Capital Group Ltd.",
+      "exchange": "NasdaqGS",
+      "sector": "Financial Services",
+      "pick_date": "2026-08-17",
+      "pick_price": 98.71,
+      "bench_at_pick": 776.34,
+      "composite": 69.2,
+      "signals": {
+        "technical": 31.5,
+        "valuation": 87.5,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.073,
+        "rsi": 33,
+        "days_in_decline": 13,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 88.9,
+          "ps": 89.3,
+          "vs_sector": 96.3,
+          "analyst_upside": 38.1
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown, Inc.",
+      "exchange": "NYSE",
+      "sector": "Financial Services",
+      "pick_date": "2026-08-17",
+      "pick_price": 70.54,
+      "bench_at_pick": 776.34,
+      "composite": 68.9,
+      "signals": {
+        "technical": 60.0,
+        "valuation": 58.2,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.265,
+        "rsi": 53,
+        "days_in_decline": 240,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 20.5,
+          "fcf_yield": 70.9,
+          "ev_ebitda": 59.5,
+          "pb": 78.8,
+          "ps": 63.7,
+          "vs_sector": 48.7,
+          "analyst_upside": 23.9,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ABX.TO",
+      "name": "BARRICK MINING CORPORATION",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-08-17",
+      "pick_price": 57.8,
+      "bench_at_pick": 776.34,
+      "composite": 68.3,
+      "signals": {
+        "technical": 44.5,
+        "valuation": 67.2,
+        "quality": 88.9,
+        "catalyst": 60.0,
+        "pullback_pct": 0.185,
+        "rsi": 69,
+        "days_in_decline": 133,
+        "fscore": 8,
+        "catalyst_category": "one_off_operational",
+        "valuation_parts": {
+          "earnings_yield": 90.4,
+          "fcf_yield": 47.8,
+          "ev_ebitda": 88.7,
+          "pb": 62.2,
+          "ps": 48.5,
+          "vs_sector": 65.5,
+          "analyst_upside": 34.4,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "HST",
+      "name": "Host Hotels & Resorts, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Real Estate",
+      "pick_date": "2026-08-17",
+      "pick_price": 22.9,
+      "bench_at_pick": 776.34,
+      "composite": 67.3,
+      "signals": {
+        "technical": 41.7,
+        "valuation": 69.2,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.103,
+        "rsi": 29,
+        "days_in_decline": 12,
+        "fscore": 6,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 50.1,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 49.2,
+          "pb": 63.6,
+          "ps": 77.8,
+          "vs_sector": 85.7,
+          "analyst_upside": 27.6,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-08-17",
+      "pick_price": 399.34,
+      "bench_at_pick": 776.34,
+      "composite": 66.8,
+      "signals": {
+        "technical": 60.0,
+        "valuation": 55.5,
+        "quality": 66.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.255,
+        "rsi": 68,
+        "days_in_decline": 244,
+        "fscore": 6,
+        "catalyst_category": "market",
+        "valuation_parts": {
+          "earnings_yield": 43.0,
+          "fcf_yield": 53.4,
+          "ev_ebitda": 4.7,
+          "pb": 72.2,
+          "ps": 46.1,
+          "vs_sector": 91.7,
+          "analyst_upside": 32.8,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "TRV",
+      "name": "The Travelers Companies, Inc.",
+      "exchange": "NYSE",
+      "sector": "Financial Services",
+      "pick_date": "2026-08-17",
+      "pick_price": 370.36,
+      "bench_at_pick": 776.34,
+      "composite": 66.7,
+      "signals": {
+        "technical": 29.8,
+        "valuation": 80.1,
+        "quality": 66.7,
+        "catalyst": 80.0,
+        "pullback_pct": 0.068,
+        "rsi": 33,
+        "days_in_decline": 13,
+        "fscore": 6,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 99.1,
+          "pb": 66.7,
+          "ps": 91.8,
+          "vs_sector": 83.3,
+          "analyst_upside": 0.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "NTR.TO",
+      "name": "NUTRIEN LTD",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-08-17",
+      "pick_price": 94.7,
+      "bench_at_pick": 776.34,
+      "composite": 65.8,
+      "signals": {
+        "technical": 41.1,
+        "valuation": 70.4,
+        "quality": 77.8,
+        "catalyst": 60.0,
+        "pullback_pct": 0.159,
+        "rsi": 46,
+        "days_in_decline": 107,
+        "fscore": 7,
+        "catalyst_category": "one_off_operational",
+        "valuation_parts": {
+          "earnings_yield": 60.9,
+          "fcf_yield": 22.1,
+          "ev_ebitda": 65.6,
+          "pb": 93.5,
+          "ps": 90.6,
+          "vs_sector": 91.9,
+          "analyst_upside": 38.3,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-08-17",
+      "pick_price": 225.56,
+      "bench_at_pick": 776.34,
+      "composite": 63.7,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 60.7,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.291,
+        "rsi": 60,
+        "days_in_decline": 49,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 19.1,
+          "fcf_yield": 65.6,
+          "ev_ebitda": 72.0,
+          "pb": 66.3,
+          "ps": 49.9,
+          "vs_sector": 94.4,
+          "analyst_upside": 57.5
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "BR",
+      "name": "Broadridge Financial Solutions,",
+      "exchange": "NYSE",
+      "sector": "Technology",
+      "pick_date": "2026-08-17",
+      "pick_price": 171.01,
+      "bench_at_pick": 776.34,
+      "composite": 63.3,
+      "signals": {
+        "technical": 30.0,
+        "valuation": 59.4,
+        "quality": 77.8,
+        "catalyst": 80.0,
+        "pullback_pct": 0.336,
+        "rsi": 71,
+        "days_in_decline": 245,
+        "fscore": 7,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 37.3,
+          "fcf_yield": 58.9,
+          "ev_ebitda": 38.9,
+          "pb": 0.0,
+          "ps": 77.0,
+          "vs_sector": 92.2,
+          "analyst_upside": 70.6,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      }
+    },
+    {
+      "ticker": "AIG",
+      "name": "American International Group, I",
+      "exchange": "NYSE",
+      "sector": "Financial Services",
+      "pick_date": "2026-08-17",
+      "pick_price": 76.64,
+      "bench_at_pick": 776.34,
+      "composite": 63.2,
+      "signals": {
+        "technical": 17.4,
+        "valuation": 86.1,
+        "quality": 55.6,
+        "catalyst": 80.0,
+        "pullback_pct": 0.104,
+        "rsi": 38,
+        "days_in_decline": 158,
+        "fscore": 5,
+        "catalyst_category": "sector",
+        "valuation_parts": {
+          "earnings_yield": 59.3,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 100.0,
+          "ps": 92.9,
+          "vs_sector": 91.9,
+          "analyst_upside": 44.6,
           "yield_vs_history": 100.0
         }
       },
