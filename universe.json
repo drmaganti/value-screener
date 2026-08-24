@@ -44,7 +44,6 @@
     "ARE",
     "ARES",
     "ATO",
-    "AVB",
     "AVGO",
     "AVY",
     "AWK",
@@ -164,7 +163,6 @@
     "EMR",
     "EOG",
     "EQIX",
-    "EQR",
     "EQT",
     "ERIE",
     "ES",
@@ -387,6 +385,7 @@
     "Q",
     "QCOM",
     "RCL",
+    "RDDT",
     "REG",
     "REGN",
     "RF",
@@ -470,6 +469,7 @@
     "VLO",
     "VLTO",
     "VMC",
+    "VMRK",
     "VRSK",
     "VRSN",
     "VRT",
@@ -565,5 +565,5 @@
     "WPM.TO",
     "WSP.TO"
   ],
-  "as_of": "2026-08-17"
+  "as_of": "2026-08-24"
 }
