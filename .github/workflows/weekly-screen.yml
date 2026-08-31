@@ -33,9 +33,12 @@ jobs:
           PROVIDER: yfinance
           CLASSIFIER: groq
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          # Only the scheduled Monday run receives email credentials.
+          # Manual workflow_dispatch runs still execute fully, but send_email()
+          # falls back to an HTML preview because these values are blank.
+          EMAIL_FROM: ${{ github.event_name == 'schedule' && secrets.EMAIL_FROM || '' }}
+          EMAIL_APP_PASSWORD: ${{ github.event_name == 'schedule' && secrets.EMAIL_APP_PASSWORD || '' }}
+          EMAIL_TO: ${{ github.event_name == 'schedule' && secrets.EMAIL_TO || '' }}
         run: python value_screener_v2.py
 
       - name: Persist V2 learning data and universe
