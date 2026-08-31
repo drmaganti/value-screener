@@ -31,7 +31,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.26,
+        "1m": 20.19,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -1.68,
+        "1m": 11.06
+      },
+      "corrected_outcomes_bench": {
+        "1w": 0.62,
+        "1m": 3.1
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 51.6884
     },
     {
       "ticker": "APA",
@@ -64,7 +87,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.97,
+        "1m": 13.06,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -2.35,
+        "1m": 5.82
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "ADP",
@@ -97,7 +143,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 8.37,
+        "1m": 19.19,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 7.13,
+        "1m": 18.17
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "AAPL",
@@ -130,7 +199,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 8.76,
+        "1m": 8.86,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 10.08,
+        "1m": 19.74
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "ABX.TO",
@@ -163,7 +255,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 5.03,
+        "1m": -2.74,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 2.48,
+        "1m": -1.98
+      },
+      "corrected_outcomes_bench": {
+        "1w": 0.62,
+        "1m": 3.1
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 51.6884
     },
     {
       "ticker": "GEN",
@@ -196,7 +311,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 9.08,
+        "1m": 12.27,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 8.32,
+        "1m": 12.31
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "IBM",
@@ -229,7 +367,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 6.59,
+        "1m": -17.66,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 9.48,
+        "1m": -16.82
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "A",
@@ -262,7 +423,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -3.91,
+        "1m": 1.74,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -3.98,
+        "1m": 3.33
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "AJG",
@@ -295,7 +479,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 11.69,
+        "1m": 10.36,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 10.51,
+        "1m": 17.39
+      },
+      "corrected_outcomes_bench": {
+        "1w": 3.06,
+        "1m": 1.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 728.99
     },
     {
       "ticker": "NTR.TO",
@@ -328,7 +535,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 6.2,
+        "1m": 11.8,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 6.05,
+        "1m": 13.23
+      },
+      "corrected_outcomes_bench": {
+        "1w": 0.62,
+        "1m": 3.1
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 51.6884
     },
     {
       "ticker": "AVGO",
@@ -361,7 +591,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.25,
+        "1m": 6.65,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 2.43,
+        "1m": 1.45
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "GRMN",
@@ -394,7 +647,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 3.23,
+        "1m": 26.35,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 5.47,
+        "1m": 26.8
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "SLB",
@@ -427,7 +703,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -3.98,
+        "1m": 5.51,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -2.72,
+        "1m": 4.17
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "WPM.TO",
@@ -460,7 +759,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 4.7,
+        "1m": -5.12,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 1.87,
+        "1m": -4.35
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.02,
+        "1m": 2.24
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 51.4795
     },
     {
       "ticker": "SWKS",
@@ -493,7 +815,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -8.0,
+        "1m": -8.41,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -8.96,
+        "1m": -10.01
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "ALLE",
@@ -526,7 +871,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.62,
+        "1m": 12.66,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.31,
+        "1m": 13.43
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "EMR",
@@ -559,7 +927,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -3.09,
+        "1m": 4.41,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -1.68,
+        "1m": 1.22
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "FANG",
@@ -592,7 +983,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -4.37,
+        "1m": 12.81,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -3.96,
+        "1m": 10.08
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "AMP",
@@ -625,7 +1039,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 8.03,
+        "1m": 20.55,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 11.73,
+        "1m": 18.95
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "CMCSA",
@@ -658,7 +1095,30 @@
         "1m": 2.47,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.68,
+        "1m": 3.41,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 2.17,
+        "1m": 2.47,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.91,
+        "1m": 6.21
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "APTV",
@@ -700,7 +1160,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -0.51,
+        "1m": -4.6,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.91,
+        "1m": -2.06
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "AKAM",
@@ -742,7 +1225,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -0.07,
+        "1m": 1.7,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -0.46,
+        "1m": -5.16
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "BAX",
@@ -784,7 +1290,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.95,
+        "1m": 18.91,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 2.6,
+        "1m": 12.55
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "FSLR",
@@ -826,7 +1355,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -3.16,
+        "1m": -9.0,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.5,
+        "1m": -14.08
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "VICI",
@@ -869,7 +1421,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.33,
+        "1m": -2.77,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -1.48,
+        "1m": 0.11
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "BRO",
@@ -912,7 +1487,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 10.03,
+        "1m": 10.66,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 7.31,
+        "1m": 17.41
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "BDX",
@@ -955,7 +1553,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 3.03,
+        "1m": 7.94,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 1.38,
+        "1m": 9.76
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "NWSA",
@@ -998,7 +1619,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 5.84,
+        "1m": 9.5,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 5.84,
+        "1m": 14.5
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "ALB",
@@ -1040,7 +1684,30 @@
         "1m": 0.86,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 4.8,
+        "1m": -9.05,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.56,
+        "1m": 0.86,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 3.44,
+        "1m": -11.96
+      },
+      "corrected_outcomes_bench": {
+        "1w": 1.39,
+        "1m": -1.56
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 741.0
     },
     {
       "ticker": "SU.TO",
@@ -1083,7 +1750,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 7.31,
+        "1m": 7.32,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 11.09,
+        "1m": 12.82
+      },
+      "corrected_outcomes_bench": {
+        "1w": 0.88,
+        "1m": 3.18
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 52.0067
     },
     {
       "ticker": "CTSH",
@@ -1126,7 +1816,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 1.38,
+        "1m": 37.34,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 4.55,
+        "1m": 32.07
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "CF",
@@ -1169,7 +1882,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 5.77,
+        "1m": 3.45,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 8.83,
+        "1m": 5.04
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "COP",
@@ -1212,7 +1948,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 4.12,
+        "1m": 12.3,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 7.04,
+        "1m": 9.12
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "BKR",
@@ -1255,7 +2014,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 9.06,
+        "1m": 16.62,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 8.85,
+        "1m": 16.42
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "EOG",
@@ -1298,7 +2080,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.54,
+        "1m": 3.03,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 5.97,
+        "1m": 2.64
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "PTC",
@@ -1340,7 +2145,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.15,
+        "1m": 18.59,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.7,
+        "1m": 11.95
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "ZTS",
@@ -1383,7 +2211,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 1.02,
+        "1m": -2.86,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.09,
+        "1m": -0.55
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "ADBE",
@@ -1425,7 +2276,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 1.78,
+        "1m": 20.7,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 4.96,
+        "1m": 18.02
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "HCA",
@@ -1467,7 +2341,30 @@
         "1m": 3.82,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -0.95,
+        "1m": 0.7,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.37,
+        "1m": 3.82,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -4.81,
+        "1m": -0.21
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.28,
+        "1m": 2.46
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 751.28
     },
     {
       "ticker": "DHI",
@@ -1510,7 +2407,30 @@
         "1m": 2.83,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.44,
+        "1m": -1.83,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.54,
+        "1m": 2.83,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -4.76,
+        "1m": -3.8
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.95,
+        "1m": 3.11
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 749.17
     },
     {
       "ticker": "GIB-A.TO",
@@ -1552,7 +2472,30 @@
         "1m": 2.83,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.57,
+        "1m": 7.41,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.54,
+        "1m": 2.83,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 1.07,
+        "1m": 8.4
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.83,
+        "1m": 3.49
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 52.4643
     },
     {
       "ticker": "BSX",
@@ -1594,7 +2537,30 @@
         "1m": 2.83,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.65,
+        "1m": 15.77,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.54,
+        "1m": 2.83,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -2.23,
+        "1m": 14.85
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.95,
+        "1m": 3.11
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 749.17
     },
     {
       "ticker": "GPN",
@@ -1637,7 +2603,30 @@
         "1m": 2.83,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.34,
+        "1m": 22.37,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.54,
+        "1m": 2.83,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 8.32,
+        "1m": 16.43
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.95,
+        "1m": 3.11
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 749.17
     },
     {
       "ticker": "LOW",
@@ -1679,7 +2668,30 @@
         "1m": 2.83,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.37,
+        "1m": 3.23,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.54,
+        "1m": 2.83,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -3.86,
+        "1m": 2.05
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.95,
+        "1m": 3.11
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 749.17
     },
     {
       "ticker": "BF-B",
@@ -1722,7 +2734,30 @@
         "1m": 2.83,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -2.25,
+        "1m": 8.6,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.54,
+        "1m": 2.83,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.92,
+        "1m": 6.69
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.95,
+        "1m": 3.11
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 749.17
     },
     {
       "ticker": "FOX",
@@ -1764,7 +2799,30 @@
         "1m": 3.02,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -4.3,
+        "1m": 18.25,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -0.59,
+        "1m": 3.02,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -1.59,
+        "1m": 16.97
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.4,
+        "1m": 3.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 742.09
     },
     {
       "ticker": "LDOS",
@@ -1807,7 +2865,30 @@
         "1m": 3.02,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 5.32,
+        "1m": 32.79,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -0.59,
+        "1m": 3.02,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 7.95,
+        "1m": 37.41
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.4,
+        "1m": 3.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 742.09
     },
     {
       "ticker": "DVN",
@@ -1850,7 +2931,30 @@
         "1m": 3.02,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.76,
+        "1m": 12.02,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -0.59,
+        "1m": 3.02,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -1.53,
+        "1m": 9.95
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.4,
+        "1m": 3.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 742.09
     },
     {
       "ticker": "WYNN",
@@ -1892,7 +2996,30 @@
         "1m": 3.02,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.29,
+        "1m": 3.77,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -0.59,
+        "1m": 3.02,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 2.91,
+        "1m": 3.58
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.4,
+        "1m": 3.63
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 742.09
     },
     {
       "ticker": "ACN",
@@ -1935,7 +3062,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 12.88,
+        "1m": 29.0,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 12.77,
+        "1m": 23.4
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "TECK-B.TO",
@@ -1969,7 +3119,7 @@
       },
       "outcomes": {
         "1w": -0.76,
-        "1m": NaN,
+        "1m": null,
         "3m": null,
         "6m": null
       },
@@ -1978,7 +3128,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -0.76,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 7.07,
+        "1m": 16.17
+      },
+      "corrected_outcomes_bench": {
+        "1w": 0.49,
+        "1m": 2.91
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 52.8722
     },
     {
       "ticker": "CRM",
@@ -2019,7 +3192,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 12.44,
+        "1m": 56.42,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 13.62,
+        "1m": 25.64
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "STZ",
@@ -2062,7 +3258,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.05,
+        "1m": 0.41,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.92,
+        "1m": 3.3
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "ZBH",
@@ -2105,7 +3324,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.82,
+        "1m": 10.47,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 6.16,
+        "1m": 10.98
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "DIS",
@@ -2147,7 +3389,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 1.41,
+        "1m": 13.97,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 3.47,
+        "1m": 15.58
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "CDW",
@@ -2189,7 +3454,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 10.45,
+        "1m": 10.36,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 9.85,
+        "1m": 5.71
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "AMAT",
@@ -2232,7 +3520,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -5.33,
+        "1m": -13.91,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -3.47,
+        "1m": -10.53
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "JKHY",
@@ -2275,7 +3586,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.3,
+        "1m": 12.72,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 3.95,
+        "1m": 14.48
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "SNDK",
@@ -2317,7 +3651,30 @@
         "1m": 4.12,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -15.43,
+        "1m": 3.37,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 1.1,
+        "1m": 4.12,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -10.34,
+        "1m": 4.37
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.51,
+        "1m": 3.65
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 739.09
     },
     {
       "ticker": "DECK",
@@ -2359,7 +3716,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.6,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 3.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.58
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.03
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 757.67
     },
     {
       "ticker": "CCL",
@@ -2402,7 +3780,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 4.24,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 3.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -0.22
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.03
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 757.67
     },
     {
       "ticker": "LRCX",
@@ -2445,7 +3844,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 6.26,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 3.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 4.57
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.03
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 757.67
     },
     {
       "ticker": "ALGN",
@@ -2487,7 +3907,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 2.66,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 3.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 4.07
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.03
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 757.67
     },
     {
       "ticker": "MRVL",
@@ -2530,7 +3971,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 16.61,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 3.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 11.2
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.03
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 757.67
     },
     {
       "ticker": "CSU.TO",
@@ -2573,7 +4035,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 7.28,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 3.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 10.04
+      },
+      "corrected_outcomes_bench": {
+        "1w": 2.86
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 52.4842
     },
     {
       "ticker": "CVX",
@@ -2616,7 +4099,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 7.2,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 7.71
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "CRH",
@@ -2659,7 +4163,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -3.31,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -4.41
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "APTV",
@@ -2701,7 +4226,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.02,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.99
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "CMCSA",
@@ -2744,7 +4290,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 3.23,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.83
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "FANG",
@@ -2787,7 +4354,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 7.67,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 9.71
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "ALB",
@@ -2830,7 +4418,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 3.84,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 2.2
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "BKR",
@@ -2873,7 +4482,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 5.31,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 5.44
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "RCI-B.TO",
@@ -2916,7 +4546,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 5.35,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 4.35
+      },
+      "corrected_outcomes_bench": {
+        "1w": 0.76
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 53.9863
     },
     {
       "ticker": "APA",
@@ -2959,7 +4610,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 7.55,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 10.5
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "LEN",
@@ -3002,7 +4674,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.53,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": 0.4,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -1.86
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.05
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 773.03
     },
     {
       "ticker": "ACGL",
@@ -3044,7 +4737,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 0.69,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 2.46
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "BRO",
@@ -3087,7 +4801,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 3.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 5.78
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "ABX.TO",
@@ -3130,7 +4865,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 13.43,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 15.28
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.38
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 54.3941
     },
     {
       "ticker": "HST",
@@ -3173,7 +4929,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 1.35,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 1.27
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "ROP",
@@ -3216,7 +4993,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 3.12,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 4.05
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "TRV",
@@ -3259,7 +5057,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -1.83,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.05
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "NTR.TO",
@@ -3302,7 +5121,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 9.51,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 8.63
+      },
+      "corrected_outcomes_bench": {
+        "1w": -0.38
+      },
+      "corrected_benchmark": "XIU.TO",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 54.3941
     },
     {
       "ticker": "FSLR",
@@ -3344,7 +5184,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -5.0,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": -7.65
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "BR",
@@ -3387,7 +5248,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": 6.53,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 8.44
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     },
     {
       "ticker": "AIG",
@@ -3430,7 +5312,28 @@
         "1m": null,
         "3m": null,
         "6m": null
-      }
+      },
+      "legacy_outcomes_snapshot": {
+        "1w": -0.68,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "legacy_outcomes_bench_snapshot": {
+        "1w": -1.37,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "corrected_outcomes": {
+        "1w": 0.97
+      },
+      "corrected_outcomes_bench": {
+        "1w": -1.19
+      },
+      "corrected_benchmark": "SPY",
+      "corrected_method": "exact-horizon:first-close-on-or-after",
+      "corrected_bench_at_pick": 772.67
     }
   ]
 }
