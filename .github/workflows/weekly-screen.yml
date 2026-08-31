@@ -2,18 +2,22 @@ name: Weekly Value Screen
 
 on:
   schedule:
-    # 04:00 UTC Monday = ~Sunday ~11pm-midnight ET (markets closed, prices settled).
-    # Email lands well before Monday's 9:30 ET open. Runs slow + paced on purpose.
+    # 04:00 UTC Monday = ~Sunday midnight ET while daylight time is in effect.
+    # Email lands before Monday's market open.
     - cron: "0 4 * * 1"
   workflow_dispatch: {}
 
 permissions:
-  contents: write          # commit the updated pick/candidate logs + universe back
+  contents: write
+
+concurrency:
+  group: value-screener-state
+  cancel-in-progress: false
 
 jobs:
   screen:
     runs-on: ubuntu-latest
-    timeout-minutes: 330    # allow a long, polite, batched scan
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
 
@@ -26,25 +30,27 @@ jobs:
 
       - name: Refresh index constituents
         run: python refresh_universe.py
-        continue-on-error: true   # if Wikipedia hiccups, fall back to last universe.json
+        continue-on-error: true
 
       - name: Run weekly screen (V2)
         env:
           PROVIDER: yfinance
           CLASSIFIER: groq
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          # Only the scheduled Monday run receives email credentials.
-          # Manual workflow_dispatch runs still execute fully, but send_email()
-          # falls back to an HTML preview because these values are blank.
+          OFFICIAL_RUN: ${{ github.event_name == 'schedule' && '1' || '0' }}
+          # Only the scheduled Monday run receives email credentials. Manual
+          # runs produce a local preview and cannot send the production digest.
           EMAIL_FROM: ${{ github.event_name == 'schedule' && secrets.EMAIL_FROM || '' }}
           EMAIL_APP_PASSWORD: ${{ github.event_name == 'schedule' && secrets.EMAIL_APP_PASSWORD || '' }}
           EMAIL_TO: ${{ github.event_name == 'schedule' && secrets.EMAIL_TO || '' }}
-        run: python value_screener_v2.py
+        run: python value_screener_v2_runner.py
 
-      - name: Persist V2 learning data and universe
+      - name: Persist official V2 learning data and universe
+        if: github.event_name == 'schedule'
         run: |
           git config user.name "screener-bot"
           git config user.email "actions@users.noreply.github.com"
           git add picks_log.json candidate_log.json universe.json fundamentals_cache.json 2>/dev/null || git add picks_log.json
-          git diff --staged --quiet || git commit -m "Weekly V2 run: update logs + universe + cache [skip ci]"
+          git diff --staged --quiet || git commit -m "Weekly V2 run: update official logs + universe + cache [skip ci]"
+          git pull --rebase origin main
           git push
