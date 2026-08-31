@@ -1926,13 +1926,13 @@
       },
       "outcomes": {
         "1w": 12.88,
-        "1m": null,
+        "1m": 29.0,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -1969,13 +1969,13 @@
       },
       "outcomes": {
         "1w": -0.76,
-        "1m": null,
+        "1m": NaN,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2010,13 +2010,13 @@
       },
       "outcomes": {
         "1w": 12.44,
-        "1m": null,
+        "1m": 56.42,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2053,13 +2053,13 @@
       },
       "outcomes": {
         "1w": 0.05,
-        "1m": null,
+        "1m": 0.41,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2096,13 +2096,13 @@
       },
       "outcomes": {
         "1w": 2.82,
-        "1m": null,
+        "1m": 10.47,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2138,13 +2138,13 @@
       },
       "outcomes": {
         "1w": 1.41,
-        "1m": null,
+        "1m": 13.97,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2180,13 +2180,13 @@
       },
       "outcomes": {
         "1w": 10.45,
-        "1m": null,
+        "1m": 10.36,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2223,13 +2223,13 @@
       },
       "outcomes": {
         "1w": -5.33,
-        "1m": null,
+        "1m": -13.91,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2266,13 +2266,13 @@
       },
       "outcomes": {
         "1w": 2.3,
-        "1m": null,
+        "1m": 12.72,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
@@ -2308,13 +2308,13 @@
       },
       "outcomes": {
         "1w": -15.43,
-        "1m": null,
+        "1m": 3.37,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": null,
+        "1m": 4.12,
         "3m": null,
         "6m": null
       }
