@@ -8,7 +8,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write          # commit the updated pick log + universe back
+  contents: write          # commit the updated pick/candidate logs + universe back
 
 jobs:
   screen:
@@ -28,7 +28,7 @@ jobs:
         run: python refresh_universe.py
         continue-on-error: true   # if Wikipedia hiccups, fall back to last universe.json
 
-      - name: Run weekly screen
+      - name: Run weekly screen (V2)
         env:
           PROVIDER: yfinance
           CLASSIFIER: groq
@@ -36,12 +36,12 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python value_screener.py
+        run: python value_screener_v2.py
 
-      - name: Persist pick log and universe
+      - name: Persist V2 learning data and universe
         run: |
           git config user.name "screener-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add picks_log.json universe.json fundamentals_cache.json 2>/dev/null || git add picks_log.json
-          git diff --staged --quiet || git commit -m "Weekly run: update log + universe + cache [skip ci]"
+          git add picks_log.json candidate_log.json universe.json fundamentals_cache.json 2>/dev/null || git add picks_log.json
+          git diff --staged --quiet || git commit -m "Weekly V2 run: update logs + universe + cache [skip ci]"
           git push
