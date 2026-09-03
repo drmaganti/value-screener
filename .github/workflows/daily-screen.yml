@@ -21,14 +21,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run screener
+      - name: Run screener (data only; no email)
         env:
           PROVIDER: yfinance
           CLASSIFIER: groq
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          # Deliberately do not expose EMAIL_* credentials here. The legacy V1
+          # daily run is retained for tracking/learning, but only the Monday V2
+          # workflow is allowed to send the production digest.
         run: python value_screener.py
 
       - name: Persist cooldown state
