@@ -47,6 +47,36 @@ Now that changes can be measured:
 - Human-in-the-loop ratings ("would I have bought?") feeding both the eval set
   and the tuning.
 
+### Ask Warren integration milestone
+
+Keep the weekly strategy's pullback, RSI, liquidity, earnings-blackout,
+repeat-pick, and catalyst rules in this repository. Apply reusable Ask Warren
+analysis only after those inexpensive strategy gates:
+
+```text
+weekly universe
+      ↓
+Value Screener strategy filters
+      ↓
+strategy survivors
+      ↓
+Ask Warren Screen for comparative ranking
+      ↓
+small finalist set
+      ↓
+Ask Warren Deep for evidence-grounded research
+      ↓
+weekly report and outcome log
+```
+
+Before changing published picks:
+
+- compare Ask Warren ranking with the current weekly composite;
+- run the integration in shadow mode;
+- limit Deep analysis to the final small set;
+- measure incremental usefulness, latency, and cost;
+- avoid double-counting factors already used by the weekly strategy.
+
 ## Phase 4 — Scale and maybe share (horizon)
 
 - A paid data API (FMP / Polygon) when free data strains or to fix the
