@@ -521,22 +521,90 @@ class MockClassifier:
 
 
 class GroqClassifier:
-    def __init__(self, model="llama-3.3-70b-versatile"):
-        self.key = os.environ["GROQ_API_KEY"]; self.model = model
+    """Groq-backed catalyst classifier with resilient, auditable fallback.
+
+    Infrastructure failures must never be mislabeled as a structural company
+    problem. Retry transient Groq failures, then fall back to the deterministic
+    headline classifier while recording where the verdict came from.
+    """
+
+    def __init__(self, model=None):
+        self.key = os.environ["GROQ_API_KEY"]
+        self.model = model or os.getenv("GROQ_CLASSIFIER_MODEL", "openai/gpt-oss-20b")
+        self.max_retries = max(0, int(os.getenv("GROQ_MAX_RETRIES", "3")))
+        self.fallback = MockClassifier()
+
+    def _fallback_verdict(self, ticker, news, error):
+        verdict = self.fallback.classify(ticker, news)
+        verdict.reason = (
+            f"Classifier fallback after {error}; " + verdict.reason
+        )
+        verdict.classification_source = "deterministic_fallback"
+        verdict.classifier_error = error
+        return verdict
 
     def classify(self, ticker, news):
         import requests
-        prompt = CATALYST_PROMPT.format(ticker=ticker, news="\n".join(f"- {n}" for n in news))
-        try:
-            r = requests.post("https://api.groq.com/openai/v1/chat/completions",
-                              headers={"Authorization": f"Bearer {self.key}"},
-                              json={"model": self.model, "temperature": 0, "max_tokens": 300,
-                                    "messages": [{"role": "user", "content": prompt}]}, timeout=30)
-            r.raise_for_status()
-            return _verdict(r.json()["choices"][0]["message"]["content"])
-        except Exception as e:
-            return CatalystVerdict("structural", False,
-                                   f"Could not classify ({type(e).__name__}); excluded.", "", veto=True)
+        import time
+
+        # Bound prompt size so a noisy news feed cannot unnecessarily consume
+        # the classifier token budget or amplify rate-limit pressure.
+        compact_news = [str(n)[:240] for n in (news or [])[:10]]
+        prompt = CATALYST_PROMPT.format(
+            ticker=ticker, news="\n".join(f"- {n}" for n in compact_news)
+        )
+
+        last_error = "unknown error"
+        for attempt in range(self.max_retries + 1):
+            try:
+                r = requests.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers={"Authorization": f"Bearer {self.key}"},
+                    json={
+                        "model": self.model,
+                        "temperature": 0,
+                        "max_tokens": 300,
+                        "messages": [{"role": "user", "content": prompt}],
+                    },
+                    timeout=30,
+                )
+
+                # Groq documents 429 for rate limits and 5xx/498-class failures
+                # as retryable capacity/service conditions.
+                if r.status_code == 429 or r.status_code == 498 or r.status_code >= 500:
+                    last_error = f"HTTP {r.status_code}"
+                    if attempt < self.max_retries:
+                        retry_after = r.headers.get("retry-after")
+                        try:
+                            delay = float(retry_after) if retry_after else min(2 ** attempt, 16)
+                        except (TypeError, ValueError):
+                            delay = min(2 ** attempt, 16)
+                        time.sleep(max(0.25, delay))
+                        continue
+
+                r.raise_for_status()
+                verdict = _verdict(r.json()["choices"][0]["message"]["content"])
+                verdict.classification_source = "groq"
+                verdict.classifier_error = None
+                return verdict
+
+            except requests.HTTPError as e:
+                status = getattr(getattr(e, "response", None), "status_code", None)
+                last_error = f"HTTP {status}" if status else type(e).__name__
+                # Authentication, permission, model-access, and malformed-request
+                # errors will not improve with repeated calls.
+                break
+            except requests.RequestException as e:
+                last_error = type(e).__name__
+                if attempt < self.max_retries:
+                    time.sleep(min(2 ** attempt, 16))
+                    continue
+                break
+            except (KeyError, ValueError, json.JSONDecodeError) as e:
+                last_error = f"invalid response ({type(e).__name__})"
+                break
+
+        return self._fallback_verdict(ticker, compact_news, last_error)
 
 
 class AnthropicClassifier:
