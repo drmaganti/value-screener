@@ -399,6 +399,8 @@ def _signals_for_log(c):
         "fscore": c.qual.fscore,
         "quality_observations": getattr(c.qual, "available_checks", None),
         "catalyst_category": c.cat.category,
+        "catalyst_classification_source": getattr(c.cat, "classification_source", "unknown"),
+        "catalyst_classifier_error": getattr(c.cat, "classifier_error", None),
         "valuation_coverage": getattr(c.val, "coverage", _valuation_coverage(c.val)),
         "valuation_parts": c.val.parts,
     }
