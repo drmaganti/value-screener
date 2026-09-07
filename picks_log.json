@@ -3119,13 +3119,13 @@
       },
       "outcomes": {
         "1w": -0.76,
-        "1m": null,
+        "1m": 16.17,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.1,
-        "1m": 4.12,
+        "1m": 3.67,
         "3m": null,
         "6m": null
       },
@@ -3707,13 +3707,13 @@
       },
       "outcomes": {
         "1w": 0.6,
-        "1m": null,
+        "1m": -13.54,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
-        "1m": null,
+        "1m": 2.43,
         "3m": null,
         "6m": null
       },
@@ -3730,10 +3730,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 0.58
+        "1w": 0.58,
+        "1m": -13.54
       },
       "corrected_outcomes_bench": {
-        "1w": 2.03
+        "1w": 2.03,
+        "1m": 0.99
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3771,13 +3773,13 @@
       },
       "outcomes": {
         "1w": 4.24,
-        "1m": null,
+        "1m": -14.64,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
-        "1m": null,
+        "1m": 2.43,
         "3m": null,
         "6m": null
       },
@@ -3794,10 +3796,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": -0.22
+        "1w": -0.22,
+        "1m": -14.64
       },
       "corrected_outcomes_bench": {
-        "1w": 2.03
+        "1w": 2.03,
+        "1m": 0.99
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3835,13 +3839,13 @@
       },
       "outcomes": {
         "1w": 6.26,
-        "1m": null,
+        "1m": -1.6,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
-        "1m": null,
+        "1m": 2.43,
         "3m": null,
         "6m": null
       },
@@ -3858,10 +3862,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 4.57
+        "1w": 4.57,
+        "1m": -1.6
       },
       "corrected_outcomes_bench": {
-        "1w": 2.03
+        "1w": 2.03,
+        "1m": 0.99
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3898,13 +3904,13 @@
       },
       "outcomes": {
         "1w": 2.66,
-        "1m": null,
+        "1m": -5.92,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
-        "1m": null,
+        "1m": 2.43,
         "3m": null,
         "6m": null
       },
@@ -3921,10 +3927,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 4.07
+        "1w": 4.07,
+        "1m": -5.92
       },
       "corrected_outcomes_bench": {
-        "1w": 2.03
+        "1w": 2.03,
+        "1m": 0.99
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3962,13 +3970,13 @@
       },
       "outcomes": {
         "1w": 16.61,
-        "1m": null,
+        "1m": 10.09,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
-        "1m": null,
+        "1m": 2.43,
         "3m": null,
         "6m": null
       },
@@ -3985,10 +3993,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 11.2
+        "1w": 11.2,
+        "1m": 10.09
       },
       "corrected_outcomes_bench": {
-        "1w": 2.03
+        "1w": 2.03,
+        "1m": 0.99
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4026,13 +4036,13 @@
       },
       "outcomes": {
         "1w": 7.28,
-        "1m": null,
+        "1m": 1.47,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
-        "1m": null,
+        "1m": 2.43,
         "3m": null,
         "6m": null
       },
@@ -4049,10 +4059,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 10.04
+        "1w": 10.04,
+        "1m": 1.47
       },
       "corrected_outcomes_bench": {
-        "1w": 2.86
+        "1w": 2.86,
+        "1m": 1.88
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
