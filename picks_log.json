@@ -23,13 +23,13 @@
       "outcomes": {
         "1w": 0.26,
         "1m": 20.19,
-        "3m": null,
+        "3m": 25.45,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -46,11 +46,13 @@
       },
       "corrected_outcomes": {
         "1w": -1.68,
-        "1m": 11.06
+        "1m": 11.06,
+        "3m": 25.45
       },
       "corrected_outcomes_bench": {
         "1w": 0.62,
-        "1m": 3.1
+        "1m": 3.1,
+        "3m": 2.07
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -79,13 +81,13 @@
       "outcomes": {
         "1w": -1.97,
         "1m": 13.06,
-        "3m": null,
+        "3m": 28.23,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -102,15 +104,17 @@
       },
       "corrected_outcomes": {
         "1w": -2.35,
-        "1m": 5.82
+        "1m": 5.82,
+        "3m": 28.23
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "ADP",
@@ -135,13 +139,13 @@
       "outcomes": {
         "1w": 8.37,
         "1m": 19.19,
-        "3m": null,
+        "3m": 17.11,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -158,15 +162,17 @@
       },
       "corrected_outcomes": {
         "1w": 7.13,
-        "1m": 18.17
+        "1m": 18.17,
+        "3m": 17.11
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "AAPL",
@@ -191,13 +197,13 @@
       "outcomes": {
         "1w": 8.76,
         "1m": 8.86,
-        "3m": null,
+        "3m": 19.25,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -214,15 +220,17 @@
       },
       "corrected_outcomes": {
         "1w": 10.08,
-        "1m": 19.74
+        "1m": 19.74,
+        "3m": 19.25
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "ABX.TO",
@@ -247,13 +255,13 @@
       "outcomes": {
         "1w": 5.03,
         "1m": -2.74,
-        "3m": null,
+        "3m": 9.98,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -270,11 +278,13 @@
       },
       "corrected_outcomes": {
         "1w": 2.48,
-        "1m": -1.98
+        "1m": -1.98,
+        "3m": 9.98
       },
       "corrected_outcomes_bench": {
         "1w": 0.62,
-        "1m": 3.1
+        "1m": 3.1,
+        "3m": 2.07
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -303,13 +313,13 @@
       "outcomes": {
         "1w": 9.08,
         "1m": 12.27,
-        "3m": null,
+        "3m": -14.72,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -326,15 +336,17 @@
       },
       "corrected_outcomes": {
         "1w": 8.32,
-        "1m": 12.31
+        "1m": 12.31,
+        "3m": -14.72
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "IBM",
@@ -359,13 +371,13 @@
       "outcomes": {
         "1w": 6.59,
         "1m": -17.66,
-        "3m": null,
+        "3m": -18.76,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -382,15 +394,17 @@
       },
       "corrected_outcomes": {
         "1w": 9.48,
-        "1m": -16.82
+        "1m": -16.82,
+        "3m": -18.76
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "A",
@@ -415,13 +429,13 @@
       "outcomes": {
         "1w": -3.91,
         "1m": 1.74,
-        "3m": null,
+        "3m": 28.63,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -438,15 +452,17 @@
       },
       "corrected_outcomes": {
         "1w": -3.98,
-        "1m": 3.33
+        "1m": 3.33,
+        "3m": 28.63
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "AJG",
@@ -471,13 +487,13 @@
       "outcomes": {
         "1w": 11.69,
         "1m": 10.36,
-        "3m": null,
+        "3m": 1.53,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -494,15 +510,17 @@
       },
       "corrected_outcomes": {
         "1w": 10.51,
-        "1m": 17.39
+        "1m": 17.39,
+        "3m": 1.53
       },
       "corrected_outcomes_bench": {
         "1w": 3.06,
-        "1m": 1.63
+        "1m": 1.63,
+        "3m": 5.28
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 728.99
+      "corrected_bench_at_pick": 727.1843
     },
     {
       "ticker": "NTR.TO",
@@ -527,13 +545,13 @@
       "outcomes": {
         "1w": 6.2,
         "1m": 11.8,
-        "3m": null,
+        "3m": 16.96,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -550,11 +568,13 @@
       },
       "corrected_outcomes": {
         "1w": 6.05,
-        "1m": 13.23
+        "1m": 13.23,
+        "3m": 16.96
       },
       "corrected_outcomes_bench": {
         "1w": 0.62,
-        "1m": 3.1
+        "1m": 3.1,
+        "3m": 2.07
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -583,13 +603,13 @@
       "outcomes": {
         "1w": -1.25,
         "1m": 6.65,
-        "3m": null,
+        "3m": -4.23,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -606,15 +626,17 @@
       },
       "corrected_outcomes": {
         "1w": 2.43,
-        "1m": 1.45
+        "1m": 1.45,
+        "3m": -4.23
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "GRMN",
@@ -639,13 +661,13 @@
       "outcomes": {
         "1w": 3.23,
         "1m": 26.35,
-        "3m": null,
+        "3m": 26.47,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -662,15 +684,17 @@
       },
       "corrected_outcomes": {
         "1w": 5.47,
-        "1m": 26.8
+        "1m": 26.8,
+        "3m": 26.47
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "SLB",
@@ -695,13 +719,13 @@
       "outcomes": {
         "1w": -3.98,
         "1m": 5.51,
-        "3m": null,
+        "3m": 9.55,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -718,15 +742,17 @@
       },
       "corrected_outcomes": {
         "1w": -2.72,
-        "1m": 4.17
+        "1m": 4.17,
+        "3m": 9.55
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "WPM.TO",
@@ -751,13 +777,13 @@
       "outcomes": {
         "1w": 4.7,
         "1m": -5.12,
-        "3m": null,
+        "3m": 19.48,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -774,11 +800,13 @@
       },
       "corrected_outcomes": {
         "1w": 1.87,
-        "1m": -4.35
+        "1m": -4.35,
+        "3m": 19.48
       },
       "corrected_outcomes_bench": {
         "1w": 1.02,
-        "1m": 2.24
+        "1m": 2.24,
+        "3m": 2.49
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -807,13 +835,13 @@
       "outcomes": {
         "1w": -8.0,
         "1m": -8.41,
-        "3m": null,
+        "3m": 28.81,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -830,15 +858,17 @@
       },
       "corrected_outcomes": {
         "1w": -8.96,
-        "1m": -10.01
+        "1m": -10.01,
+        "3m": 28.81
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "ALLE",
@@ -863,13 +893,13 @@
       "outcomes": {
         "1w": 0.62,
         "1m": 12.66,
-        "3m": null,
+        "3m": 11.22,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -886,15 +916,17 @@
       },
       "corrected_outcomes": {
         "1w": 0.31,
-        "1m": 13.43
+        "1m": 13.43,
+        "3m": 11.22
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "EMR",
@@ -919,13 +951,13 @@
       "outcomes": {
         "1w": -3.09,
         "1m": 4.41,
-        "3m": null,
+        "3m": 11.08,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -942,15 +974,17 @@
       },
       "corrected_outcomes": {
         "1w": -1.68,
-        "1m": 1.22
+        "1m": 1.22,
+        "3m": 11.08
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "FANG",
@@ -975,13 +1009,13 @@
       "outcomes": {
         "1w": -4.37,
         "1m": 12.81,
-        "3m": null,
+        "3m": 2.96,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -998,15 +1032,17 @@
       },
       "corrected_outcomes": {
         "1w": -3.96,
-        "1m": 10.08
+        "1m": 10.08,
+        "3m": 2.96
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "AMP",
@@ -1031,13 +1067,13 @@
       "outcomes": {
         "1w": 8.03,
         "1m": 20.55,
-        "3m": null,
+        "3m": 9.57,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1054,15 +1090,17 @@
       },
       "corrected_outcomes": {
         "1w": 11.73,
-        "1m": 18.95
+        "1m": 18.95,
+        "3m": 9.57
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "CMCSA",
@@ -1087,13 +1125,13 @@
       "outcomes": {
         "1w": 2.68,
         "1m": 3.41,
-        "3m": null,
+        "3m": -7.4,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 2.17,
         "1m": 2.47,
-        "3m": null,
+        "3m": 5.02,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1110,15 +1148,17 @@
       },
       "corrected_outcomes": {
         "1w": 0.91,
-        "1m": 6.21
+        "1m": 6.21,
+        "3m": -7.4
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "APTV",
@@ -1152,13 +1192,13 @@
       "outcomes": {
         "1w": -0.51,
         "1m": -4.6,
-        "3m": null,
+        "3m": -26.27,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1175,15 +1215,17 @@
       },
       "corrected_outcomes": {
         "1w": 0.91,
-        "1m": -2.06
+        "1m": -2.06,
+        "3m": -26.27
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "AKAM",
@@ -1217,13 +1259,13 @@
       "outcomes": {
         "1w": -0.07,
         "1m": 1.7,
-        "3m": null,
+        "3m": -3.76,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1240,15 +1282,17 @@
       },
       "corrected_outcomes": {
         "1w": -0.46,
-        "1m": -5.16
+        "1m": -5.16,
+        "3m": -3.76
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "BAX",
@@ -1282,13 +1326,13 @@
       "outcomes": {
         "1w": 2.95,
         "1m": 18.91,
-        "3m": null,
+        "3m": 6.77,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1305,15 +1349,17 @@
       },
       "corrected_outcomes": {
         "1w": 2.6,
-        "1m": 12.55
+        "1m": 12.55,
+        "3m": 6.77
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "FSLR",
@@ -1347,13 +1393,13 @@
       "outcomes": {
         "1w": -3.16,
         "1m": -9.0,
-        "3m": null,
+        "3m": -25.41,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1370,15 +1416,17 @@
       },
       "corrected_outcomes": {
         "1w": 0.5,
-        "1m": -14.08
+        "1m": -14.08,
+        "3m": -25.41
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "VICI",
@@ -1413,13 +1461,13 @@
       "outcomes": {
         "1w": 0.33,
         "1m": -2.77,
-        "3m": null,
+        "3m": -14.43,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1436,15 +1484,17 @@
       },
       "corrected_outcomes": {
         "1w": -1.48,
-        "1m": 0.11
+        "1m": 0.11,
+        "3m": -14.43
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "BRO",
@@ -1479,13 +1529,13 @@
       "outcomes": {
         "1w": 10.03,
         "1m": 10.66,
-        "3m": null,
+        "3m": -5.31,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1502,15 +1552,17 @@
       },
       "corrected_outcomes": {
         "1w": 7.31,
-        "1m": 17.41
+        "1m": 17.41,
+        "3m": -5.31
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "BDX",
@@ -1545,13 +1597,13 @@
       "outcomes": {
         "1w": 3.03,
         "1m": 7.94,
-        "3m": null,
+        "3m": 19.81,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1568,15 +1620,17 @@
       },
       "corrected_outcomes": {
         "1w": 1.38,
-        "1m": 9.76
+        "1m": 9.76,
+        "3m": 19.81
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "NWSA",
@@ -1611,13 +1665,13 @@
       "outcomes": {
         "1w": 5.84,
         "1m": 9.5,
-        "3m": null,
+        "3m": 15.61,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1634,15 +1688,17 @@
       },
       "corrected_outcomes": {
         "1w": 5.84,
-        "1m": 14.5
+        "1m": 14.5,
+        "3m": 15.61
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "ALB",
@@ -1676,13 +1732,13 @@
       "outcomes": {
         "1w": 4.8,
         "1m": -9.05,
-        "3m": null,
+        "3m": -16.98,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.56,
         "1m": 0.86,
-        "3m": null,
+        "3m": 3.37,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1699,15 +1755,17 @@
       },
       "corrected_outcomes": {
         "1w": 3.44,
-        "1m": -11.96
+        "1m": -11.96,
+        "3m": -16.98
       },
       "corrected_outcomes_bench": {
         "1w": 1.39,
-        "1m": -1.56
+        "1m": -1.56,
+        "3m": 3.58
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 741.0
+      "corrected_bench_at_pick": 739.1645
     },
     {
       "ticker": "SU.TO",
@@ -1742,13 +1800,13 @@
       "outcomes": {
         "1w": 7.31,
         "1m": 7.32,
-        "3m": null,
+        "3m": 25.45,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1765,11 +1823,13 @@
       },
       "corrected_outcomes": {
         "1w": 11.09,
-        "1m": 12.82
+        "1m": 12.82,
+        "3m": 25.45
       },
       "corrected_outcomes_bench": {
         "1w": 0.88,
-        "1m": 3.18
+        "1m": 3.18,
+        "3m": 1.58
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -1808,13 +1868,13 @@
       "outcomes": {
         "1w": 1.38,
         "1m": 37.34,
-        "3m": null,
+        "3m": 38.53,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1831,15 +1891,17 @@
       },
       "corrected_outcomes": {
         "1w": 4.55,
-        "1m": 32.07
+        "1m": 32.07,
+        "3m": 38.53
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "CF",
@@ -1874,13 +1936,13 @@
       "outcomes": {
         "1w": 5.77,
         "1m": 3.45,
-        "3m": null,
+        "3m": 4.96,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1897,15 +1959,17 @@
       },
       "corrected_outcomes": {
         "1w": 8.83,
-        "1m": 5.04
+        "1m": 5.04,
+        "3m": 4.96
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "COP",
@@ -1940,13 +2004,13 @@
       "outcomes": {
         "1w": 4.12,
         "1m": 12.3,
-        "3m": null,
+        "3m": 22.6,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -1963,15 +2027,17 @@
       },
       "corrected_outcomes": {
         "1w": 7.04,
-        "1m": 9.12
+        "1m": 9.12,
+        "3m": 22.6
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "BKR",
@@ -2006,13 +2072,13 @@
       "outcomes": {
         "1w": 9.06,
         "1m": 16.62,
-        "3m": null,
+        "3m": 8.72,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2029,15 +2095,17 @@
       },
       "corrected_outcomes": {
         "1w": 8.85,
-        "1m": 16.42
+        "1m": 16.42,
+        "3m": 8.72
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "EOG",
@@ -2072,13 +2140,13 @@
       "outcomes": {
         "1w": 2.54,
         "1m": 3.03,
-        "3m": null,
+        "3m": 10.17,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2095,15 +2163,17 @@
       },
       "corrected_outcomes": {
         "1w": 5.97,
-        "1m": 2.64
+        "1m": 2.64,
+        "3m": 10.17
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "PTC",
@@ -2137,13 +2207,13 @@
       "outcomes": {
         "1w": 0.15,
         "1m": 18.59,
-        "3m": null,
+        "3m": 54.36,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2160,15 +2230,17 @@
       },
       "corrected_outcomes": {
         "1w": 0.7,
-        "1m": 11.95
+        "1m": 11.95,
+        "3m": 54.36
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "ZTS",
@@ -2203,13 +2275,13 @@
       "outcomes": {
         "1w": 1.02,
         "1m": -2.86,
-        "3m": null,
+        "3m": -4.53,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2226,15 +2298,17 @@
       },
       "corrected_outcomes": {
         "1w": 0.09,
-        "1m": -0.55
+        "1m": -0.55,
+        "3m": -4.53
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "ADBE",
@@ -2268,13 +2342,13 @@
       "outcomes": {
         "1w": 1.78,
         "1m": 20.7,
-        "3m": null,
+        "3m": 8.68,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2291,15 +2365,17 @@
       },
       "corrected_outcomes": {
         "1w": 4.96,
-        "1m": 18.02
+        "1m": 18.02,
+        "3m": 8.68
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "HCA",
@@ -2333,13 +2409,13 @@
       "outcomes": {
         "1w": -0.95,
         "1m": 0.7,
-        "3m": null,
+        "3m": 5.95,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.37,
         "1m": 3.82,
-        "3m": null,
+        "3m": 4.03,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2356,15 +2432,17 @@
       },
       "corrected_outcomes": {
         "1w": -4.81,
-        "1m": -0.21
+        "1m": -0.21,
+        "3m": 5.95
       },
       "corrected_outcomes_bench": {
         "1w": -0.28,
-        "1m": 2.46
+        "1m": 2.46,
+        "3m": 3.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 751.28
+      "corrected_bench_at_pick": 749.4191
     },
     {
       "ticker": "DHI",
@@ -2430,7 +2508,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 749.17
+      "corrected_bench_at_pick": 747.3143
     },
     {
       "ticker": "GIB-A.TO",
@@ -2560,7 +2638,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 749.17
+      "corrected_bench_at_pick": 747.3143
     },
     {
       "ticker": "GPN",
@@ -2626,7 +2704,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 749.17
+      "corrected_bench_at_pick": 747.3143
     },
     {
       "ticker": "LOW",
@@ -2691,7 +2769,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 749.17
+      "corrected_bench_at_pick": 747.3143
     },
     {
       "ticker": "BF-B",
@@ -2757,7 +2835,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 749.17
+      "corrected_bench_at_pick": 747.3143
     },
     {
       "ticker": "FOX",
@@ -2822,7 +2900,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 742.09
+      "corrected_bench_at_pick": 740.2518
     },
     {
       "ticker": "LDOS",
@@ -2888,7 +2966,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 742.09
+      "corrected_bench_at_pick": 740.2518
     },
     {
       "ticker": "DVN",
@@ -2954,7 +3032,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 742.09
+      "corrected_bench_at_pick": 740.2518
     },
     {
       "ticker": "WYNN",
@@ -3019,7 +3097,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 742.09
+      "corrected_bench_at_pick": 740.2518
     },
     {
       "ticker": "ACN",
@@ -3085,7 +3163,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "TECK-B.TO",
@@ -3215,7 +3293,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "STZ",
@@ -3281,7 +3359,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "ZBH",
@@ -3347,7 +3425,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "DIS",
@@ -3412,7 +3490,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "CDW",
@@ -3477,7 +3555,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "AMAT",
@@ -3543,7 +3621,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "JKHY",
@@ -3609,7 +3687,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "SNDK",
@@ -3674,7 +3752,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 739.09
+      "corrected_bench_at_pick": 737.2593
     },
     {
       "ticker": "DECK",
@@ -3739,7 +3817,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 757.67
+      "corrected_bench_at_pick": 755.7932
     },
     {
       "ticker": "CCL",
@@ -3805,7 +3883,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 757.67
+      "corrected_bench_at_pick": 755.7932
     },
     {
       "ticker": "LRCX",
@@ -3871,7 +3949,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 757.67
+      "corrected_bench_at_pick": 755.7932
     },
     {
       "ticker": "ALGN",
@@ -3936,7 +4014,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 757.67
+      "corrected_bench_at_pick": 755.7932
     },
     {
       "ticker": "MRVL",
@@ -4002,7 +4080,7 @@
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 757.67
+      "corrected_bench_at_pick": 755.7932
     },
     {
       "ticker": "CSU.TO",
@@ -4102,13 +4180,13 @@
       },
       "outcomes": {
         "1w": 7.2,
-        "1m": null,
+        "1m": 14.61,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4125,14 +4203,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 7.71
+        "1w": 7.71,
+        "1m": 14.61
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "CRH",
@@ -4166,13 +4246,13 @@
       },
       "outcomes": {
         "1w": -3.31,
-        "1m": null,
+        "1m": -11.08,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4189,14 +4269,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": -4.41
+        "1w": -4.41,
+        "1m": -11.08
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "APTV",
@@ -4229,13 +4311,13 @@
       },
       "outcomes": {
         "1w": 0.02,
-        "1m": null,
+        "1m": -10.17,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4252,14 +4334,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 0.99
+        "1w": 0.99,
+        "1m": -10.17
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "CMCSA",
@@ -4293,13 +4377,13 @@
       },
       "outcomes": {
         "1w": 3.23,
-        "1m": null,
+        "1m": -4.52,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4316,14 +4400,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 0.83
+        "1w": 0.83,
+        "1m": -4.52
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "FANG",
@@ -4357,13 +4443,13 @@
       },
       "outcomes": {
         "1w": 7.67,
-        "1m": null,
+        "1m": 7.76,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4380,14 +4466,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 9.71
+        "1w": 9.71,
+        "1m": 7.76
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "ALB",
@@ -4421,13 +4509,13 @@
       },
       "outcomes": {
         "1w": 3.84,
-        "1m": null,
+        "1m": -4.29,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4444,14 +4532,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 2.2
+        "1w": 2.2,
+        "1m": -4.29
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "BKR",
@@ -4485,13 +4575,13 @@
       },
       "outcomes": {
         "1w": 5.31,
-        "1m": null,
+        "1m": 3.4,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4508,14 +4598,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 5.44
+        "1w": 5.44,
+        "1m": 3.4
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "RCI-B.TO",
@@ -4549,13 +4641,13 @@
       },
       "outcomes": {
         "1w": 5.35,
-        "1m": null,
+        "1m": 4.85,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4572,10 +4664,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 4.35
+        "1w": 4.35,
+        "1m": 4.85
       },
       "corrected_outcomes_bench": {
-        "1w": 0.76
+        "1w": 0.76,
+        "1m": -1.83
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4613,13 +4707,13 @@
       },
       "outcomes": {
         "1w": 7.55,
-        "1m": null,
+        "1m": 19.16,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4636,14 +4730,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 10.5
+        "1w": 10.5,
+        "1m": 19.16
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "LEN",
@@ -4677,13 +4773,13 @@
       },
       "outcomes": {
         "1w": -1.53,
-        "1m": null,
+        "1m": -9.01,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
-        "1m": null,
+        "1m": -1.65,
         "3m": null,
         "6m": null
       },
@@ -4700,14 +4796,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": -1.86
+        "1w": -1.86,
+        "1m": -9.01
       },
       "corrected_outcomes_bench": {
-        "1w": -0.05
+        "1w": -0.05,
+        "1m": -1.38
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 773.03
+      "corrected_bench_at_pick": 771.1152
     },
     {
       "ticker": "ACGL",
@@ -4740,13 +4838,13 @@
       },
       "outcomes": {
         "1w": 0.69,
-        "1m": null,
+        "1m": -1.76,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -4763,14 +4861,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 2.46
+        "1w": 2.46,
+        "1m": -1.76
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "BRO",
@@ -4804,13 +4904,13 @@
       },
       "outcomes": {
         "1w": 3.37,
-        "1m": null,
+        "1m": -6.61,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -4827,14 +4927,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 5.78
+        "1w": 5.78,
+        "1m": -6.61
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "ABX.TO",
@@ -4868,13 +4970,13 @@
       },
       "outcomes": {
         "1w": 13.43,
-        "1m": null,
+        "1m": 2.89,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -4891,10 +4993,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 15.28
+        "1w": 15.28,
+        "1m": 2.89
       },
       "corrected_outcomes_bench": {
-        "1w": -0.38
+        "1w": -0.38,
+        "1m": -2.93
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4932,13 +5036,13 @@
       },
       "outcomes": {
         "1w": 1.35,
-        "1m": null,
+        "1m": -5.83,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -4955,14 +5059,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 1.27
+        "1w": 1.27,
+        "1m": -5.83
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "ROP",
@@ -4996,13 +5102,13 @@
       },
       "outcomes": {
         "1w": 3.12,
-        "1m": null,
+        "1m": -6.13,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -5019,14 +5125,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 4.05
+        "1w": 4.05,
+        "1m": -6.13
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "TRV",
@@ -5060,13 +5168,13 @@
       },
       "outcomes": {
         "1w": -1.83,
-        "1m": null,
+        "1m": 2.31,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -5083,14 +5191,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 0.05
+        "1w": 0.05,
+        "1m": 2.31
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "NTR.TO",
@@ -5124,13 +5234,13 @@
       },
       "outcomes": {
         "1w": 9.51,
-        "1m": null,
+        "1m": 13.81,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -5147,10 +5257,12 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 8.63
+        "1w": 8.63,
+        "1m": 13.81
       },
       "corrected_outcomes_bench": {
-        "1w": -0.38
+        "1w": -0.38,
+        "1m": -2.93
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -5187,13 +5299,13 @@
       },
       "outcomes": {
         "1w": -5.0,
-        "1m": null,
+        "1m": -15.29,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -5210,14 +5322,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": -7.65
+        "1w": -7.65,
+        "1m": -15.29
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "BR",
@@ -5251,13 +5365,13 @@
       },
       "outcomes": {
         "1w": 6.53,
-        "1m": null,
+        "1m": -2.29,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -5274,14 +5388,16 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 8.44
+        "1w": 8.44,
+        "1m": -2.29
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
     },
     {
       "ticker": "AIG",
@@ -5315,13 +5431,13 @@
       },
       "outcomes": {
         "1w": -0.68,
-        "1m": null,
+        "1m": -0.74,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.37,
-        "1m": null,
+        "1m": -3.11,
         "3m": null,
         "6m": null
       },
@@ -5338,14 +5454,613 @@
         "6m": null
       },
       "corrected_outcomes": {
-        "1w": 0.97
+        "1w": 0.97,
+        "1m": -0.74
       },
       "corrected_outcomes_bench": {
-        "1w": -1.19
+        "1w": -1.19,
+        "1m": -2.41
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
-      "corrected_bench_at_pick": 772.67
+      "corrected_bench_at_pick": 770.756
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-10-12",
+      "pick_price": 82.89,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 87.6,
+      "signals": {
+        "technical": 95.8,
+        "valuation": 73.2,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.315,
+        "rsi": 62,
+        "days_in_decline": 158,
+        "return_20d": 1.99,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 25.8,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 79.0,
+          "fcf_yield": 81.7,
+          "ev_ebitda": 92.6,
+          "pb": 1.9,
+          "ps": 85.1,
+          "vs_sector": 72.1,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-10-12",
+      "pick_price": 94.5,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 85.3,
+      "signals": {
+        "technical": 65.1,
+        "valuation": 85.9,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.562,
+        "rsi": 31,
+        "days_in_decline": 191,
+        "return_20d": -4.52,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 10.1,
+          "stabilization": 0.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 69.9,
+          "ps": 100.0,
+          "vs_sector": 100.0,
+          "analyst_upside": 31.5
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "K.TO",
+      "name": "KINROSS GOLD CORP.",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-10-12",
+      "pick_price": 33.85,
+      "benchmark": "XIU.TO",
+      "bench_at_pick": 53.08,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 83.2,
+      "signals": {
+        "technical": 63.6,
+        "valuation": 79.8,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.345,
+        "rsi": 30,
+        "days_in_decline": 178,
+        "return_20d": -16.19,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 29.5,
+          "maturity": 25.0,
+          "rsi_stability": 9.2,
+          "stabilization": 0.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 78.0,
+          "ev_ebitda": 98.6,
+          "pb": 51.9,
+          "ps": 46.6,
+          "vs_sector": 63.7,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH PLC",
+      "exchange": "NYSE",
+      "sector": "Basic Materials",
+      "pick_date": "2026-10-12",
+      "pick_price": 81.54,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 82.4,
+      "signals": {
+        "technical": 66.3,
+        "valuation": 75.5,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.372,
+        "rsi": 32,
+        "days_in_decline": 188,
+        "return_20d": -7.92,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 11.3,
+          "stabilization": 0.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 56.3,
+          "fcf_yield": 24.6,
+          "ev_ebitda": 73.5,
+          "pb": 68.5,
+          "ps": 94.2,
+          "vs_sector": 87.2,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-10-12",
+      "pick_price": 74.81,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 82.4,
+      "signals": {
+        "technical": 100.0,
+        "valuation": 64.9,
+        "quality": 85.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.483,
+        "rsi": 63,
+        "days_in_decline": 239,
+        "return_20d": 2.52,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 8,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 73.2,
+          "fcf_yield": 64.6,
+          "ev_ebitda": 72.6,
+          "pb": 0.0,
+          "ps": 67.9,
+          "vs_sector": 59.7,
+          "analyst_upside": 80.9,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "TROW",
+      "name": "T. Rowe Price Group, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Financial Services",
+      "pick_date": "2026-10-12",
+      "pick_price": 105.16,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 81.9,
+      "signals": {
+        "technical": 61.7,
+        "valuation": 76.9,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.125,
+        "rsi": 52,
+        "days_in_decline": 52,
+        "return_20d": 0.17,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 3.0,
+          "maturity": 13.7,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 92.4,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 99.7,
+          "pb": 74.0,
+          "ps": 72.1,
+          "vs_sector": 72.3,
+          "analyst_upside": 4.4,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Communication Services",
+      "pick_date": "2026-10-12",
+      "pick_price": 103.38,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 80.3,
+      "signals": {
+        "technical": 55.0,
+        "valuation": 100.0,
+        "quality": 71.4,
+        "catalyst": 90.0,
+        "pullback_pct": 0.612,
+        "rsi": 17,
+        "days_in_decline": 248,
+        "return_20d": -29.08,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 0.0,
+          "stabilization": 0.0
+        },
+        "fscore": 6,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 100.0,
+          "ps": 100.0,
+          "vs_sector": 100.0,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International",
+      "exchange": "NYSE",
+      "sector": "Utilities",
+      "pick_date": "2026-10-12",
+      "pick_price": 55.3,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 79.6,
+      "signals": {
+        "technical": 83.4,
+        "valuation": 78.6,
+        "quality": 71.4,
+        "catalyst": 90.0,
+        "pullback_pct": 0.301,
+        "rsi": 57,
+        "days_in_decline": 56,
+        "return_20d": 0.37,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 24.1,
+          "maturity": 14.3,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 6,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 0.0,
+          "ev_ebitda": 95.4,
+          "pb": 94.5,
+          "ps": 98.6,
+          "vs_sector": 96.3,
+          "analyst_upside": 43.8,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton Company",
+      "exchange": "NYSE",
+      "sector": "Energy",
+      "pick_date": "2026-10-12",
+      "pick_price": 32.55,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 79.4,
+      "signals": {
+        "technical": 62.8,
+        "valuation": 79.6,
+        "quality": 85.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.236,
+        "rsi": 42,
+        "days_in_decline": 99,
+        "return_20d": -9.18,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 16.3,
+          "maturity": 21.5,
+          "rsi_stability": 25.0,
+          "stabilization": 0.0
+        },
+        "fscore": 8,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 40.5,
+          "fcf_yield": 79.5,
+          "ev_ebitda": 88.4,
+          "pb": 63.4,
+          "ps": 97.0,
+          "vs_sector": 72.6,
+          "analyst_upside": 95.2,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "PPG",
+      "name": "PPG Industries, Inc.",
+      "exchange": "NYSE",
+      "sector": "Basic Materials",
+      "pick_date": "2026-10-12",
+      "pick_price": 103.96,
+      "benchmark": "SPY",
+      "bench_at_pick": 778.57,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 79.0,
+      "signals": {
+        "technical": 61.4,
+        "valuation": 67.5,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.195,
+        "rsi": 47,
+        "days_in_decline": 165,
+        "return_20d": -1.46,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 11.4,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 0.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "invalid response (JSONDecodeError)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 52.8,
+          "fcf_yield": 39.7,
+          "ev_ebitda": 57.9,
+          "pb": 56.6,
+          "ps": 94.2,
+          "vs_sector": 80.3,
+          "analyst_upside": 58.5,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
     }
   ]
 }
