@@ -563,7 +563,18 @@ class GroqClassifier:
                     json={
                         "model": self.model,
                         "temperature": 0,
-                        "max_tokens": 300,
+                        "max_tokens": 700,
+                        "reasoning_effort": "low",
+                        "response_format": {"type": "json_schema", "json_schema": {
+                            "name": "catalyst_verdict", "strict": True,
+                            "schema": {"type": "object", "additionalProperties": False,
+                                "properties": {
+                                    "category": {"type": "string", "enum": ["market", "sector", "one_off_operational", "structural"]},
+                                    "transient": {"type": "boolean"},
+                                    "reason": {"type": "string"},
+                                    "source": {"type": "string"}
+                                },
+                                "required": ["category", "transient", "reason", "source"]}}},
                         "messages": [{"role": "user", "content": prompt}],
                     },
                     timeout=30,
@@ -602,6 +613,9 @@ class GroqClassifier:
                 break
             except (KeyError, ValueError, json.JSONDecodeError) as e:
                 last_error = f"invalid response ({type(e).__name__})"
+                if attempt < self.max_retries:
+                    time.sleep(min(2 ** attempt, 16))
+                    continue
                 break
 
         return self._fallback_verdict(ticker, compact_news, last_error)
