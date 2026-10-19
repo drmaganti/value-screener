@@ -447,8 +447,9 @@ def load_candidate_log():
 
 
 def save_candidate_log(log):
-    with open(core._p(CANDIDATES_LOG), "w") as fh:
-        json.dump(log, fh, indent=2, default=str)
+    from json_persistence import save_json_strict
+
+    save_json_strict(core._p(CANDIDATES_LOG), log)
 
 
 def update_candidate_outcomes(provider, log, today):
