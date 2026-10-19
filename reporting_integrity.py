@@ -6,10 +6,11 @@ comparable V1-vs-V2 performance record.
 from __future__ import annotations
 
 import copy
-import json
 import math
 import statistics
 from datetime import date, timedelta
+
+from json_persistence import save_json_strict
 
 import value_screener as core
 import value_screener_v2 as v2
@@ -234,8 +235,3 @@ def performance_by_strategy(log, horizon="1m"):
         key: _stats_for_records(records, horizon=horizon)
         for key, records in groups.items()
     }
-
-
-def save_json_strict(path, payload):
-    with open(path, "w") as fh:
-        json.dump(payload, fh, indent=2, default=str, allow_nan=False)
