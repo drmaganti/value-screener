@@ -2477,13 +2477,13 @@
       "outcomes": {
         "1w": -1.44,
         "1m": -1.83,
-        "3m": null,
+        "3m": -11.41,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
         "1m": 2.83,
-        "3m": null,
+        "3m": 3.07,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2500,11 +2500,13 @@
       },
       "corrected_outcomes": {
         "1w": -4.76,
-        "1m": -3.8
+        "1m": -3.8,
+        "3m": -11.41
       },
       "corrected_outcomes_bench": {
         "1w": -0.95,
-        "1m": 3.11
+        "1m": 3.11,
+        "3m": 4.12
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2542,13 +2544,13 @@
       "outcomes": {
         "1w": 0.57,
         "1m": 7.41,
-        "3m": null,
+        "3m": 8.28,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
         "1m": 2.83,
-        "3m": null,
+        "3m": 3.07,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2565,11 +2567,13 @@
       },
       "corrected_outcomes": {
         "1w": 1.07,
-        "1m": 8.4
+        "1m": 8.4,
+        "3m": 8.28
       },
       "corrected_outcomes_bench": {
         "1w": -0.83,
-        "1m": 3.49
+        "1m": 3.49,
+        "3m": 2.47
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2607,13 +2611,13 @@
       "outcomes": {
         "1w": -1.65,
         "1m": 15.77,
-        "3m": null,
+        "3m": -2.08,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
         "1m": 2.83,
-        "3m": null,
+        "3m": 3.07,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2630,11 +2634,13 @@
       },
       "corrected_outcomes": {
         "1w": -2.23,
-        "1m": 14.85
+        "1m": 14.85,
+        "3m": -2.08
       },
       "corrected_outcomes_bench": {
         "1w": -0.95,
-        "1m": 3.11
+        "1m": 3.11,
+        "3m": 4.12
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2673,13 +2679,13 @@
       "outcomes": {
         "1w": 2.34,
         "1m": 22.37,
-        "3m": null,
+        "3m": 7.92,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
         "1m": 2.83,
-        "3m": null,
+        "3m": 3.07,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2696,11 +2702,13 @@
       },
       "corrected_outcomes": {
         "1w": 8.32,
-        "1m": 16.43
+        "1m": 16.43,
+        "3m": 7.92
       },
       "corrected_outcomes_bench": {
         "1w": -0.95,
-        "1m": 3.11
+        "1m": 3.11,
+        "3m": 4.12
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2738,13 +2746,13 @@
       "outcomes": {
         "1w": -1.37,
         "1m": 3.23,
-        "3m": null,
+        "3m": -12.87,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
         "1m": 2.83,
-        "3m": null,
+        "3m": 3.07,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2761,11 +2769,13 @@
       },
       "corrected_outcomes": {
         "1w": -3.86,
-        "1m": 2.05
+        "1m": 2.05,
+        "3m": -12.87
       },
       "corrected_outcomes_bench": {
         "1w": -0.95,
-        "1m": 3.11
+        "1m": 3.11,
+        "3m": 4.12
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2804,13 +2814,13 @@
       "outcomes": {
         "1w": -2.25,
         "1m": 8.6,
-        "3m": null,
+        "3m": 2.45,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.54,
         "1m": 2.83,
-        "3m": null,
+        "3m": 3.07,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2827,11 +2837,13 @@
       },
       "corrected_outcomes": {
         "1w": 0.92,
-        "1m": 6.69
+        "1m": 6.69,
+        "3m": 2.45
       },
       "corrected_outcomes_bench": {
         "1w": -0.95,
-        "1m": 3.11
+        "1m": 3.11,
+        "3m": 4.12
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2869,13 +2881,13 @@
       "outcomes": {
         "1w": -4.3,
         "1m": 18.25,
-        "3m": null,
+        "3m": 12.98,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -0.59,
         "1m": 3.02,
-        "3m": null,
+        "3m": 3.12,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2892,11 +2904,13 @@
       },
       "corrected_outcomes": {
         "1w": -1.59,
-        "1m": 16.97
+        "1m": 16.97,
+        "3m": 12.98
       },
       "corrected_outcomes_bench": {
         "1w": -0.4,
-        "1m": 3.63
+        "1m": 3.63,
+        "3m": 3.54
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -2935,13 +2949,13 @@
       "outcomes": {
         "1w": 5.32,
         "1m": 32.79,
-        "3m": null,
+        "3m": 18.38,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -0.59,
         "1m": 3.02,
-        "3m": null,
+        "3m": 3.12,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -2958,11 +2972,13 @@
       },
       "corrected_outcomes": {
         "1w": 7.95,
-        "1m": 37.41
+        "1m": 37.41,
+        "3m": 18.38
       },
       "corrected_outcomes_bench": {
         "1w": -0.4,
-        "1m": 3.63
+        "1m": 3.63,
+        "3m": 3.54
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3001,13 +3017,13 @@
       "outcomes": {
         "1w": 2.76,
         "1m": 12.02,
-        "3m": null,
+        "3m": 16.18,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -0.59,
         "1m": 3.02,
-        "3m": null,
+        "3m": 3.12,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -3024,11 +3040,13 @@
       },
       "corrected_outcomes": {
         "1w": -1.53,
-        "1m": 9.95
+        "1m": 9.95,
+        "3m": 16.18
       },
       "corrected_outcomes_bench": {
         "1w": -0.4,
-        "1m": 3.63
+        "1m": 3.63,
+        "3m": 3.54
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3066,13 +3084,13 @@
       "outcomes": {
         "1w": 0.29,
         "1m": 3.77,
-        "3m": null,
+        "3m": -21.38,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -0.59,
         "1m": 3.02,
-        "3m": null,
+        "3m": 3.12,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -3089,11 +3107,13 @@
       },
       "corrected_outcomes": {
         "1w": 2.91,
-        "1m": 3.58
+        "1m": 3.58,
+        "3m": -21.38
       },
       "corrected_outcomes_bench": {
         "1w": -0.4,
-        "1m": 3.63
+        "1m": 3.63,
+        "3m": 3.54
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -5510,13 +5530,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 5.25,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5569,13 +5589,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 3.45,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5629,13 +5649,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -1.33,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": 1.32,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5689,13 +5709,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 2.01,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5749,13 +5769,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 6.39,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5809,13 +5829,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": -4.81,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5868,13 +5888,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 4.96,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5928,13 +5948,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 0.69,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -5988,13 +6008,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 1.32,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
@@ -6048,13 +6068,13 @@
         }
       },
       "outcomes": {
-        "1w": null,
+        "1w": 3.45,
         "1m": null,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
-        "1w": null,
+        "1w": -1.55,
         "1m": null,
         "3m": null,
         "6m": null
