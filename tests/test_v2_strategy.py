@@ -167,3 +167,17 @@ def test_track_record_stats_ignore_nan_outcomes():
 def test_tsx_uses_canadian_benchmark_but_us_uses_spy():
     assert v2.benchmark_for_ticker("RY.TO") == "XIU.TO"
     assert v2.benchmark_for_ticker("AAPL") == "SPY"
+
+
+def test_unknown_news_is_logged_without_structural_veto():
+    c = _candidate()
+    news = core.NewsResult([], "provider_error", "TimeoutError")
+    c.cat = core.unknown_catalyst(news)
+    c = v2.evaluate_v2(c, news)
+    assert c.vetoed_for is None or not c.vetoed_for.startswith("catalyst:")
+    signals = v2._signals_for_log(c)
+    assert signals["catalyst_category"] == "unknown"
+    assert signals["news_status"] == "provider_error"
+    assert signals["news_error"] == "TimeoutError"
+    assert signals["structural_veto"] is False
+    assert signals["catalyst_evidence"] == ""

@@ -45,6 +45,14 @@ jobs:
           EMAIL_TO: ${{ github.event_name == 'schedule' && secrets.EMAIL_TO || '' }}
         run: python value_screener_v2_runner.py
 
+      - name: Retain catalyst monitoring
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalyst-monitoring
+          path: catalyst_monitoring.json
+          if-no-files-found: warn
+
       - name: Persist official V2 learning data and universe
         if: github.event_name == 'schedule'
         run: |

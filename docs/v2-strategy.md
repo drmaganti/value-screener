@@ -80,3 +80,28 @@ comparison without continuing to email V1 picks.
 Do not tune weights from a handful of observations. Prefer stable cohort
 evidence across multiple one-month outcomes, then confirm with 3- and 6-month
 results before making larger strategy changes.
+
+### Catalyst evidence and retrieval monitoring
+
+News retrieval records `ok`, `no_headlines`, or `provider_error` separately.
+Missing news (including the legacy `No recent headlines retrieved` placeholder)
+and retrieval failures produce `unknown`, never a structural veto. Unknown uses
+the existing default catalyst score of 30; weights and other eligibility gates
+are unchanged. A structural veto requires an exact supplied headline with an
+explicit negative event; neutral mentions, denials, and resolved issues do not
+qualify. The deterministic fallback examines all headlines for such evidence.
+The evidence check is deliberately conservative and rule based; it cannot
+independently verify the publisher or capture every possible negative event.
+
+Candidate and pick signals preserve retrieval status/error, category, reason,
+evidence, classifier source/error, and structural-veto status. Each V2 run emits
+`catalyst_monitoring.json` and prints counts and rates for provider failures,
+empty news, unknown classifications, structural vetoes, and classifier fallbacks.
+All rates use evaluated post-pullback candidates as denominator; zero candidates
+has null rates. Weekly Actions retains this file as an artifact and adds the
+metrics to its job summary, including manual runs. Compare these rates between
+runs to detect news outages or classifier degradation. Manual runs remain
+non-official and do not persist picks or send the production email.
+
+The news provider and classifier are shared with V1, so these evidence and
+retrieval corrections also apply to its daily/shadow classifications.
