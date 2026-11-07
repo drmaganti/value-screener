@@ -531,7 +531,7 @@ def unknown_catalyst(news, reason="Insufficient news evidence."):
 def structural_evidence(headline):
     import re
     h = headline.lower()
-    if re.search(r"\b(denies|denied|dismissed|resolved|cleared|no evidence|not facing)\b", h):
+    if re.search(r"\b(denies|denied|dismissed|resolved|cleared|no evidence|not facing|may|might|could|rumou?r|avoids?|averts?|no guidance cut)\b", h):
         return False
     return bool(re.search(
         r"(?:cuts?|slashe[sd]|lowers?|reduce[sd]) (?:its |full-year |annual |profit |earnings |revenue )*(?:guidance|dividend)|guidance cut|"

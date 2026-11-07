@@ -118,6 +118,8 @@ def test_structural_groq_requires_real_negative_source(monkeypatch):
         ("Shares trade lower", "Company cuts guidance", "unknown"),
         ("Company denies accounting fraud", "Company denies accounting fraud", "unknown"),
         ("Company reaffirms guidance", "Company reaffirms guidance", "unknown"),
+        ("Company may cut guidance", "Company may cut guidance", "unknown"),
+        ("Company announces no guidance cut", "Company announces no guidance cut", "unknown"),
     ]:
         import json
         payload = {"choices": [{"message": {"content": json.dumps(dict(category="structural", transient=False, reason="Risk", source=source))}}]}
