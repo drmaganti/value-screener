@@ -128,3 +128,14 @@ separate ticker/date cache keys, unavailable history caching, independent later
 runs, unchanged first/last close selection, and stage success/failure persistence.
 An offline manual smoke run with the seed universe completed all stages and
 produced both diagnostics and a preview; this is not live market-data proof.
+
+Groq rate limits with `Retry-After` over 30 seconds now enter a provider-instance
+cooldown and use the existing deterministic fallback immediately. Later
+candidates keep using fallback until that cooldown expires. Short rate-limit
+retries are retained; other provider-advertised retry sleeps are capped at 30
+seconds. This prevents an advertised multi-hour wait from blocking the weekly
+run. Tests cover retries disabled, last-attempt cooldown, expiration, and short
+successful retries. A fresh read-only reviewer (`runtime_review`) checked the
+cache and diagnostics, found the artifact-timeout and final-attempt cooldown
+issues, and verified both fixes. These checks do not establish the original
+live timeout's exact cause.

@@ -610,6 +610,7 @@ class GroqClassifier:
         self.model = model or os.getenv("GROQ_CLASSIFIER_MODEL", "openai/gpt-oss-20b")
         self.max_retries = max(0, int(os.getenv("GROQ_MAX_RETRIES", "3")))
         self.fallback = MockClassifier()
+        self._unavailable_until = 0.0
 
     def _fallback_verdict(self, ticker, news, error):
         verdict = self.fallback.classify(ticker, news)
@@ -627,6 +628,8 @@ class GroqClassifier:
         news = normalize_news(news)
         if not news or news.status == "provider_error":
             return unknown_catalyst(news)
+        if time.monotonic() < self._unavailable_until:
+            return self._fallback_verdict(ticker, news, "HTTP 429 (provider cooldown)")
         # Bound headline count while keeping evidence text intact for exact matching.
         compact_news = list(news[:10])
         prompt = CATALYST_PROMPT.format(
@@ -663,13 +666,22 @@ class GroqClassifier:
                 # as retryable capacity/service conditions.
                 if r.status_code == 429 or r.status_code == 498 or r.status_code >= 500:
                     last_error = f"HTTP {r.status_code}"
+                    retry_after = r.headers.get("retry-after")
+                    try:
+                        delay = float(retry_after) if retry_after else min(2 ** attempt, 16)
+                    except (TypeError, ValueError):
+                        delay = min(2 ** attempt, 16)
+                    if not math.isfinite(delay):
+                        delay = min(2 ** attempt, 16)
+                    if r.status_code == 429 and delay > 30:
+                        # Daily quotas can advertise hours of Retry-After.
+                        # Do not block this candidate or hammer the provider
+                        # again for every later candidate in the same run.
+                        self._unavailable_until = time.monotonic() + min(delay, 86400)
+                        last_error = "HTTP 429 (provider cooldown)"
+                        break
                     if attempt < self.max_retries:
-                        retry_after = r.headers.get("retry-after")
-                        try:
-                            delay = float(retry_after) if retry_after else min(2 ** attempt, 16)
-                        except (TypeError, ValueError):
-                            delay = min(2 ** attempt, 16)
-                        time.sleep(max(0.25, delay))
+                        time.sleep(min(30.0, max(0.25, delay)))
                         continue
 
                 r.raise_for_status()

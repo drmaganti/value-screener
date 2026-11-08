@@ -2,6 +2,7 @@
 import os
 
 import requests
+import pytest
 
 import value_screener as vs
 
@@ -164,3 +165,64 @@ def test_monitoring_and_candidate_signals_preserve_unknown():
     assert metrics["unknown_classifications"] == 2
     assert metrics["rates"]["unknown_classifications"] == 2 / 3
     assert v2.catalyst_metrics([])["rates"]["fallbacks"] is None
+
+
+
+@pytest.mark.parametrize("retries", [0, 1])
+def test_long_rate_limit_delay_uses_fallback_without_sleeping(monkeypatch, retries):
+    import time
+    clf = _classifier(monkeypatch)
+    clf.max_retries = retries
+    calls, sleeps = [], []
+    monkeypatch.setattr(time, "monotonic", lambda: 100.0)
+    monkeypatch.setattr(time, "sleep", lambda seconds: sleeps.append(seconds))
+    def post(*args, **kwargs):
+        calls.append(True)
+        return _Response(429, headers={"retry-after": "36000"})
+    monkeypatch.setattr(requests, "post", post)
+    for ticker in ("AAA", "BBB"):
+        verdict = clf.classify(ticker, ["Company cuts guidance"])
+        assert verdict.classification_source == "deterministic_fallback"
+        assert verdict.veto
+        assert "cooldown" in verdict.classifier_error
+    assert len(calls) == 1
+    assert sleeps == []
+    monkeypatch.setattr(time, "monotonic", lambda: 36101.0)
+    clf.classify("CCC", ["Shares dip with the broader market"])
+    assert len(calls) == 2
+
+
+def test_short_rate_limit_retry_still_uses_groq(monkeypatch):
+    import time
+    clf = _classifier(monkeypatch)
+    clf.max_retries = 1
+    sleeps = []
+    responses = iter([
+        _Response(429, headers={"retry-after": "2"}),
+        _Response(200, {"choices": [{"message": {"content": '{"category":"sector","transient":true,"reason":"Sector rotation","source":"Sector rotation"}'}}]}),
+    ])
+    monkeypatch.setattr(requests, "post", lambda *a, **k: next(responses))
+    monkeypatch.setattr(time, "sleep", lambda seconds: sleeps.append(seconds))
+    verdict = clf.classify("AAA", ["Sector rotation"])
+    assert verdict.classification_source == "groq"
+    assert sleeps == [2.0]
+
+
+
+def test_long_rate_limit_on_last_attempt_sets_cooldown(monkeypatch):
+    import time
+    clf = _classifier(monkeypatch)
+    clf.max_retries = 1
+    responses = iter([_Response(429, headers={"retry-after": "1"}),
+                      _Response(429, headers={"retry-after": "36000"})])
+    calls, sleeps = [], []
+    def post(*a, **k):
+        calls.append(True)
+        return next(responses)
+    monkeypatch.setattr(requests, "post", post)
+    monkeypatch.setattr(time, "sleep", sleeps.append)
+    for ticker in ("AAA", "BBB"):
+        verdict = clf.classify(ticker, ["Shares dip with the broader market"])
+        assert "cooldown" in verdict.classifier_error
+    assert len(calls) == 2
+    assert sleeps == [1.0]
