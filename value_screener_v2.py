@@ -285,9 +285,7 @@ def _price_on_or_after(provider, ticker, target_date):
     if isinstance(provider, core.YFinanceProvider):
         try:
             end = target_date + timedelta(days=8)
-            hist = provider._t(ticker).history(
-                start=target_date.isoformat(), end=end.isoformat()
-            )
+            hist = provider.history_window(ticker, target_date, end)
             if hist is None or len(hist) == 0:
                 return None
             value = float(hist["Close"].iloc[0])
@@ -546,7 +544,8 @@ def run_screen_v2(
                 pass
 
     scored, rejected = [], []
-    for c in survivors:
+    for candidate_index, c in enumerate(survivors, 1):
+        print(f"  catalyst {candidate_index}/{len(survivors)}: {c.fund.ticker}", flush=True)
         try:
             news = core.normalize_news(provider.recent_news(c.fund.ticker))
         except Exception as exc:

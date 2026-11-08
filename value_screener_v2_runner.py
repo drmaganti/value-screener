@@ -27,24 +27,26 @@ def main():
         f"Weekly screen [provider={core.PROVIDER} classifier={core.CLASSIFIER} "
         f"strategy={v2.STRATEGY_VERSION} official={official}] {today}"
     )
-    provider = core.build_provider()
+    from run_diagnostics import RunDiagnostics
+    diagnostics = RunDiagnostics(core._p("run_diagnostics.json"))
+    provider = diagnostics.run("build_provider", core.build_provider)
 
     log = core.load_log()
     integrity.snapshot_legacy_outcomes(log)
-    repaired = v2.update_outcomes_v2(provider, log, today)
-    corrected = integrity.backfill_legacy_exact_horizons(provider, log, today)
+    repaired = diagnostics.run("pick_outcomes", v2.update_outcomes_v2, provider, log, today)
+    corrected = diagnostics.run("legacy_backfill", integrity.backfill_legacy_exact_horizons, provider, log, today)
     print(f"  updated/repaired {repaired} standard outcome slots")
     print(f"  backfilled {corrected} corrected legacy outcome slots")
 
     candidate_log = v2.load_candidate_log()
-    candidate_filled = v2.update_candidate_outcomes(provider, candidate_log, today)
+    candidate_filled = diagnostics.run("candidate_outcomes", v2.update_candidate_outcomes, provider, candidate_log, today)
     print(f"  updated/repaired {candidate_filled} candidate outcome slots")
 
     universe = core.load_universe()
     all_tickers = [t for group in universe.values() for t in group]
     fund_cache = core.load_fund_cache()
-    refreshed = core.refresh_fundamentals_cache(
-        provider, fund_cache, all_tickers, today
+    refreshed = diagnostics.run(
+        "fundamentals_refresh", core.refresh_fundamentals_cache, provider, fund_cache, all_tickers, today
     )
     sector_medians = core.compute_sector_medians(fund_cache)
     print(
@@ -54,8 +56,8 @@ def main():
 
     exclude = core.open_tickers(log, today)
     core._analysis_inputs = v2.analysis_inputs_v2
-    qualifiers, featured, rejected, all_candidates = v2.run_screen_v2(
-        provider,
+    qualifiers, featured, rejected, all_candidates = diagnostics.run(
+        "screen", v2.run_screen_v2, provider,
         core.build_classifier(),
         core.build_analyst(),
         exclude,
@@ -80,15 +82,16 @@ def main():
     else:
         print("  manual/test run: official pick, candidate, and cache logs are not persisted")
 
-    stats = integrity.performance_by_strategy(log)
-    html, text = email_report_v2.build(
-        today, featured, qualifiers, log.get("picks", []), stats
+    stats = diagnostics.run("performance_summary", integrity.performance_by_strategy, log)
+    html, text = diagnostics.run(
+        "report", email_report_v2.build, today, featured, qualifiers, log.get("picks", []), stats
     )
-    core.send_email(
-        html,
+    diagnostics.run(
+        "deliver_report", core.send_email, html,
         text,
         f"Weekly Value Screen V2 - {today.strftime('%b %d, %Y')}",
     )
+    diagnostics.complete()
     print(
         f"Done. {len(qualifiers)} qualifiers ({len(featured)} featured), "
         f"{len(rejected)} hard-screened out, {len(all_candidates)} candidates evaluated."

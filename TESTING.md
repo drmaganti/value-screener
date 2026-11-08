@@ -103,3 +103,28 @@ deterministic. Run those on demand, or on the weekly schedule.
 > Count note: the 48 figure is the Phase 1 suite. The Phase 2 factor leaderboard
 > (`factor_leaderboard.py` + `tests/test_leaderboard.py`) adds 10 more, for 58,
 > once that piece is committed.
+
+
+### Investigating slow weekly runs
+
+The V2 runner writes `run_diagnostics.json` before each stage, records stage
+elapsed times, and emits a stack trace every 120 seconds while a stage runs.
+Actions uses unbuffered Python output. Historical lookups log ticker/date windows;
+identical windows (including unavailable data) are cached within one provider
+instance. A later run retries failures. Date windows and first/last-close outcome
+semantics are unchanged. These are per-request history timeouts, not a guarantee
+that every yfinance operation returns within ten seconds.
+
+Weekly runs retain `run_diagnostics.json` and `catalyst_monitoring.json` in the
+`screen-diagnostics` artifact. A manual run can set `screen_timeout_minutes` to
+limit screening work (default 300); the job limit remains 330 to allow artifact
+upload after a step timeout. Manual runs do not persist official picks or send
+the production digest. On a timeout, treat a diagnostic stage marked `running`
+as interrupted, not completed; catalyst metrics exist only if screening reached
+its final aggregation. Do not infer a successful empty screen from a missing file.
+
+Runtime regression tests cover 285 repeated historical queries making one call,
+separate ticker/date cache keys, unavailable history caching, independent later
+runs, unchanged first/last close selection, and stage success/failure persistence.
+An offline manual smoke run with the seed universe completed all stages and
+produced both diagnostics and a preview; this is not live market-data proof.

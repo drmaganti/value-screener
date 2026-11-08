@@ -183,6 +183,19 @@ class YFinanceProvider:
             self._cache[ticker] = self.yf.Ticker(ticker)
         return self._cache[ticker]
 
+    def history_window(self, ticker, start, end):
+        """Reuse exact historical windows for this provider instance/run, including failures."""
+        cache = self.__dict__.setdefault("_history_windows", {})
+        key = (ticker, start.isoformat(), end.isoformat())
+        if key not in cache:
+            print(f"  history fetch {ticker} {key[1]}..{key[2]} (unique={len(cache) + 1})", flush=True)
+            try:
+                cache[key] = self._t(ticker).history(start=key[1], end=key[2], timeout=10)
+            except Exception as exc:
+                print(f"  history unavailable {ticker}: {type(exc).__name__}", flush=True)
+                cache[key] = None
+        return cache[key]
+
     def prices(self, ticker):
         hist = self._t(ticker).history(period="1y")
         return PriceHistory(ticker, [float(x) for x in hist["Close"].values])
@@ -889,6 +902,7 @@ def refresh_fundamentals_cache(provider, cache, universe_tickers, today):
                 cache_put(cache, provider.fundamentals(tk), today)
             except Exception:
                 pass
+        print(f"  fundamentals refresh: {min(i + SCAN['batch_size'], len(todo))}/{len(todo)} attempted", flush=True)
         if paced and i + SCAN["batch_size"] < len(todo):
             time.sleep(SCAN["sleep_between_batches"])
     return len(todo)
@@ -951,6 +965,7 @@ def scan_prices(provider, tickers):
                 results[tk] = ph; done[tk] = "ok"
             else:
                 done[tk] = "fail"
+        print(f"  price scan: {min(i + SCAN['batch_size'], len(todo))}/{len(todo)} attempted; {len(results)} usable", flush=True)
         with open(_p(CHECKPOINT), "w") as fh:
             json.dump(done, fh)
         if paced and i + SCAN["batch_size"] < len(todo):
