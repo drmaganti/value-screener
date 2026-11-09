@@ -3826,13 +3826,13 @@
       "outcomes": {
         "1w": 0.6,
         "1m": -13.54,
-        "3m": null,
+        "3m": -12.26,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
         "1m": 2.43,
-        "3m": null,
+        "3m": 0.68,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -3849,11 +3849,13 @@
       },
       "corrected_outcomes": {
         "1w": 0.58,
-        "1m": -13.54
+        "1m": -13.54,
+        "3m": -12.26
       },
       "corrected_outcomes_bench": {
         "1w": 2.03,
-        "1m": 0.99
+        "1m": 0.99,
+        "3m": -0.49
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3892,13 +3894,13 @@
       "outcomes": {
         "1w": 4.24,
         "1m": -14.64,
-        "3m": null,
+        "3m": 7.51,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
         "1m": 2.43,
-        "3m": null,
+        "3m": 0.68,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -3915,11 +3917,13 @@
       },
       "corrected_outcomes": {
         "1w": -0.22,
-        "1m": -14.64
+        "1m": -14.64,
+        "3m": 7.51
       },
       "corrected_outcomes_bench": {
         "1w": 2.03,
-        "1m": 0.99
+        "1m": 0.99,
+        "3m": -0.49
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -3958,13 +3962,13 @@
       "outcomes": {
         "1w": 6.26,
         "1m": -1.6,
-        "3m": null,
+        "3m": -22.34,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
         "1m": 2.43,
-        "3m": null,
+        "3m": 0.68,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -3981,11 +3985,13 @@
       },
       "corrected_outcomes": {
         "1w": 4.57,
-        "1m": -1.6
+        "1m": -1.6,
+        "3m": -22.34
       },
       "corrected_outcomes_bench": {
         "1w": 2.03,
-        "1m": 0.99
+        "1m": 0.99,
+        "3m": -0.49
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4023,13 +4029,13 @@
       "outcomes": {
         "1w": 2.66,
         "1m": -5.92,
-        "3m": null,
+        "3m": -8.89,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
         "1m": 2.43,
-        "3m": null,
+        "3m": 0.68,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4046,11 +4052,13 @@
       },
       "corrected_outcomes": {
         "1w": 4.07,
-        "1m": -5.92
+        "1m": -5.92,
+        "3m": -8.89
       },
       "corrected_outcomes_bench": {
         "1w": 2.03,
-        "1m": 0.99
+        "1m": 0.99,
+        "3m": -0.49
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4089,13 +4097,13 @@
       "outcomes": {
         "1w": 16.61,
         "1m": 10.09,
-        "3m": null,
+        "3m": -8.61,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
         "1m": 2.43,
-        "3m": null,
+        "3m": 0.68,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4112,11 +4120,13 @@
       },
       "corrected_outcomes": {
         "1w": 11.2,
-        "1m": 10.09
+        "1m": 10.09,
+        "3m": -8.61
       },
       "corrected_outcomes_bench": {
         "1w": 2.03,
-        "1m": 0.99
+        "1m": 0.99,
+        "3m": -0.49
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4155,13 +4165,13 @@
       "outcomes": {
         "1w": 7.28,
         "1m": 1.47,
-        "3m": null,
+        "3m": 14.79,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 3.51,
         "1m": 2.43,
-        "3m": null,
+        "3m": 0.68,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4178,11 +4188,13 @@
       },
       "corrected_outcomes": {
         "1w": 10.04,
-        "1m": 1.47
+        "1m": 1.47,
+        "3m": 14.79
       },
       "corrected_outcomes_bench": {
         "1w": 2.86,
-        "1m": 1.88
+        "1m": 1.88,
+        "3m": 3.02
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -6095,6 +6107,603 @@
       },
       "outcomes_bench": {
         "1w": -1.55,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant Technology Solutions ",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-11-09",
+      "pick_price": 64.72,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 86.5,
+      "signals": {
+        "technical": 86.8,
+        "valuation": 80.5,
+        "quality": 100.0,
+        "catalyst": 80.0,
+        "pullback_pct": 0.24,
+        "rsi": 46,
+        "days_in_decline": 205,
+        "return_20d": 9.32,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 16.8,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "sector",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 78.1,
+          "fcf_yield": 74.1,
+          "ev_ebitda": 97.9,
+          "pb": 75.8,
+          "ps": 95.4,
+          "vs_sector": 100.0,
+          "analyst_upside": 22.4,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Communication Services",
+      "pick_date": "2026-11-09",
+      "pick_price": 24.39,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 83.4,
+      "signals": {
+        "technical": 81.2,
+        "valuation": 92.8,
+        "quality": 71.4,
+        "catalyst": 90.0,
+        "pullback_pct": 0.218,
+        "rsi": 68,
+        "days_in_decline": 186,
+        "return_20d": 18.05,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 14.2,
+          "maturity": 25.0,
+          "rsi_stability": 22.0,
+          "stabilization": 20.0
+        },
+        "fscore": 6,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 100.0,
+          "ps": 100.0,
+          "vs_sector": 100.0,
+          "analyst_upside": 42.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "MKC",
+      "name": "McCormick & Company, Incorporat",
+      "exchange": "NYSE",
+      "sector": "Consumer Defensive",
+      "pick_date": "2026-11-09",
+      "pick_price": 48.4,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 83.3,
+      "signals": {
+        "technical": 94.6,
+        "valuation": 71.6,
+        "quality": 85.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.305,
+        "rsi": 58,
+        "days_in_decline": 185,
+        "return_20d": 9.16,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 24.6,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 8,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 52.8,
+          "ev_ebitda": 42.6,
+          "pb": 78.5,
+          "ps": 90.1,
+          "vs_sector": 73.1,
+          "analyst_upside": 35.7,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "UHS",
+      "name": "Universal Health Services, Inc.",
+      "exchange": "NYSE",
+      "sector": "Healthcare",
+      "pick_date": "2026-11-09",
+      "pick_price": 195.5,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 83.2,
+      "signals": {
+        "technical": 81.5,
+        "valuation": 81.4,
+        "quality": 100.0,
+        "catalyst": 80.0,
+        "pullback_pct": 0.196,
+        "rsi": 60,
+        "days_in_decline": 237,
+        "return_20d": 10.23,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 11.5,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "sector",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 63.8,
+          "ev_ebitda": 100.0,
+          "pb": 87.2,
+          "ps": 100.0,
+          "vs_sector": 100.0,
+          "analyst_upside": 0.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "HII",
+      "name": "Huntington Ingalls Industries, ",
+      "exchange": "NYSE",
+      "sector": "Industrials",
+      "pick_date": "2026-11-09",
+      "pick_price": 288.74,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 83.1,
+      "signals": {
+        "technical": 100.0,
+        "valuation": 67.2,
+        "quality": 85.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.358,
+        "rsi": 60,
+        "days_in_decline": 174,
+        "return_20d": 9.04,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 8,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 49.0,
+          "fcf_yield": 0.0,
+          "ev_ebitda": 53.1,
+          "pb": 73.2,
+          "ps": 100.0,
+          "vs_sector": 93.5,
+          "analyst_upside": 68.9,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-11-09",
+      "pick_price": 201.14,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 82.8,
+      "signals": {
+        "technical": 78.2,
+        "valuation": 68.9,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.368,
+        "rsi": 80,
+        "days_in_decline": 109,
+        "return_20d": 13.11,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 23.2,
+          "rsi_stability": 5.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 79.9,
+          "fcf_yield": 16.9,
+          "ev_ebitda": 86.8,
+          "pb": 75.3,
+          "ps": 52.7,
+          "vs_sector": 94.3,
+          "analyst_upside": 76.1
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "TXT",
+      "name": "Textron Inc.",
+      "exchange": "NYSE",
+      "sector": "Industrials",
+      "pick_date": "2026-11-09",
+      "pick_price": 83.54,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 81.1,
+      "signals": {
+        "technical": 77.5,
+        "valuation": 75.7,
+        "quality": 85.7,
+        "catalyst": 90.0,
+        "pullback_pct": 0.17,
+        "rsi": 66,
+        "days_in_decline": 180,
+        "return_20d": 12.65,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 8.4,
+          "maturity": 25.0,
+          "rsi_stability": 24.1,
+          "stabilization": 20.0
+        },
+        "fscore": 8,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 52.2,
+          "fcf_yield": 47.8,
+          "ev_ebitda": 67.8,
+          "pb": 81.4,
+          "ps": 100.0,
+          "vs_sector": 96.0,
+          "analyst_upside": 60.6,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "LVS",
+      "name": "Las Vegas Sands Corp.",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-11-09",
+      "pick_price": 40.73,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 80.7,
+      "signals": {
+        "technical": 98.6,
+        "valuation": 75.6,
+        "quality": 83.3,
+        "catalyst": 80.0,
+        "pullback_pct": 0.399,
+        "rsi": 66,
+        "days_in_decline": 235,
+        "return_20d": 13.53,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 23.6,
+          "stabilization": 20.0
+        },
+        "fscore": 8,
+        "quality_observations": 6,
+        "catalyst_category": "sector",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 5,
+        "valuation_parts": {
+          "earnings_yield": 42.7,
+          "fcf_yield": 85.5,
+          "ev_ebitda": 81.9,
+          "ps": 86.6,
+          "vs_sector": 70.4,
+          "analyst_upside": 62.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Financial Services",
+      "pick_date": "2026-11-09",
+      "pick_price": 59.24,
+      "benchmark": "SPY",
+      "bench_at_pick": 735.29,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 80.7,
+      "signals": {
+        "technical": 71.4,
+        "valuation": 71.3,
+        "quality": 100.0,
+        "catalyst": 80.0,
+        "pullback_pct": 0.111,
+        "rsi": 62,
+        "days_in_decline": 248,
+        "return_20d": 6.68,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 1.4,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "sector",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 83.5,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 87.2,
+          "pb": 61.4,
+          "ps": 93.8,
+          "vs_sector": 73.5,
+          "analyst_upside": 0.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CVE.TO",
+      "name": "CENOVUS ENERGY INC.",
+      "exchange": "Toronto",
+      "sector": "Energy",
+      "pick_date": "2026-11-09",
+      "pick_price": 38.74,
+      "benchmark": "XIU.TO",
+      "bench_at_pick": 53.83,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 80.4,
+      "signals": {
+        "technical": 28.7,
+        "valuation": 94.0,
+        "quality": 100.0,
+        "catalyst": 90.0,
+        "pullback_pct": 0.18,
+        "rsi": 22,
+        "days_in_decline": 37,
+        "return_20d": -13.47,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 9.6,
+          "maturity": 11.2,
+          "rsi_stability": 0.0,
+          "stabilization": 8.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "market",
+        "catalyst_classification_source": "groq",
+        "catalyst_classifier_error": null,
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 89.5,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 75.3,
+          "ps": 96.6,
+          "vs_sector": 90.7,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
         "1m": null,
         "3m": null,
         "6m": null
