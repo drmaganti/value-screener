@@ -39,7 +39,7 @@ jobs:
         continue-on-error: true
 
       - name: Run weekly screen (V2)
-        timeout-minutes: ${{ inputs.screen_timeout_minutes || 300 }}
+        timeout-minutes: 305
         env:
           SCREEN_TIMEOUT_MINUTES: ${{ inputs.screen_timeout_minutes || 300 }}
           PROVIDER: yfinance

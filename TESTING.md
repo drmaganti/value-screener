@@ -151,3 +151,19 @@ validates a 1–300 minute input, and reserves the remainder of the job for uplo
 Exhausted Groq failures now also enter a five-minute cooldown; the source and
 original error are preserved on fallback classifications. These changes keep
 weights and all other eligibility gates unchanged.
+
+
+Verification run 42736489970 on 644e2f4 completed successfully in 4m11s and
+retained both diagnostics files. It evaluated 25 candidates with 8 manual
+qualifiers, 16 unknown classifications, 1 structural veto, 25 fallbacks, and no
+news retrieval failures or empty-news results. No official picks were persisted
+and no production email was sent. All 86 tests passed in both CI checks.
+Live Groq classification was unavailable (100% fallback), and Nasdaq-100 refresh
+still reported a missing ticker-column error. This confirms pipeline completion,
+not successful live Groq responses or complete index-source coverage.
+
+That run exposed Actions treating the supplied step timeout as a string
+(`Unexpected value '20'`). The step now uses a fixed numeric 305-minute ceiling;
+the validated process deadline still uses the requested 1–300 minute input.
+The 330-minute job ceiling reserves upload time. The final numeric-step edit
+was checked by CI; the successful live screen ran immediately before that edit.
