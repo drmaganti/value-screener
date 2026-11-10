@@ -139,3 +139,15 @@ successful retries. A fresh read-only reviewer (`runtime_review`) checked the
 cache and diagnostics, found the artifact-timeout and final-attempt cooldown
 issues, and verified both fixes. These checks do not establish the original
 live timeout's exact cause.
+
+
+Live diagnostic run 42441276403 retained its stage artifact: pick outcomes took
+3.014s, legacy backfill 1.312s, candidate outcomes 38.977s, and fundamentals
+refresh 62.949s. Repeated captured stacks point to the old classifier's
+`time.sleep(max(0.25, delay))` while progressing slowly through 307 candidates.
+It hit the 330-minute job timeout. The requested five-minute Actions step limit
+did not stop it; the workflow now also uses an Ubuntu `timeout` process deadline,
+validates a 1–300 minute input, and reserves the remainder of the job for upload.
+Exhausted Groq failures now also enter a five-minute cooldown; the source and
+original error are preserved on fallback classifications. These changes keep
+weights and all other eligibility gates unchanged.

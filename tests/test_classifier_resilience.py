@@ -226,3 +226,24 @@ def test_long_rate_limit_on_last_attempt_sets_cooldown(monkeypatch):
         assert "cooldown" in verdict.classifier_error
     assert len(calls) == 2
     assert sleeps == [1.0]
+
+
+
+def test_exhausted_timeouts_cool_down_subsequent_candidates(monkeypatch):
+    import time
+    clf = _classifier(monkeypatch)
+    calls = []
+    monkeypatch.setattr(time, "monotonic", lambda: 100.0)
+    def post(*a, **k):
+        calls.append(True)
+        raise requests.Timeout()
+    monkeypatch.setattr(requests, "post", post)
+    first = clf.classify("AAA", ["Shares dip with the broader market"])
+    second = clf.classify("BBB", ["Company cuts guidance"])
+    assert first.classifier_error == "Timeout"
+    assert second.classifier_error == "Timeout (provider cooldown)"
+    assert second.veto
+    assert len(calls) == 1
+    monkeypatch.setattr(time, "monotonic", lambda: 401.0)
+    clf.classify("CCC", ["Shares dip with the broader market"])
+    assert len(calls) == 2
