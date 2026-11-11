@@ -285,9 +285,7 @@ def _price_on_or_after(provider, ticker, target_date):
     if isinstance(provider, core.YFinanceProvider):
         try:
             end = target_date + timedelta(days=8)
-            hist = provider._t(ticker).history(
-                start=target_date.isoformat(), end=end.isoformat()
-            )
+            hist = provider.history_window(ticker, target_date, end)
             if hist is None or len(hist) == 0:
                 return None
             value = float(hist["Close"].iloc[0])
@@ -399,6 +397,11 @@ def _signals_for_log(c):
         "fscore": c.qual.fscore,
         "quality_observations": getattr(c.qual, "available_checks", None),
         "catalyst_category": c.cat.category,
+        "news_status": c.cat.news_status,
+        "news_error": c.cat.news_error,
+        "catalyst_reason": c.cat.reason,
+        "catalyst_evidence": c.cat.source,
+        "structural_veto": c.cat.veto,
         "catalyst_classification_source": getattr(c.cat, "classification_source", "unknown"),
         "catalyst_classifier_error": getattr(c.cat, "classifier_error", None),
         "valuation_coverage": getattr(c.val, "coverage", _valuation_coverage(c.val)),
@@ -541,9 +544,13 @@ def run_screen_v2(
                 pass
 
     scored, rejected = [], []
-    for c in survivors:
-        news = provider.recent_news(c.fund.ticker)
-        c.cat = classifier.classify(c.fund.ticker, news)
+    for candidate_index, c in enumerate(survivors, 1):
+        print(f"  catalyst {candidate_index}/{len(survivors)}: {c.fund.ticker}", flush=True)
+        try:
+            news = core.normalize_news(provider.recent_news(c.fund.ticker))
+        except Exception as exc:
+            news = core.NewsResult([], status="provider_error", error=type(exc).__name__)
+        c.cat = core.validate_catalyst(classifier.classify(c.fund.ticker, news), news)
         c = evaluate_v2(c, news, sector_medians, today=today)
 
         shadow = core.Candidate(fund=c.fund, tech=c.v1_tech)
@@ -568,7 +575,29 @@ def run_screen_v2(
         c.analysis = analyst.write(c)
 
     all_candidates = rejected + scored
+    metrics = catalyst_metrics(all_candidates)
+    print("  catalyst monitoring: " + json.dumps(metrics, sort_keys=True))
+    with open(core._p("catalyst_monitoring.json"), "w") as handle:
+        json.dump({"date": today.isoformat(), **metrics}, handle, indent=2, allow_nan=False)
+    summary_path = os.getenv("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        with open(summary_path, "a") as handle:
+            handle.write("\n### V2 catalyst monitoring\n\nAll rates use evaluated candidates as denominator.\n\n```json\n" +
+                         json.dumps(metrics, indent=2) + "\n```\n")
     return qualifiers, featured, rejected, all_candidates
+
+
+def catalyst_metrics(candidates):
+    total = len(candidates)
+    counts = {
+        "news_retrieval_failures": sum(c.cat.news_status == "provider_error" for c in candidates),
+        "no_headlines": sum(c.cat.news_status == "no_headlines" for c in candidates),
+        "unknown_classifications": sum(c.cat.category == "unknown" for c in candidates),
+        "structural_vetoes": sum(c.cat.veto for c in candidates),
+        "fallbacks": sum(getattr(c.cat, "classification_source", "") == "deterministic_fallback" for c in candidates),
+    }
+    return {"evaluated": total, **counts,
+            "rates": {key: value / total if total else None for key, value in counts.items()}}
 
 
 def _make_report(today, featured, qualifiers, picks, stats):

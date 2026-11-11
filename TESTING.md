@@ -103,3 +103,67 @@ deterministic. Run those on demand, or on the weekly schedule.
 > Count note: the 48 figure is the Phase 1 suite. The Phase 2 factor leaderboard
 > (`factor_leaderboard.py` + `tests/test_leaderboard.py`) adds 10 more, for 58,
 > once that piece is committed.
+
+
+### Investigating slow weekly runs
+
+The V2 runner writes `run_diagnostics.json` before each stage, records stage
+elapsed times, and emits a stack trace every 120 seconds while a stage runs.
+Actions uses unbuffered Python output. Historical lookups log ticker/date windows;
+identical windows (including unavailable data) are cached within one provider
+instance. A later run retries failures. Date windows and first/last-close outcome
+semantics are unchanged. These are per-request history timeouts, not a guarantee
+that every yfinance operation returns within ten seconds.
+
+Weekly runs retain `run_diagnostics.json` and `catalyst_monitoring.json` in the
+`screen-diagnostics` artifact. A manual run can set `screen_timeout_minutes` to
+limit screening work (default 300); the job limit remains 330 to allow artifact
+upload after a step timeout. Manual runs do not persist official picks or send
+the production digest. On a timeout, treat a diagnostic stage marked `running`
+as interrupted, not completed; catalyst metrics exist only if screening reached
+its final aggregation. Do not infer a successful empty screen from a missing file.
+
+Runtime regression tests cover 285 repeated historical queries making one call,
+separate ticker/date cache keys, unavailable history caching, independent later
+runs, unchanged first/last close selection, and stage success/failure persistence.
+An offline manual smoke run with the seed universe completed all stages and
+produced both diagnostics and a preview; this is not live market-data proof.
+
+Groq rate limits with `Retry-After` over 30 seconds now enter a provider-instance
+cooldown and use the existing deterministic fallback immediately. Later
+candidates keep using fallback until that cooldown expires. Short rate-limit
+retries are retained; other provider-advertised retry sleeps are capped at 30
+seconds. This prevents an advertised multi-hour wait from blocking the weekly
+run. Tests cover retries disabled, last-attempt cooldown, expiration, and short
+successful retries. A fresh read-only reviewer (`runtime_review`) checked the
+cache and diagnostics, found the artifact-timeout and final-attempt cooldown
+issues, and verified both fixes. These checks do not establish the original
+live timeout's exact cause.
+
+
+Live diagnostic run 42441276403 retained its stage artifact: pick outcomes took
+3.014s, legacy backfill 1.312s, candidate outcomes 38.977s, and fundamentals
+refresh 62.949s. Repeated captured stacks point to the old classifier's
+`time.sleep(max(0.25, delay))` while progressing slowly through 307 candidates.
+It hit the 330-minute job timeout. The requested five-minute Actions step limit
+did not stop it; the workflow now also uses an Ubuntu `timeout` process deadline,
+validates a 1–300 minute input, and reserves the remainder of the job for upload.
+Exhausted Groq failures now also enter a five-minute cooldown; the source and
+original error are preserved on fallback classifications. These changes keep
+weights and all other eligibility gates unchanged.
+
+
+Verification run 42736489970 on 644e2f4 completed successfully in 4m11s and
+retained both diagnostics files. It evaluated 25 candidates with 8 manual
+qualifiers, 16 unknown classifications, 1 structural veto, 25 fallbacks, and no
+news retrieval failures or empty-news results. No official picks were persisted
+and no production email was sent. All 86 tests passed in both CI checks.
+Live Groq classification was unavailable (100% fallback), and Nasdaq-100 refresh
+still reported a missing ticker-column error. This confirms pipeline completion,
+not successful live Groq responses or complete index-source coverage.
+
+That run exposed Actions treating the supplied step timeout as a string
+(`Unexpected value '20'`). The step now uses a fixed numeric 305-minute ceiling;
+the validated process deadline still uses the requested 1–300 minute input.
+The 330-minute job ceiling reserves upload time. The final numeric-step edit
+was checked by CI; the successful live screen ran immediately before that edit.

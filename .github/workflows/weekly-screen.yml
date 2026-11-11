@@ -5,7 +5,13 @@ on:
     # 04:00 UTC Monday = ~Sunday midnight ET while daylight time is in effect.
     # Email lands before Monday's market open.
     - cron: "0 4 * * 1"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      screen_timeout_minutes:
+        description: "Screen step limit (leaves job time to upload diagnostics)"
+        type: number
+        default: 300
+        required: false
 
 permissions:
   contents: write
@@ -33,7 +39,9 @@ jobs:
         continue-on-error: true
 
       - name: Run weekly screen (V2)
+        timeout-minutes: 305
         env:
+          SCREEN_TIMEOUT_MINUTES: ${{ inputs.screen_timeout_minutes || 300 }}
           PROVIDER: yfinance
           CLASSIFIER: groq
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -43,7 +51,20 @@ jobs:
           EMAIL_FROM: ${{ github.event_name == 'schedule' && secrets.EMAIL_FROM || '' }}
           EMAIL_APP_PASSWORD: ${{ github.event_name == 'schedule' && secrets.EMAIL_APP_PASSWORD || '' }}
           EMAIL_TO: ${{ github.event_name == 'schedule' && secrets.EMAIL_TO || '' }}
-        run: python value_screener_v2_runner.py
+        run: |
+          [[ "$SCREEN_TIMEOUT_MINUTES" =~ ^[0-9]+$ ]] || exit 2
+          (( SCREEN_TIMEOUT_MINUTES >= 1 && SCREEN_TIMEOUT_MINUTES <= 300 )) || exit 2
+          timeout --signal=TERM --kill-after=30s "${SCREEN_TIMEOUT_MINUTES}m" python -u value_screener_v2_runner.py
+
+      - name: Retain run diagnostics and catalyst monitoring
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screen-diagnostics
+          path: |
+            catalyst_monitoring.json
+            run_diagnostics.json
+          if-no-files-found: warn
 
       - name: Persist official V2 learning data and universe
         if: github.event_name == 'schedule'

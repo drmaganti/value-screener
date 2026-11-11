@@ -85,9 +85,7 @@ def _price_on_or_before(provider, ticker, target_date):
         try:
             start = target_date - timedelta(days=8)
             end = target_date + timedelta(days=1)
-            hist = provider._t(ticker).history(
-                start=start.isoformat(), end=end.isoformat()
-            )
+            hist = provider.history_window(ticker, start, end)
             if hist is None or len(hist) == 0:
                 return None
             value = float(hist["Close"].iloc[-1])
