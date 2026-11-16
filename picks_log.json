@@ -4233,13 +4233,13 @@
       "outcomes": {
         "1w": 7.2,
         "1m": 14.61,
-        "3m": null,
+        "3m": 12.98,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4256,11 +4256,13 @@
       },
       "corrected_outcomes": {
         "1w": 7.71,
-        "1m": 14.61
+        "1m": 14.61,
+        "3m": 12.98
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4299,13 +4301,13 @@
       "outcomes": {
         "1w": -3.31,
         "1m": -11.08,
-        "3m": null,
+        "3m": -3.14,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4322,11 +4324,13 @@
       },
       "corrected_outcomes": {
         "1w": -4.41,
-        "1m": -11.08
+        "1m": -11.08,
+        "3m": -3.14
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4364,13 +4368,13 @@
       "outcomes": {
         "1w": 0.02,
         "1m": -10.17,
-        "3m": null,
+        "3m": -19.46,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4387,11 +4391,13 @@
       },
       "corrected_outcomes": {
         "1w": 0.99,
-        "1m": -10.17
+        "1m": -10.17,
+        "3m": -19.46
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4430,13 +4436,13 @@
       "outcomes": {
         "1w": 3.23,
         "1m": -4.52,
-        "3m": null,
+        "3m": -3.35,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4453,11 +4459,13 @@
       },
       "corrected_outcomes": {
         "1w": 0.83,
-        "1m": -4.52
+        "1m": -4.52,
+        "3m": -3.35
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4496,13 +4504,13 @@
       "outcomes": {
         "1w": 7.67,
         "1m": 7.76,
-        "3m": null,
+        "3m": -5.87,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4519,11 +4527,13 @@
       },
       "corrected_outcomes": {
         "1w": 9.71,
-        "1m": 7.76
+        "1m": 7.76,
+        "3m": -5.87
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4562,13 +4572,13 @@
       "outcomes": {
         "1w": 3.84,
         "1m": -4.29,
-        "3m": null,
+        "3m": -24.4,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4585,11 +4595,13 @@
       },
       "corrected_outcomes": {
         "1w": 2.2,
-        "1m": -4.29
+        "1m": -4.29,
+        "3m": -24.4
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4628,13 +4640,13 @@
       "outcomes": {
         "1w": 5.31,
         "1m": 3.4,
-        "3m": null,
+        "3m": -21.66,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4651,11 +4663,13 @@
       },
       "corrected_outcomes": {
         "1w": 5.44,
-        "1m": 3.4
+        "1m": 3.4,
+        "3m": -21.66
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4694,13 +4708,13 @@
       "outcomes": {
         "1w": 5.35,
         "1m": 4.85,
-        "3m": null,
+        "3m": -1.77,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4717,11 +4731,13 @@
       },
       "corrected_outcomes": {
         "1w": 4.35,
-        "1m": 4.85
+        "1m": 4.85,
+        "3m": -1.77
       },
       "corrected_outcomes_bench": {
         "1w": 0.76,
-        "1m": -1.83
+        "1m": -1.83,
+        "3m": 1.27
       },
       "corrected_benchmark": "XIU.TO",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4760,13 +4776,13 @@
       "outcomes": {
         "1w": 7.55,
         "1m": 19.16,
-        "3m": null,
+        "3m": 18.39,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4783,11 +4799,13 @@
       },
       "corrected_outcomes": {
         "1w": 10.5,
-        "1m": 19.16
+        "1m": 19.16,
+        "3m": 18.39
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -4826,13 +4844,13 @@
       "outcomes": {
         "1w": -1.53,
         "1m": -9.01,
-        "3m": null,
+        "3m": 3.86,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 0.4,
         "1m": -1.65,
-        "3m": null,
+        "3m": -2.66,
         "6m": null
       },
       "legacy_outcomes_snapshot": {
@@ -4849,11 +4867,13 @@
       },
       "corrected_outcomes": {
         "1w": -1.86,
-        "1m": -9.01
+        "1m": -9.01,
+        "3m": 3.86
       },
       "corrected_outcomes_bench": {
         "1w": -0.05,
-        "1m": -1.38
+        "1m": -1.38,
+        "3m": -2.39
       },
       "corrected_benchmark": "SPY",
       "corrected_method": "exact-horizon:first-close-on-or-after",
@@ -5563,13 +5583,13 @@
       },
       "outcomes": {
         "1w": 5.25,
-        "1m": null,
+        "1m": 6.62,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -5622,13 +5642,13 @@
       },
       "outcomes": {
         "1w": 3.45,
-        "1m": null,
+        "1m": 13.7,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -5682,13 +5702,13 @@
       },
       "outcomes": {
         "1w": -1.33,
-        "1m": null,
+        "1m": -9.72,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": 1.32,
-        "1m": null,
+        "1m": 3.28,
         "3m": null,
         "6m": null
       },
@@ -5742,13 +5762,13 @@
       },
       "outcomes": {
         "1w": 2.01,
-        "1m": null,
+        "1m": 17.56,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -5802,13 +5822,13 @@
       },
       "outcomes": {
         "1w": 6.39,
-        "1m": null,
+        "1m": 10.37,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -5862,13 +5882,13 @@
       },
       "outcomes": {
         "1w": -4.81,
-        "1m": null,
+        "1m": 5.26,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -5921,13 +5941,13 @@
       },
       "outcomes": {
         "1w": 4.96,
-        "1m": null,
+        "1m": 31.85,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -5981,13 +6001,13 @@
       },
       "outcomes": {
         "1w": 0.69,
-        "1m": null,
+        "1m": 8.35,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -6041,13 +6061,13 @@
       },
       "outcomes": {
         "1w": 1.32,
-        "1m": null,
+        "1m": 1.17,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -6101,13 +6121,13 @@
       },
       "outcomes": {
         "1w": 3.45,
-        "1m": null,
+        "1m": 20.21,
         "3m": null,
         "6m": null
       },
       "outcomes_bench": {
         "1w": -1.55,
-        "1m": null,
+        "1m": -2.41,
         "3m": null,
         "6m": null
       },
@@ -6693,6 +6713,653 @@
           "ps": 96.6,
           "vs_sector": 90.7,
           "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-11-16",
+      "pick_price": 105.65,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 81.5,
+      "signals": {
+        "technical": 100.0,
+        "valuation": 80.1,
+        "quality": 100.0,
+        "catalyst": 30.0,
+        "pullback_pct": 0.511,
+        "rsi": 55,
+        "days_in_decline": 216,
+        "return_20d": 8.81,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 100.0,
+          "pb": 63.4,
+          "ps": 98.5,
+          "vs_sector": 98.9,
+          "analyst_upside": 0.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH PLC",
+      "exchange": "NYSE",
+      "sector": "Basic Materials",
+      "pick_date": "2026-11-16",
+      "pick_price": 93.16,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 80.6,
+      "signals": {
+        "technical": 91.6,
+        "valuation": 67.6,
+        "quality": 100.0,
+        "catalyst": 60.0,
+        "pullback_pct": 0.28,
+        "rsi": 63,
+        "days_in_decline": 213,
+        "return_20d": 11.86,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 21.6,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "one_off_operational",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Single-quarter reaction.",
+        "catalyst_evidence": "AECOM Q4 Earnings Ahead: What Should Investors Expect?",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 38.6,
+          "fcf_yield": 23.9,
+          "ev_ebitda": 63.5,
+          "pb": 63.0,
+          "ps": 91.6,
+          "vs_sector": 75.0,
+          "analyst_upside": 85.4,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "K.TO",
+      "name": "KINROSS GOLD CORP.",
+      "exchange": "Toronto",
+      "sector": "Basic Materials",
+      "pick_date": "2026-11-16",
+      "pick_price": 29.62,
+      "benchmark": "XIU.TO",
+      "bench_at_pick": 54.55,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 75.7,
+      "signals": {
+        "technical": 80.0,
+        "valuation": 82.4,
+        "quality": 100.0,
+        "catalyst": 30.0,
+        "pullback_pct": 0.427,
+        "rsi": 43,
+        "days_in_decline": 202,
+        "return_20d": -12.86,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 0.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 72.3,
+          "ev_ebitda": 100.0,
+          "pb": 62.7,
+          "ps": 55.2,
+          "vs_sector": 68.9,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "WSP.TO",
+      "name": "WSP GLOBAL INC",
+      "exchange": "Toronto",
+      "sector": "Industrials",
+      "pick_date": "2026-11-16",
+      "pick_price": 186.94,
+      "benchmark": "XIU.TO",
+      "bench_at_pick": 54.55,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 74.8,
+      "signals": {
+        "technical": 95.1,
+        "valuation": 69.9,
+        "quality": 71.4,
+        "catalyst": 60.0,
+        "pullback_pct": 0.309,
+        "rsi": 52,
+        "days_in_decline": 208,
+        "return_20d": 12.47,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 25.1,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 6,
+        "quality_observations": 7,
+        "catalyst_category": "one_off_operational",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Single-quarter reaction.",
+        "catalyst_evidence": "What WSP Global (WSP) Said on Its Q3 Earnings Call",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 13.0,
+          "fcf_yield": 69.2,
+          "ev_ebitda": 33.5,
+          "pb": 66.2,
+          "ps": 96.4,
+          "vs_sector": 80.9,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "exchange": "NYSE",
+      "sector": "Consumer Cyclical",
+      "pick_date": "2026-11-16",
+      "pick_price": 86.82,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 74.4,
+      "signals": {
+        "technical": 91.9,
+        "valuation": 61.8,
+        "quality": 100.0,
+        "catalyst": 30.0,
+        "pullback_pct": 0.282,
+        "rsi": 62,
+        "days_in_decline": 183,
+        "return_20d": 1.3,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 21.9,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 81.4,
+          "fcf_yield": 72.0,
+          "ev_ebitda": 90.4,
+          "pb": 0.0,
+          "ps": 84.6,
+          "vs_sector": 71.1,
+          "analyst_upside": 33.4
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-11-16",
+      "pick_price": 885.01,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 73.2,
+      "signals": {
+        "technical": 64.4,
+        "valuation": 76.0,
+        "quality": 100.0,
+        "catalyst": 30.0,
+        "pullback_pct": 0.621,
+        "rsi": 34,
+        "days_in_decline": 99,
+        "return_20d": -31.89,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 21.5,
+          "rsi_stability": 12.9,
+          "stabilization": 0.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 99.0,
+          "ev_ebitda": 100.0,
+          "pb": 0.0,
+          "ps": 52.2,
+          "vs_sector": 80.6,
+          "analyst_upside": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Technology",
+      "pick_date": "2026-11-16",
+      "pick_price": 778.31,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 73.0,
+      "signals": {
+        "technical": 84.5,
+        "valuation": 62.1,
+        "quality": 100.0,
+        "catalyst": 30.0,
+        "pullback_pct": 0.358,
+        "rsi": 40,
+        "days_in_decline": 99,
+        "return_20d": -11.44,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 30.0,
+          "maturity": 21.5,
+          "rsi_stability": 25.0,
+          "stabilization": 8.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 93.6,
+          "fcf_yield": 18.7,
+          "ev_ebitda": 91.8,
+          "pb": 0.0,
+          "ps": 19.8,
+          "vs_sector": 72.9,
+          "analyst_upside": 100.0,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporatio",
+      "exchange": "NYSE",
+      "sector": "Energy",
+      "pick_date": "2026-11-16",
+      "pick_price": 58.75,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 72.6,
+      "signals": {
+        "technical": 43.6,
+        "valuation": 81.2,
+        "quality": 100.0,
+        "catalyst": 60.0,
+        "pullback_pct": 0.105,
+        "rsi": 31,
+        "days_in_decline": 159,
+        "return_20d": -5.82,
+        "stabilizing": false,
+        "technical_parts": {
+          "dislocation": 0.6,
+          "maturity": 25.0,
+          "rsi_stability": 10.1,
+          "stabilization": 8.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "one_off_operational",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Single-quarter reaction.",
+        "catalyst_evidence": "Earnings week scorecard: beats rewarded selectively as AI-infrastructure names pull back",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 66.3,
+          "fcf_yield": 90.8,
+          "ev_ebitda": 100.0,
+          "pb": 82.9,
+          "ps": 80.7,
+          "vs_sector": 69.4,
+          "analyst_upside": 59.8,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
+      "exchange": "NasdaqGS",
+      "sector": "Industrials",
+      "pick_date": "2026-11-16",
+      "pick_price": 222.46,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 72.5,
+      "signals": {
+        "technical": 74.2,
+        "valuation": 79.2,
+        "quality": 85.7,
+        "catalyst": 30.0,
+        "pullback_pct": 0.135,
+        "rsi": 54,
+        "days_in_decline": 179,
+        "return_20d": 5.56,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 4.2,
+          "maturity": 25.0,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 8,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 86.7,
+          "fcf_yield": 100.0,
+          "ev_ebitda": 76.9,
+          "pb": 46.3,
+          "ps": 87.6,
+          "vs_sector": 96.0,
+          "analyst_upside": 40.3,
+          "yield_vs_history": 100.0
+        }
+      },
+      "outcomes": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "outcomes_bench": {
+        "1w": null,
+        "1m": null,
+        "3m": null,
+        "6m": null
+      },
+      "official": true,
+      "run_type": "scheduled"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries Holdings, Inc.",
+      "exchange": "NYSE",
+      "sector": "Basic Materials",
+      "pick_date": "2026-11-16",
+      "pick_price": 125.09,
+      "benchmark": "SPY",
+      "bench_at_pick": 754.37,
+      "strategy_version": "v2",
+      "conviction": "strong",
+      "composite": 72.1,
+      "signals": {
+        "technical": 58.7,
+        "valuation": 76.1,
+        "quality": 100.0,
+        "catalyst": 30.0,
+        "pullback_pct": 0.102,
+        "rsi": 56,
+        "days_in_decline": 51,
+        "return_20d": 3.51,
+        "stabilizing": true,
+        "technical_parts": {
+          "dislocation": 0.2,
+          "maturity": 13.5,
+          "rsi_stability": 25.0,
+          "stabilization": 20.0
+        },
+        "fscore": 9,
+        "quality_observations": 7,
+        "catalyst_category": "unknown",
+        "news_status": "ok",
+        "news_error": null,
+        "catalyst_reason": "Classifier fallback after HTTP 400 (provider cooldown); Insufficient news evidence.",
+        "catalyst_evidence": "",
+        "structural_veto": false,
+        "catalyst_classification_source": "deterministic_fallback",
+        "catalyst_classifier_error": "HTTP 400 (provider cooldown)",
+        "valuation_coverage": 6,
+        "valuation_parts": {
+          "earnings_yield": 100.0,
+          "fcf_yield": 95.5,
+          "ev_ebitda": 100.0,
+          "pb": 43.9,
+          "ps": 81.4,
+          "vs_sector": 76.4,
+          "analyst_upside": 11.3,
           "yield_vs_history": 100.0
         }
       },
